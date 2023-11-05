@@ -1,0 +1,157 @@
+
+
+<Html>  
+<head>   
+    <title>  
+        Registration Page  
+    </title>  
+ 
+    
+</head>  
+<body bgcolor="lightyellow">  
+    <br><br>  
+    <form action="login.html" method="post"> 
+        <fieldset>
+            
+            <legend>1. Candidate's Name (as per 12th marksheet):<b>FILL IN CAPITAL LETTERS ONLY</b></legend>
+            <div >
+            <label> Firstname </label>         
+            <input type="text" name="firstname" size="15" required/> <br> <br>  
+            <label> Middlename: </label>     
+            <input type="text" name="middlename" size="15" required/> <br> <br>  
+            <label> Lastname: </label>         
+            <input type="text" name="lastname" size="15" required/> <br> <br>  
+            
+            </div>
+        </fieldset><br>
+        <fieldset >
+            <legend>2. General Information </legend><br/><br/>
+
+            <label>
+                Date of birth :
+            </label>
+            <input type="Date" name="date" min="1950-01-01" max="2020-01-01" required />
+            <br>
+            <br>
+            <p>Category</p>
+            <input type="radio"  name="Category" value="General" checked="checked">
+            <label>General</label><br>
+            <input type="radio"  name="Category" value="SC" >
+            <label>SC</label><br>
+            <input type="radio"  name="Category" value="ST">
+            <label>ST</label><br>
+            <input type="radio"  name="Category" value="OBC">
+            <label>OBC</label><br>
+
+
+
+            <label> <br><br>
+                <label> Religion: </label>         
+                <input type="text" name="Religion" size="15" required/> <br> <br>
+                <label> Caste :</label>         
+                <input type="text" name="Caste" size="15" required/> <br> <br>
+                <label> Nationality :</label>         
+                <input type="text" name="Nationality" size="15" required/> <br> <br>
+                <label> State Of Domicile :</label>         
+                <input type="text" name="StateofDomicile" size="15" required/> <br> <br>
+                <label> Blood Group :</label>         
+                <input type="text" name="Blood" size="15" required/> <br> <br>
+                <label> Adhar card no. :</label>         
+                <input type="text" name="Aadhar" size="15" required/> <br> <br>
+
+                <p>Gender</p>
+                <input type="radio"  name="Gender" value="Female" checked="checked">
+                <label>Female</label><br>
+                <input type="radio" name="Gender" value="Male" >
+                <label>Male</label><br>
+                <input type="radio" name="Gender" value="Other" >
+                <label>Other</label><br><br>
+
+
+                <label> Email ID :</label>         
+                <input type="email" name="email" size="15" required/> <br> <br>
+                <label> Password :</label>         
+                <input type="password" name="pass" size="15" required/> <br> <br>
+                <label>   
+                    Cadidate's Mob No. :  
+                </label>  
+                <input type="number" name="C_country_code" value="+91" max="99" min="00" size="2" required/>   
+                <input type="number" name="C_phone" size="10" required/> <br> <br>
+
+
+                <label>   
+                    Parent's Mob No. :  
+                </label>  
+                <input type="number" name="P_country code"  value="+91" max="99" min="00" step="1" required/>   
+                <input type="number" name="P_phone" size="10" required/> <br> <br> 
+            </fieldset><br>
+            <fieldset>
+
+                <legend>3.Correspondence Address:</legend>
+                Address  
+                <br>  
+                <textarea cols="80" rows="5" value="address" name="Address" required>  
+                </textarea>  
+                <br> <br>  
+                <label>Town/City:</label>         
+                <input type="text" name="City" size="15" required/> <br> <br>
+                <label>District :</label>         
+                <input type="text" name="District" size="15" required/> <br> <br>
+                <label>Pin Code :</label>         
+                <input type="number" name="Pin" size="6" required/> <br> <br>
+                <label>State :</label>         
+                <input type="text" name="State" size="15" required/> <br> <br>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Other Information</legend>
+
+                <label for="Fname">Father's name: </label>
+                <input type="text" id="Fname" name="Fname" required><br><br>
+
+                <label for="Mname">Mother's name: </label>
+                <input type="text" id="Mname" name="Mname" required><br><br>
+
+                <label for="Focc">Father's occupation: </label>
+                <input type="text" id="Focc" name="Focc" required><br><br>
+
+                <label for="Mocc">Mother's occupation: </label>
+                <input type="text" id="Mocc" name="Mocc" required><br><br>
+
+                <label for="Inc">Total Family Annual Income: </label>
+                <input type="number" id="Inc" name="Inc" required><br><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Documents</legend>
+                <label for="img">Select image:</label>
+                <input type="file" id="file" name="img" accept="image/png, image/jpg" ondrop="dropHandler(event);">
+            </fieldset>
+
+            <input type="submit" name="submit">
+
+            <p><center>Already have an account? <a href="login.html">Login</a>.</center></p>
+
+        </form> 
+        <script>
+            function dropHandler(ev) {
+            ev.preventDefault();
+              var fileInput=document.getElementById('file');
+                         
+                        var filePath = fileInput.value;
+                     
+                        // Allowing file type
+                        var allowedExtensions =
+                                /(\.jpg|\.jpeg|\.png)$/i;
+                         
+                        if (!allowedExtensions.exec(filePath)) {
+                            alert('Invalid file type');
+                            fileInput.value = '';
+                            return false;
+                        }
+            }
+            
+            </script> 
+    </body>  
+</html>  
+
