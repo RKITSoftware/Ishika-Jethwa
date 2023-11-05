@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        border: 2px solid red;
+        margin: 3px 0;
+        background: yellowgreen;
+      }
+
+      .btn1 {
+        margin-left: auto;
+        border-radius: 20px; /* Adjust the value to control the roundness */
+        padding: 10px 10px;
+        background-color: #ff00dd; /* Add background color */
+        color: #000000; /* Set text color */
+        border: none; /* Remove border */
+        cursor: pointer;
+      }
+      #panel {
+  padding: 5px;
+  text-align: center;
+  background-color: #ff00dd;
+  border: solid 1px #c3c3c3;
+  display: none;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>jQuery Selectors</h4>
+      <p>
+        hably was the first person born in British America to be ordained a
+        Catholic priest.
+      </p>
+      <p class="test">
+        hably was the first person born in British America to be ordained a
+        Catholic priest.
+      </p>
+      <p id="test">
+        hably was the first person born in British America to be ordained a
+        Catholic priest.
+      </p>
+
+      <button class="btn1">Click Me!</button>
+    </div>
+    <div class="container">
+      <h4>jQuery Events</h4>
+      <p>
+        hably was the first person born in British America to be ordained a
+        Catholic priest.
+      </p>
+
+      <p id="p1">
+        hably was the first person born in British America to be ordained a
+        Catholic priest.
+      </p>
+      <br />
+      <input type="text" name="userNAme" /><br />
+      <p>Keypresses: <span>0</span></p>
+      <button class="btn1">Click Me!</button>
+    </div>
+    <div class="container">
+      <h4>jQuery Toggler &nbsp;&nbsp;</h4>
+      <p>If you click on the "Hide" button, I will disappear.</p>
+
+      <button class="btn1" id="hide">Hide</button>
+      <button class="btn1" id="show">Show</button>
+      <button class="btn1" id="toggleButton">ToggleButton</button>
+    </div>
+    <div class="container">
+      <h4>jQuery fadeButton &nbsp;&nbsp;</h4>
+      <button class="btn1" id="fadeButton">Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+    </div>
+    <div class="container">
+      <h4>jQuery slide &nbsp;&nbsp;</h4>
+      <div class="btn1" id="flip">Click to slide the panel down or up</div>
+      <button class="btn1" id="stop">Stop sliding</button>
+      <div id="panel">Hello world!</div>
+    </div>
+    <div class="container">
+      <h4>jQuery Animation &nbsp;&nbsp; </h4>
+      <p id="wiki">
+        hably was the first person born in British America to be ordained a
+        Catholic priest.
+      </p>
+    </div>
+    <div class="container">
+      <p id="para">This is some <b>bold</b> text in a paragraph.&nbsp;&nbsp;&nbsp;&nbsp;</p>
+      Name: <input type="text" id="Mickey" value="Mickey Mouse">
+      <a href="www.google.com">www.google.com</a>
+
+<button class="btn1" id="btn1">Show Text</button>
+<button  class="btn1" id="btn2">Show HTML</button>
+<button class="btn1" id="btn3">Show Value</button>
+    </div>
+  </body>
+  <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      console.log("internal jQuery");
+      $(document).on("myCustomEvent", function(event) {
+            // Your custom event handler code here
+            console.log("Custom event fired!");
+          // Add your custom logic here
+});
+
+// Trigger the custom event "myCustomEvent" programmatically
+$(document).trigger("myCustomEvent");
+
+    })
+    
+  </script>
+  <script src="js/myjQuery.js"></script>
+</html>

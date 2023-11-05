@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal JSON File Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <h1>Internal JSON File Example</h1>
+    <button id="loadData">Load Data</button>
+    <ul id="dataList"></ul>
+    <div>
+        <input type="text" id="newItem" placeholder="New Item">
+        <button id="addItem">Add Item</button>
+    </div>
+    <div>
+        <input type="text" id="updateId" placeholder="Item ID">
+        <input type="text" id="updateValue" placeholder="New Value">
+        <button id="updateItem">Update Item</button>
+    </div>
+    <div>
+        <input type="text" id="deleteId" placeholder="Item ID">
+        <button id="deleteItem">Delete Item</button>
+    </div>
+</body>
+<script>
+  $(document).ready(function() {
+    const jsonDataUrl = "demo.json"; // Path to the internal JSON file
+
+    // Function to load and display data
+    function loadData() {
+        $.ajax({
+            url: jsonDataUrl,
+            type: "GET",
+            dataType: "json",
+            success: function(data) {
+                $("#dataList").empty();
+                data.forEach(function(item) {
+                    $("#dataList").append("<li>ID: " + item.id + ", Name: " + item.name + "</li>");
+                });
+            },
+            error: function(error) {
+                console.log("Error loading data:", error);
+            }
+        });
+    }
+
+    // Click event for "Load Data" button
+    $("#loadData").click(function() {
+        loadData();
+    });
+
+    // Click event for "Add Item" button
+    $("#addItem").click(function() {
+        const newItem = $("#newItem").val();
+        if (newItem.trim() !== "") {
+            $.ajax({
+                url: jsonDataUrl,
+                type: "POST",
+                dataType: "json",
+                data: JSON.stringify({ name: newItem }),
+                contentType: "application/json",
+                success: function() {
+                    loadData();
+                    $("#newItem").val("");
+                },
+                error: function(error) {
+                    console.log("Error adding item:", error);
+                }
+            });
+        }
+    });
+
+    // Click event for "Update Item" button
+    $("#updateItem").click(function() {
+        const itemId = $("#updateId").val();
+        const newValue = $("#updateValue").val();
+
+        if (itemId.trim() !== "" && newValue.trim() !== "") {
+            $.ajax({
+                url: jsonDataUrl + "/" + itemId,
+                type: "PUT",
+                dataType: "json",
+                data: JSON.stringify({ name: newValue }),
+                contentType: "application/json",
+                success: function() {
+                    loadData();
+                    $("#updateId").val("");
+                    $("#updateValue").val("");
+                },
+                error: function(error) {
+                    console.log("Error updating item:", error);
+                }
+            });
+        }
+    });
+
+    // Click event for "Delete Item" button
+    $("#deleteItem").click(function() {
+        const itemId = $("#deleteId").val();
+        if (itemId.trim() !== "") {
+            $.ajax({
+                url: jsonDataUrl + "/" + itemId,
+                type: "DELETE",
+                success: function() {
+                    loadData();
+                    $("#deleteId").val("");
+                },
+                error: function(error) {
+                    console.log("Error deleting item:", error);
+                }
+            });
+        }
+    });
+});
+
+
+    
+</script>
+</html>

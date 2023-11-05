@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AJAX Demo</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<button id="get-data">Get Data</button>
+<button id="post-data">Post Data</button>
+<button id="put-data">Put Data</button>
+<button id="delete-data">Delete Data</button>
+<div id="result"></div>
+<hr>
+<form action="">
+  First name: <input type="text" name="FirstName" value="Mickey"><br>
+  Last name: <input type="text" name="LastName" value="Mouse"><br>
+</form>
+
+<button id="serialize">Serialize form values</button>
+<div id="ser"></div>
+<div id="seri"></div>
+<!-- <script src="demo.js"></script> -->
+
+<script>
+$(document).ready(function() {
+  const apiUrl = "https://jsonplaceholder.typicode.com/posts/1"; 
+
+  // Function to display the result
+  function displayResult(data) {
+    $("#result").html(JSON.stringify(data));
+  }
+
+  // GET request
+  $("#get-data").click(function() {
+    $.get("demo.js", function(data) {
+      displayResult(data);
+    });
+  });
+
+  // POST request
+  $("#post-data").click(function() {
+    $.post('https://dummy.restapiexample.com/api/v1/create', {
+        "name":"tes","salary":"12","age":"25"
+    }, function(data) {
+      displayResult(data);
+    })
+//     .fail(function(jqXHR, textStatus, errorThrown) {
+//   // Error callback
+//   alert("Error: " + textStatus + " - " + errorThrown);
+// });
+  });
+//   $("#put-data").click(function() {
+//     $.ajax({url:'https://fakestoreapi.com/products',
+//             method:"POST",
+//             data:JSON.stringify(
+//                 {
+//                     title: 'test',
+//                     price: 135,
+//                     description: 'loripsum set',
+//                     image: 'https://i.pravatar.cc',
+//                     category: 'electronic'
+//                 }
+//             ),
+//             success: function(data) {
+//         displayResult(data);
+//       }
+//         })
+           
+//     });
+  // PUT request
+  $("#put-data").click(function() {
+    $.ajax({
+      url: "https://jsonplaceholder.typicode.com/posts/",
+      method: "PUT",
+      data : {
+  "userId": 2,
+  "title": "sunt ",
+  "body": "quia et  rem eveniet architecto",
+  "age": 15
+},
+      success: function(data1) {
+        displayResult(data1);
+      }
+    });
+  });
+
+  // DELETE request
+  $("#delete-data").click(function() {
+    $.ajax({
+      url: apiUrl,
+      method: "DELETE",
+      success: function(data) {
+        displayResult(data);
+      }
+    });
+  });
+});
+
+
+// ============serialization=============
+
+// Serialization (JavaScript object to JSON string)
+var data = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+var jsonString = JSON.stringify(data);
+
+console.log("Serialized data:");
+console.log(jsonString);
+
+// Deserialization (JSON string to JavaScript object)
+var jsonString2 = '{"name": "Alice", "age": 25, "city": "Los Angeles"}';
+
+var parsedData = JSON.parse(jsonString2);
+
+console.log("Deserialized data:");
+console.log(parsedData);
+
+$(document).ready(function(){
+  $("#serialize").click(function(){
+    $("#ser").text($("form").serialize());
+
+    
+    var x = $("form").serializeArray();
+    $.each(x, function(i, field){
+      $("#seri").append(field.name + ":" + field.value + " ");
+    });
+  });
+
+
+});
+
+</script>
+
+</body>
+</html>
