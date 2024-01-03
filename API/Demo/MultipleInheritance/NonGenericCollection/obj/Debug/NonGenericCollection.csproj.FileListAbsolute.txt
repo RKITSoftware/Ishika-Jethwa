@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\MultipleInheritance\NonGenericCollection\bin\Debug\NonGenericCollection.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\NonGenericCollection\bin\Debug\NonGenericCollection.exe
+C:\Users\Dell\source\repos\MultipleInheritance\NonGenericCollection\bin\Debug\NonGenericCollection.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\NonGenericCollection\obj\Debug\NonGenericCollection.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\NonGenericCollection\obj\Debug\NonGenericCollection.exe
+C:\Users\Dell\source\repos\MultipleInheritance\NonGenericCollection\obj\Debug\NonGenericCollection.pdb

@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\MultipleInheritance\FileDemo\bin\Debug\FileDemo.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\FileDemo\bin\Debug\FileDemo.exe
+C:\Users\Dell\source\repos\MultipleInheritance\FileDemo\bin\Debug\FileDemo.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\FileDemo\obj\Debug\FileDemo.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\FileDemo\obj\Debug\FileDemo.exe
+C:\Users\Dell\source\repos\MultipleInheritance\FileDemo\obj\Debug\FileDemo.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\FileDemo\obj\Debug\FileDemo.csprojAssemblyReference.cache

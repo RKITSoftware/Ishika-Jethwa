@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\EmployeeManagementApp\EmployeeManagementApp\bin\Debug\EmployeeManagementApp.exe.config
+C:\Users\Dell\source\repos\EmployeeManagementApp\EmployeeManagementApp\bin\Debug\EmployeeManagementApp.exe
+C:\Users\Dell\source\repos\EmployeeManagementApp\EmployeeManagementApp\bin\Debug\EmployeeManagementApp.pdb
+C:\Users\Dell\source\repos\EmployeeManagementApp\EmployeeManagementApp\obj\Debug\EmployeeManagementApp.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\EmployeeManagementApp\EmployeeManagementApp\obj\Debug\EmployeeManagementApp.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\EmployeeManagementApp\EmployeeManagementApp\obj\Debug\EmployeeManagementApp.exe
+C:\Users\Dell\source\repos\EmployeeManagementApp\EmployeeManagementApp\obj\Debug\EmployeeManagementApp.pdb

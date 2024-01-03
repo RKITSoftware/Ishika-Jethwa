@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\MultipleInheritance\DateTime\bin\Debug\DateTime.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\DateTime\bin\Debug\DateTime.exe
+C:\Users\Dell\source\repos\MultipleInheritance\DateTime\bin\Debug\DateTime.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\DateTime\obj\Debug\DateTime.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\DateTime\obj\Debug\DateTime.exe
+C:\Users\Dell\source\repos\MultipleInheritance\DateTime\obj\Debug\DateTime.pdb

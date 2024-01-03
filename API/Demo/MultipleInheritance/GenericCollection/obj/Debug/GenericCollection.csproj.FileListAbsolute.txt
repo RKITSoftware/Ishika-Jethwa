@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\MultipleInheritance\GenericCollection\bin\Debug\GenericCollection.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\GenericCollection\bin\Debug\GenericCollection.exe
+C:\Users\Dell\source\repos\MultipleInheritance\GenericCollection\bin\Debug\GenericCollection.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\GenericCollection\obj\Debug\GenericCollection.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\GenericCollection\obj\Debug\GenericCollection.exe
+C:\Users\Dell\source\repos\MultipleInheritance\GenericCollection\obj\Debug\GenericCollection.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\GenericCollection\obj\Debug\GenericCollection.csprojAssemblyReference.cache

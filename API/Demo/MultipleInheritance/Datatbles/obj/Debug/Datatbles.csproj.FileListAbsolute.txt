@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\MultipleInheritance\Datatbles\bin\Debug\Datatbles.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\Datatbles\bin\Debug\Datatbles.exe
+C:\Users\Dell\source\repos\MultipleInheritance\Datatbles\bin\Debug\Datatbles.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\Datatbles\obj\Debug\Datatbles.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\Datatbles\obj\Debug\Datatbles.exe
+C:\Users\Dell\source\repos\MultipleInheritance\Datatbles\obj\Debug\Datatbles.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\Datatbles\obj\Debug\Datatbles.csprojAssemblyReference.cache

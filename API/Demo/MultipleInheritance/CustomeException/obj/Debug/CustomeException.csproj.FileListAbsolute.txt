@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\MultipleInheritance\CustomeException\bin\Debug\CustomeException.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\CustomeException\bin\Debug\CustomeException.exe
+C:\Users\Dell\source\repos\MultipleInheritance\CustomeException\bin\Debug\CustomeException.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\CustomeException\obj\Debug\CustomeException.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\CustomeException\obj\Debug\CustomeException.exe
+C:\Users\Dell\source\repos\MultipleInheritance\CustomeException\obj\Debug\CustomeException.pdb

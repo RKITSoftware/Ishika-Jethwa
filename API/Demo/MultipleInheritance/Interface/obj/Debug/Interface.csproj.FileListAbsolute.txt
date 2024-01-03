@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\MultipleInheritance\Interface\bin\Debug\Interface.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\Interface\bin\Debug\Interface.exe
+C:\Users\Dell\source\repos\MultipleInheritance\Interface\bin\Debug\Interface.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\Interface\obj\Debug\Interface.exe
+C:\Users\Dell\source\repos\MultipleInheritance\Interface\obj\Debug\Interface.pdb

@@ -1,0 +1,49 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <script src="~/Scripts/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                let uservalue = {};
+                uservalue['Name'] = $("#Name").val();
+                uservalue['Email'] = $("#Email").text();
+                uservalue['Gender'] = $("#Gender").text();
+                uservalue['City'] = $("#City").text();
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:52318//api/Employees/",
+                   data: $.param(uservalue),
+                   
+                    success: function () {
+                            alert('Congrats Data is submitted');
+                        }
+                    ,
+                    error: function () {
+                        alert("Failed");
+                    }
+                });
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div>
+        <label>Name:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="Name" name="Name" value="" /><br />
+        <label>Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="Email" name="Email" value="" /><br />
+        <label>Gender:</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" id="Gender" name="Gender" value="" /><br />
+        <label>City:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="City" name="City" value="" /><br />
+        <input type="button" id="btn1" name="btn1" value="SignIn" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\MultipleInheritance\EnumDemo\bin\Debug\EnumDemo.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\EnumDemo\bin\Debug\EnumDemo.exe
+C:\Users\Dell\source\repos\MultipleInheritance\EnumDemo\bin\Debug\EnumDemo.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\EnumDemo\obj\Debug\EnumDemo.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\EnumDemo\obj\Debug\EnumDemo.exe
+C:\Users\Dell\source\repos\MultipleInheritance\EnumDemo\obj\Debug\EnumDemo.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\EnumDemo\obj\Debug\EnumDemo.csprojAssemblyReference.cache

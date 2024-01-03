@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\MultipleInheritance\StringDemo\bin\Debug\StringDemo.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\StringDemo\bin\Debug\StringDemo.exe
+C:\Users\Dell\source\repos\MultipleInheritance\StringDemo\bin\Debug\StringDemo.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\StringDemo\obj\Debug\StringDemo.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\StringDemo\obj\Debug\StringDemo.exe
+C:\Users\Dell\source\repos\MultipleInheritance\StringDemo\obj\Debug\StringDemo.pdb

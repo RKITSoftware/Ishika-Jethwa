@@ -1,0 +1,5 @@
+C:\Users\Dell\source\repos\Temprature\TempratureLibrary\bin\Debug\TempratureLibrary.dll
+C:\Users\Dell\source\repos\Temprature\TempratureLibrary\bin\Debug\TempratureLibrary.pdb
+C:\Users\Dell\source\repos\Temprature\TempratureLibrary\obj\Debug\TempratureLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Temprature\TempratureLibrary\obj\Debug\TempratureLibrary.dll
+C:\Users\Dell\source\repos\Temprature\TempratureLibrary\obj\Debug\TempratureLibrary.pdb

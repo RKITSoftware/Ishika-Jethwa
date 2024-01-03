@@ -1,0 +1,13 @@
+C:\Users\Dell\source\repos\Temprature\Temprature\bin\Debug\Temprature.exe.config
+C:\Users\Dell\source\repos\Temprature\Temprature\bin\Debug\Temprature.exe
+C:\Users\Dell\source\repos\Temprature\Temprature\bin\Debug\Temprature.pdb
+C:\Users\Dell\source\repos\Temprature\Temprature\obj\Debug\Temprature.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\Temprature\Temprature\obj\Debug\Temprature.Form1.resources
+C:\Users\Dell\source\repos\Temprature\Temprature\obj\Debug\Temprature.Properties.Resources.resources
+C:\Users\Dell\source\repos\Temprature\Temprature\obj\Debug\Temprature.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\Temprature\Temprature\obj\Debug\Temprature.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Temprature\Temprature\obj\Debug\Temprature.exe
+C:\Users\Dell\source\repos\Temprature\Temprature\obj\Debug\Temprature.pdb
+C:\Users\Dell\source\repos\Temprature\Temprature\bin\Debug\TempratureLibrary.dll
+C:\Users\Dell\source\repos\Temprature\Temprature\bin\Debug\TempratureLibrary.pdb
+C:\Users\Dell\source\repos\Temprature\Temprature\obj\Debug\Temprature.csproj.CopyComplete
