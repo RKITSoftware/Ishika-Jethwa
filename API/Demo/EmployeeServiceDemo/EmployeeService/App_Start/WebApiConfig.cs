@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using EmployeeService.Auth;
 using System.Web.Http;
 using System.Web.Http.Cors;
+using System.Web.Http.ExceptionHandling;
 
 namespace EmployeeService
 {
@@ -27,6 +26,8 @@ namespace EmployeeService
                 defaults: new { id = RouteParameter.Optional }
                 
             );
+            config.Filters.Add(new BasicAuthentication());
+            config.Services.Replace(typeof(IExceptionHandler), new EmployeeExceptionHandler());
         }
     }
 }
