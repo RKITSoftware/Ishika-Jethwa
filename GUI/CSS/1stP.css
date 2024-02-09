@@ -1,0 +1,58 @@
+body{
+   
+ 
+    background-color:aliceblue;
+    color: rgb(219, 19, 59);
+    font-family: 'Poppins';
+}
+
+.singlepart{
+    padding: 30px;
+}
+
+
+.singlepart legend{
+    color: black;
+    filter: opacity(0.5);
+}
+
+
+.singlepart label{
+    font-size: larger;
+}
+
+.singlepart input[type=text], input[type=email], input[type=password]{
+    position: relative;
+    padding: 10px;
+    left:10px;
+    border: none;
+    font-size: larger;
+    background-color: aliceblue;
+    border-bottom: 5px solid rgb(219, 19, 59);;
+    transition: 0.5s ease;
+}
+
+.singlepart input[type=text]:hover{
+    font-size: large;
+    border: none;
+    background-color: aliceblue;
+    border-bottom: 5px solid rgb(219, 19, 59);;
+}
+
+.phN{
+    padding: 10px;
+
+}
+
+input[type=submit]{
+    padding: 20px;
+    background-color: rgb(219, 19, 59);;
+    color: aliceblue;
+    font-size: larger;
+    border: none;
+    border-radius: 10px;    
+}
+
+.firstname{
+    display: block;
+}

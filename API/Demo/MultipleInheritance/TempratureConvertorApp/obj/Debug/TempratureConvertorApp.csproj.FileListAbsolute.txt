@@ -1,0 +1,13 @@
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\bin\Debug\TempratureConvertorApp.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\bin\Debug\TempratureConvertorApp.exe
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\bin\Debug\TempratureConvertorApp.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\bin\Debug\TemperatureConverterLibrary.dll
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\bin\Debug\TemperatureConverterLibrary.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\obj\Debug\TempratureConvertorApp.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\obj\Debug\TempratureConvertorApp.Form1.resources
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\obj\Debug\TempratureConvertorApp.Properties.Resources.resources
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\obj\Debug\TempratureConvertorApp.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\obj\Debug\TempratureConvertorApp.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\obj\Debug\TempratureConvertorApp.csproj.CopyComplete
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\obj\Debug\TempratureConvertorApp.exe
+C:\Users\Dell\source\repos\MultipleInheritance\TempratureConvertorApp\obj\Debug\TempratureConvertorApp.pdb

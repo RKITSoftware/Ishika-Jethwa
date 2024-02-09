@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\MultipleInheritance\HybridInheritance\bin\Debug\HybridInheritance.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\HybridInheritance\bin\Debug\HybridInheritance.exe
+C:\Users\Dell\source\repos\MultipleInheritance\HybridInheritance\bin\Debug\HybridInheritance.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\HybridInheritance\obj\Debug\HybridInheritance.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MultipleInheritance\HybridInheritance\obj\Debug\HybridInheritance.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\HybridInheritance\obj\Debug\HybridInheritance.exe
+C:\Users\Dell\source\repos\MultipleInheritance\HybridInheritance\obj\Debug\HybridInheritance.pdb

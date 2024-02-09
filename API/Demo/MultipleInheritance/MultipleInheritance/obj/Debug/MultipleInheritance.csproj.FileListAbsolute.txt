@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\MultipleInheritance\MultipleInheritance\bin\Debug\MultipleInheritance.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\MultipleInheritance\bin\Debug\MultipleInheritance.exe
+C:\Users\Dell\source\repos\MultipleInheritance\MultipleInheritance\bin\Debug\MultipleInheritance.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\MultipleInheritance\obj\Debug\MultipleInheritance.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MultipleInheritance\MultipleInheritance\obj\Debug\MultipleInheritance.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\MultipleInheritance\obj\Debug\MultipleInheritance.exe
+C:\Users\Dell\source\repos\MultipleInheritance\MultipleInheritance\obj\Debug\MultipleInheritance.pdb

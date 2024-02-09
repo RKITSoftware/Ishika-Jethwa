@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\MultilevelInheritance\MultilevelInheritance\bin\Debug\MultilevelInheritance.exe.config
+C:\Users\Dell\source\repos\MultilevelInheritance\MultilevelInheritance\bin\Debug\MultilevelInheritance.exe
+C:\Users\Dell\source\repos\MultilevelInheritance\MultilevelInheritance\bin\Debug\MultilevelInheritance.pdb
+C:\Users\Dell\source\repos\MultilevelInheritance\MultilevelInheritance\obj\Debug\MultilevelInheritance.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultilevelInheritance\MultilevelInheritance\obj\Debug\MultilevelInheritance.exe
+C:\Users\Dell\source\repos\MultilevelInheritance\MultilevelInheritance\obj\Debug\MultilevelInheritance.pdb

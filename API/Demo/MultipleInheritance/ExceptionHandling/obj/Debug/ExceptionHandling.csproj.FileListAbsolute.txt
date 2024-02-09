@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\MultipleInheritance\ExceptionHandling\bin\Debug\ExceptionHandling.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\ExceptionHandling\bin\Debug\ExceptionHandling.exe
+C:\Users\Dell\source\repos\MultipleInheritance\ExceptionHandling\bin\Debug\ExceptionHandling.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\ExceptionHandling\obj\Debug\ExceptionHandling.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\ExceptionHandling\obj\Debug\ExceptionHandling.exe
+C:\Users\Dell\source\repos\MultipleInheritance\ExceptionHandling\obj\Debug\ExceptionHandling.pdb

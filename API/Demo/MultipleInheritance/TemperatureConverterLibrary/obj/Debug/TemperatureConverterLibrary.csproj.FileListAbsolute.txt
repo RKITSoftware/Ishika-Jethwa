@@ -1,0 +1,6 @@
+C:\Users\Dell\source\repos\MultipleInheritance\TemperatureConverterLibrary\bin\Debug\TemperatureConverterLibrary.dll
+C:\Users\Dell\source\repos\MultipleInheritance\TemperatureConverterLibrary\bin\Debug\TemperatureConverterLibrary.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\TemperatureConverterLibrary\obj\Debug\TemperatureConverterLibrary.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MultipleInheritance\TemperatureConverterLibrary\obj\Debug\TemperatureConverterLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\TemperatureConverterLibrary\obj\Debug\TemperatureConverterLibrary.dll
+C:\Users\Dell\source\repos\MultipleInheritance\TemperatureConverterLibrary\obj\Debug\TemperatureConverterLibrary.pdb

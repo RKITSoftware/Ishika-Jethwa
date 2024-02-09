@@ -1,0 +1,11 @@
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\bin\Debug\Assembly.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\bin\Debug\Assembly.exe
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\bin\Debug\Assembly.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\bin\Debug\AccessSpecifiers.exe
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\bin\Debug\AccessSpecifiers.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\bin\Debug\AccessSpecifiers.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\obj\Debug\Assembly.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\obj\Debug\Assembly.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\obj\Debug\Assembly.csproj.CopyComplete
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\obj\Debug\Assembly.exe
+C:\Users\Dell\source\repos\MultipleInheritance\Assembly\obj\Debug\Assembly.pdb

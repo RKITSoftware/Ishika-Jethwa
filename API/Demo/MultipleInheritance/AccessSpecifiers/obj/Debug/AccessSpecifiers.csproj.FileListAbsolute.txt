@@ -1,0 +1,7 @@
+C:\Users\Dell\source\repos\MultipleInheritance\AccessSpecifiers\bin\Debug\AccessSpecifiers.exe.config
+C:\Users\Dell\source\repos\MultipleInheritance\AccessSpecifiers\bin\Debug\AccessSpecifiers.exe
+C:\Users\Dell\source\repos\MultipleInheritance\AccessSpecifiers\bin\Debug\AccessSpecifiers.pdb
+C:\Users\Dell\source\repos\MultipleInheritance\AccessSpecifiers\obj\Debug\AccessSpecifiers.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MultipleInheritance\AccessSpecifiers\obj\Debug\AccessSpecifiers.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MultipleInheritance\AccessSpecifiers\obj\Debug\AccessSpecifiers.exe
+C:\Users\Dell\source\repos\MultipleInheritance\AccessSpecifiers\obj\Debug\AccessSpecifiers.pdb
