@@ -2,6 +2,11 @@ using System.Web.Http;
 using WebActivatorEx;
 using HRMSystem;
 using Swashbuckle.Application;
+using Swashbuckle.Swagger;
+using System.Collections.Generic;
+using System.Web.Http.Description;
+using HRMSyatem.Auth;
+using System.Linq;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -33,6 +38,11 @@ namespace HRMSystem
                         // additional fields by chaining methods off SingleApiVersion.
                         //
                         c.SingleApiVersion("v1", "HRMSystem");
+                        c.BasicAuth("basic")
+                           .Description("Basic HTTP Authentication");
+                        c.OperationFilter<AssignOAuth2SecurityRequirements>();
+                        c.OperationFilter<FileUploadOperation>();
+                       
 
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
@@ -61,7 +71,7 @@ namespace HRMSystem
                         //c.BasicAuth("basic")
                         //    .Description("Basic HTTP Authentication");
                         //
-						// NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
+                        // NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
                         //c.ApiKey("apiKey")
                         //    .Description("API Key Authentication")
                         //    .Name("apiKey")
@@ -250,6 +260,107 @@ namespace HRMSystem
                         //
                         //c.EnableApiKeySupport("apiKey", "header");
                     });
+        }
+
+        public class FileUploadOperation : IOperationFilter
+        {
+            public void Apply(Operation operation, SchemaRegistry schemaRegistry, ApiDescription apiDescription)
+            {
+                if (operation.operationId == "CLAPP01_SubmitJobApplication") // Ensure this matches the operationId of your endpoint
+                {
+                    operation.consumes.Add("multipart/form-data");
+
+                    operation.parameters = operation.parameters ?? new List<Parameter>();
+
+                    // Add form fields
+                    operation.parameters.Add(new Parameter
+                    {
+                        name = "A01F01",
+                        @in = "formData",
+                        description = "Application ID",
+                        required = true,
+                        type = "integer",
+                        format = "int32"
+                    });
+
+                    operation.parameters.Add(new Parameter
+                    {
+                        name = "A01F02",
+                        @in = "formData",
+                        description = "Job ID",
+                        required = true,
+                        type = "integer",
+                        format = "int32"
+                    });
+
+                    operation.parameters.Add(new Parameter
+                    {
+                        name = "A01F03",
+                        @in = "formData",
+                        description = "Candidate Name",
+                        required = true,
+                        type = "string"
+                    });
+
+                    // Add file upload fields
+                    operation.parameters.Add(new Parameter
+                    {
+                        name = "A01F04",
+                        @in = "formData",
+                        description = "Resume file",
+                        required = true,
+                        type = "file"
+                    });
+
+                    operation.parameters.Add(new Parameter
+                    {
+                        name = "A01F05",
+                        @in = "formData",
+                        description = "Cover Letter file",
+                        required = true,
+                        type = "file"
+                    });
+                }
+            }
+
+        }
+
+        public class AssignOAuth2SecurityRequirements : IOperationFilter
+        {
+            public void Apply(Operation operation, SchemaRegistry schemaRegistry, ApiDescription apiDescription)
+            {
+                ////Check if the method has the BasicAuth attribute
+                //var basicAuthRequired = apiDescription.GetControllerAndActionAttributes<BLBasicAuthentication>().Any();
+
+                //// Check if the method has the BearerAuth attribute
+                //var bearerAuthRequired = apiDescription.GetControllerAndActionAttributes<BearerAuthentication>().Any();
+
+              
+
+                //if (bearerAuthRequired)
+                //{
+                //    // Apply Bearer Authentication
+                //    if (operation.security == null)
+                //        operation.security = new List<IDictionary<string, IEnumerable<string>>>();
+
+                //    var bearerAuth = new Dictionary<string, IEnumerable<string>>
+                //    {
+                //        { "BearerToken", new string[] { } }
+                //    };
+
+                //    operation.security.Add(bearerAuth);
+                //}
+                if (operation.security == null)
+                    operation.security = new List<IDictionary<string, IEnumerable<string>>>();
+
+                var basicAuth = new Dictionary<string, IEnumerable<string>>
+                    {
+                        { "basic", new string[] { } }
+                    };
+
+                operation.security.Add(basicAuth);
+            }
+
         }
     }
 }

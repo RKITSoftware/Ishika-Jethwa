@@ -83,8 +83,10 @@ namespace HRMSystem.BL
             try
             {
                 // Accessing form fields
-                int appid = HttpContext.Current.GetFormInt("A01F01");
-                int jobid = HttpContext.Current.GetFormInt("A01F02");
+                //int appid = HttpContext.Current.GetFormInt("A01F01");
+                //int jobid = HttpContext.Current.GetFormInt("A01F02");
+                int appid = int.Parse(HttpContext.Current.Request.Form["A01F01"]);
+                int jobid = int.Parse(HttpContext.Current.Request.Form["A01F02"]);
                 string cadidatename = HttpContext.Current.Request.Form["A01F03"];
                 // Accessing uploaded file
                 HttpPostedFile resumeFile = HttpContext.Current.Request.Files["A01F04"];
@@ -184,7 +186,7 @@ namespace HRMSystem.BL
         {
             int count;
             Response response = new Response();
-            int jobid = HttpContext.Current.GetFormInt("A01F02");
+            int jobid = int.Parse(HttpContext.Current.Request.Form["A01F02"]);
             using (IDbConnection db = Connections.dbFactory.OpenDbConnection())
             {
                 // Check if the table contains any records with the same values as the provided USR01 object
