@@ -1,0 +1,176 @@
+2024-04-01 12:04:38.9918||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7298 
+2024-04-01 12:04:38.9918||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5064 
+2024-04-01 12:04:39.0146||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-01 12:04:39.0218||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-01 12:04:39.0218||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Demo\ASP.NET Core\API\Logging\Logging 
+2024-04-01 12:04:40.4214||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - - 
+2024-04-01 12:04:42.1904||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-01 12:04:42.2434||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - - 
+2024-04-01 12:04:42.2774||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 90.1164ms 
+2024-04-01 12:04:42.2774||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 1877.1552ms 
+2024-04-01 12:04:42.7418||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 504.9715ms 
+2024-04-01 12:04:42.9260||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - 
+2024-04-01 12:04:43.0429||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 118.5982ms 
+2024-04-01 12:04:47.2457||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - - 
+2024-04-01 12:04:47.3091||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:04:47.3836||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Void Get() on controller Logging.Controllers.WeatherForecastController (Logging). 
+2024-04-01 12:04:47.4094||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.WeatherForecastController.Get (Logging) - Validation state: Valid 
+2024-04-01 12:04:47.4230||INFO|Logging.Controllers.WeatherForecastController|Log information 
+2024-04-01 12:04:47.5349||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.WeatherForecastController.Get (Logging), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 104.5834ms. 
+2024-04-01 12:04:47.5381||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.WeatherForecastController.Get (Logging) in 153.4583ms 
+2024-04-01 12:04:47.5381||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:04:47.5381||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 298.8979ms 
+2024-04-01 12:05:56.7612||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7298 
+2024-04-01 12:05:56.7612||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5064 
+2024-04-01 12:05:56.7612||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-01 12:05:56.7756||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-01 12:05:56.7756||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Demo\ASP.NET Core\API\Logging\Logging 
+2024-04-01 12:05:57.2973||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - - 
+2024-04-01 12:05:58.4593||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-01 12:05:58.4927||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 36.8457ms 
+2024-04-01 12:05:58.6525||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - - 
+2024-04-01 12:05:58.7122||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 1419.7780ms 
+2024-04-01 12:05:58.8346||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 194.4862ms 
+2024-04-01 12:05:58.9496||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - 
+2024-04-01 12:05:59.0966||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 141.2248ms 
+2024-04-01 12:06:02.6809||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - - 
+2024-04-01 12:06:02.7434||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:06:02.8185||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Void Get() on controller Logging.Controllers.WeatherForecastController (Logging). 
+2024-04-01 12:06:02.8378||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.WeatherForecastController.Get (Logging) - Validation state: Valid 
+2024-04-01 12:06:02.8533||INFO|Logging.Controllers.WeatherForecastController|Log information 
+2024-04-01 12:06:03.1344||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.WeatherForecastController.Get (Logging), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 289.5641ms. 
+2024-04-01 12:06:03.1344||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.WeatherForecastController.Get (Logging) in 318.8566ms 
+2024-04-01 12:06:03.1344||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:06:03.1477||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 464.5300ms 
+2024-04-01 12:37:30.2668||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7298 
+2024-04-01 12:37:30.2830||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5064 
+2024-04-01 12:37:30.3236||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-01 12:37:30.3685||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-01 12:37:30.3685||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Demo\ASP.NET Core\API\Logging\Logging 
+2024-04-01 12:37:31.4511||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - - 
+2024-04-01 12:37:34.0703||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 2611.4194ms 
+2024-04-01 12:37:34.3903||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-01 12:37:34.3903||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - - 
+2024-04-01 12:37:34.4282||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 37.7136ms 
+2024-04-01 12:37:34.9334||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 545.6500ms 
+2024-04-01 12:37:35.4312||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - 
+2024-04-01 12:37:35.6629||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 232.5305ms 
+2024-04-01 12:37:40.9843||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - - 
+2024-04-01 12:37:41.0448||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:37:41.0957||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Void Get() on controller Logging.Controllers.WeatherForecastController (Logging). 
+2024-04-01 12:37:41.1004||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.WeatherForecastController.Get (Logging) - Validation state: Valid 
+2024-04-01 12:37:41.1193||INFO|Logging.Controllers.WeatherForecastController|Log information 
+2024-04-01 12:37:41.2109||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.WeatherForecastController.Get (Logging), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 94.4679ms. 
+2024-04-01 12:37:41.2109||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.WeatherForecastController.Get (Logging) in 119.6995ms 
+2024-04-01 12:37:41.2109||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:37:41.2247||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 237.0139ms 
+2024-04-01 12:40:08.8695||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7298 
+2024-04-01 12:40:08.8695||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5064 
+2024-04-01 12:40:08.8965||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-01 12:40:08.9289||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-01 12:40:08.9354||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Demo\ASP.NET Core\API\Logging\Logging 
+2024-04-01 12:40:09.9482||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - - 
+2024-04-01 12:40:11.1092||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-01 12:40:11.1333||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 1188.4654ms 
+2024-04-01 12:40:11.2236||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 43.4799ms 
+2024-04-01 12:40:11.2400||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - - 
+2024-04-01 12:40:11.6168||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 377.6443ms 
+2024-04-01 12:40:11.8246||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - 
+2024-04-01 12:40:11.9970||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 171.1939ms 
+2024-04-01 12:40:17.5898||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - - 
+2024-04-01 12:40:17.6527||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:40:17.7255||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Void Get() on controller Logging.Controllers.WeatherForecastController (Logging). 
+2024-04-01 12:40:17.7270||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.WeatherForecastController.Get (Logging) - Validation state: Valid 
+2024-04-01 12:40:17.7488||INFO|Logging.Controllers.WeatherForecastController|Log information 
+2024-04-01 12:40:17.9166||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.WeatherForecastController.Get (Logging), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 168.1177ms. 
+2024-04-01 12:40:17.9166||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.WeatherForecastController.Get (Logging) in 192.1804ms 
+2024-04-01 12:40:17.9166||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:40:17.9166||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 326.5214ms 
+2024-04-01 12:42:15.9200||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7298 
+2024-04-01 12:42:15.9200||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5064 
+2024-04-01 12:42:15.9200||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-01 12:42:15.9323||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-01 12:42:15.9323||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Demo\ASP.NET Core\API\Logging\Logging 
+2024-04-01 12:42:16.7895||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - - 
+2024-04-01 12:42:17.5786||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 792.9966ms 
+2024-04-01 12:42:17.7560||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-01 12:42:17.7560||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - - 
+2024-04-01 12:42:17.7810||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 24.6810ms 
+2024-04-01 12:42:17.8066||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 50.2115ms 
+2024-04-01 12:42:17.8924||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - 
+2024-04-01 12:42:17.9931||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 96.7518ms 
+2024-04-01 12:42:21.1128||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - - 
+2024-04-01 12:42:21.1514||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:42:21.1882||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Void Get() on controller Logging.Controllers.WeatherForecastController (Logging). 
+2024-04-01 12:42:21.2048||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.WeatherForecastController.Get (Logging) - Validation state: Valid 
+2024-04-01 12:42:21.2048||INFO|Logging.Controllers.WeatherForecastController|Log information 
+2024-04-01 12:42:21.2764||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.WeatherForecastController.Get (Logging), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 63.1808ms. 
+2024-04-01 12:42:21.2764||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.WeatherForecastController.Get (Logging) in 89.4091ms 
+2024-04-01 12:42:21.2764||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:42:21.2764||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 173.1669ms 
+2024-04-01 12:43:42.2393||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7298 
+2024-04-01 12:43:42.2837||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5064 
+2024-04-01 12:43:42.2998||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-01 12:43:42.2998||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-01 12:43:42.3082||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Demo\ASP.NET Core\API\Logging\Logging 
+2024-04-01 12:43:42.7894||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - - 
+2024-04-01 12:43:43.3752||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 596.6443ms 
+2024-04-01 12:43:43.4136||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-01 12:43:43.4136||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - - 
+2024-04-01 12:43:43.4181||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 10.9701ms 
+2024-04-01 12:43:43.4488||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.1379ms 
+2024-04-01 12:43:43.5493||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - 
+2024-04-01 12:43:43.6468||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 94.3462ms 
+2024-04-01 12:45:18.1392||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - - 
+2024-04-01 12:45:18.2009||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:45:18.2502||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Void Get() on controller Logging.Controllers.WeatherForecastController (Logging). 
+2024-04-01 12:45:18.2723||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.WeatherForecastController.Get (Logging) - Validation state: Valid 
+2024-04-01 12:45:18.2793||INFO|Logging.Controllers.WeatherForecastController|Log information 
+2024-04-01 12:45:18.3427||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.WeatherForecastController.Get (Logging), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 60.9041ms. 
+2024-04-01 12:45:18.3427||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.WeatherForecastController.Get (Logging) in 94.4586ms 
+2024-04-01 12:45:18.3564||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:45:18.3564||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 219.9855ms 
+2024-04-01 12:46:43.7596||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7298 
+2024-04-01 12:46:43.8615||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5064 
+2024-04-01 12:46:43.9492||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-01 12:46:43.9904||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-01 12:46:44.0308||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Demo\ASP.NET Core\API\Logging\Logging 
+2024-04-01 12:46:44.4515||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - - 
+2024-04-01 12:46:45.3052||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-01 12:46:45.3177||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 14.4852ms 
+2024-04-01 12:46:45.3177||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 881.1230ms 
+2024-04-01 12:46:45.3294||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - - 
+2024-04-01 12:46:45.4096||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 80.9655ms 
+2024-04-01 12:46:45.5156||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - 
+2024-04-01 12:46:45.6239||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.0221ms 
+2024-04-01 12:46:50.0538||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - - 
+2024-04-01 12:46:50.1128||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:46:50.1616||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Void Get() on controller Logging.Controllers.WeatherForecastController (Logging). 
+2024-04-01 12:46:50.1725||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.WeatherForecastController.Get (Logging) - Validation state: Valid 
+2024-04-01 12:46:50.1885||INFO|Logging.Controllers.WeatherForecastController|Log information 
+2024-04-01 12:46:50.3155||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.WeatherForecastController.Get (Logging), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 115.6706ms. 
+2024-04-01 12:46:50.3338||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.WeatherForecastController.Get (Logging) in 156.3963ms 
+2024-04-01 12:46:50.3338||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:46:50.3338||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 287.4432ms 
+2024-04-01 12:47:52.9527||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7298 
+2024-04-01 12:47:54.1473||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - - 
+2024-04-01 12:47:54.9321||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5064 
+2024-04-01 12:47:54.9730||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2024-04-01 12:47:54.9848||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2024-04-01 12:47:54.9848||INFO|Microsoft.Hosting.Lifetime|Content root path: F:\Demo\ASP.NET Core\API\Logging\Logging 
+2024-04-01 12:47:55.4559||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - 
+2024-04-01 12:47:55.4724||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 11.9382ms 
+2024-04-01 12:47:55.4724||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 1339.4450ms 
+2024-04-01 12:47:55.4846||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - - 
+2024-04-01 12:47:55.5309||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.7833ms 
+2024-04-01 12:47:55.6418||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - 
+2024-04-01 12:47:55.7457||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 104.5560ms 
+2024-04-01 12:48:25.7537||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - - 
+2024-04-01 12:48:25.8006||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:48:25.8426||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature Void Get() on controller Logging.Controllers.WeatherForecastController (Logging). 
+2024-04-01 12:48:25.8476||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Logging.Controllers.WeatherForecastController.Get (Logging) - Validation state: Valid 
+2024-04-01 12:48:25.8620||INFO|Logging.Controllers.WeatherForecastController|Log information 
+2024-04-01 12:48:25.9111||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Logging.Controllers.WeatherForecastController.Get (Logging), returned result Microsoft.AspNetCore.Mvc.EmptyResult in 54.0682ms. 
+2024-04-01 12:48:25.9243||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Logging.Controllers.WeatherForecastController.Get (Logging) in 78.5024ms 
+2024-04-01 12:48:25.9243||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:48:25.9385||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 174.5682ms 

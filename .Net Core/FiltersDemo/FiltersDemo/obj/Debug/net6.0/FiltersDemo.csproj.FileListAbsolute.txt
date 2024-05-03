@@ -1,0 +1,192 @@
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.Development.json
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.json
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.exe
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.deps.json
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.runtimeconfig.json
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.pdb
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.AssemblyReference.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfoInputs.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfo.cs
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CoreCompileInputs.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cs
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.FiltersDemo.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.build.FiltersDemo.props
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FiltersDemo.props
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FiltersDemo.props
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.build.json
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.development.json
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\scopedcss\bundle\FiltersDemo.styles.css
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CopyComplete
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\refint\FiltersDemo.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.pdb
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.genruntimeconfig.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\FiltersDemo\FiltersDemo\obj\Debug\net6.0\ref\FiltersDemo.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.Development.json
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.json
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.exe
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.deps.json
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.runtimeconfig.json
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.pdb
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.AssemblyReference.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfoInputs.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfo.cs
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CoreCompileInputs.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cs
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.FiltersDemo.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.build.FiltersDemo.props
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FiltersDemo.props
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FiltersDemo.props
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.build.json
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.development.json
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\scopedcss\bundle\FiltersDemo.styles.css
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CopyComplete
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\refint\FiltersDemo.dll
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.pdb
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.genruntimeconfig.cache
+D:\Hitesh\2. Data\7. ASP .Net Core\2. Demos\1. Web API Demos\6. FiltersDemo\FiltersDemo\obj\Debug\net6.0\ref\FiltersDemo.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.Development.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.exe
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.deps.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.runtimeconfig.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.pdb
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.AssemblyReference.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfoInputs.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfo.cs
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CoreCompileInputs.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cs
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.FiltersDemo.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.build.FiltersDemo.props
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FiltersDemo.props
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FiltersDemo.props
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.build.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.development.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\scopedcss\bundle\FiltersDemo.styles.css
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CopyComplete
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\refint\FiltersDemo.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.pdb
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.genruntimeconfig.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo\FiltersDemo\obj\Debug\net6.0\ref\FiltersDemo.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\appsettings.Development.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\appsettings.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\FiltersDemo.exe
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\FiltersDemo.deps.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\FiltersDemo.runtimeconfig.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\FiltersDemo.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\FiltersDemo.pdb
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.AssemblyReference.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfoInputs.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfo.cs
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CoreCompileInputs.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cs
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.FiltersDemo.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.build.FiltersDemo.props
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FiltersDemo.props
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FiltersDemo.props
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\staticwebassets.build.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\staticwebassets.development.json
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\scopedcss\bundle\FiltersDemo.styles.css
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CopyComplete
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\refint\FiltersDemo.dll
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.pdb
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\FiltersDemo.genruntimeconfig.cache
+D:\Hitesh\2. Data\07. ASP .Net Core\2. Demos\06. FiltersDemo - Copy\FiltersDemo\obj\Debug\net6.0\ref\FiltersDemo.dll
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.Development.json
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.json
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.exe
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.deps.json
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.runtimeconfig.json
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.dll
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.pdb
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.AssemblyReference.cache
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.GeneratedMSBuildEditorConfig.editorconfig
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfoInputs.cache
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfo.cs
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CoreCompileInputs.cache
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cs
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cache
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.FiltersDemo.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.build.FiltersDemo.props
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FiltersDemo.props
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FiltersDemo.props
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.pack.json
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.build.json
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.development.json
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\scopedcss\bundle\FiltersDemo.styles.css
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CopyComplete
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.dll
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\refint\FiltersDemo.dll
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.pdb
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.genruntimeconfig.cache
+F:\Demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\ref\FiltersDemo.dll
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.Development.json
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\appsettings.json
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.exe
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.deps.json
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.runtimeconfig.json
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.dll
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\FiltersDemo.pdb
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.AssemblyReference.cache
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfoInputs.cache
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.AssemblyInfo.cs
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CoreCompileInputs.cache
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cs
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.MvcApplicationPartsAssemblyInfo.cache
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.FiltersDemo.Microsoft.AspNetCore.StaticWebAssets.props
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.build.FiltersDemo.props
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FiltersDemo.props
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FiltersDemo.props
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.pack.json
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.build.json
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\staticwebassets.development.json
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\scopedcss\bundle\FiltersDemo.styles.css
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.csproj.CopyComplete
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.dll
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\refint\FiltersDemo.dll
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.pdb
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\FiltersDemo.genruntimeconfig.cache
+C:\demo\ASP.NET Core\API\FiltersDemo\FiltersDemo\obj\Debug\net6.0\ref\FiltersDemo.dll

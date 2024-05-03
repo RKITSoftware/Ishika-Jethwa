@@ -1,0 +1,207 @@
+2024-05-03 09:49:55.8536||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 03-05-2024 09:49:55
+[Method]: GET
+[Path]: /api/CLBCT01/GetCertificate/3
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Basic aXNoaWthOlBhc3N3b3Jk
+    Referer: http://localhost:5268/swagger/index.html
+    sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:50:01.5706||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 200
+[ResponseContentType]: application/pdf
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:51:39.0076||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 03-05-2024 09:51:38
+[Method]: GET
+[Path]: /api/CLBCR01/GetAll
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Referer: http://localhost:5268/swagger/index.html
+    sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:51:39.1675||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 400
+[ResponseContentType]: application/problem+json; charset=utf-8
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:51:59.5110||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 03-05-2024 09:51:59
+[Method]: GET
+[Path]: /api/CLBCR01/GetAll
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Basic aXNoaWthOlBhc3N3b3Jk
+    Referer: http://localhost:5268/swagger/index.html
+    sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:53:37.7334||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 03-05-2024 09:53:37
+[Method]: POST
+[Path]: /api/CLCHD01/AddChild
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Basic aXNoaWthOlBhc3N3b3Jk
+    Content-Type: application/json
+    Origin: http://localhost:5268
+    Referer: http://localhost:5268/swagger/index.html
+    Content-Length: 173
+    sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:53:37.7904||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 403
+[ResponseContentType]: application/problem+json; charset=utf-8
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:55:01.3673||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 03-05-2024 09:55:01
+[Method]: POST
+[Path]: /api/CLCHD01/AddChild
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Basic ZGltcGxlOmRpbXBsZQ==
+    Content-Type: application/json
+    Origin: http://localhost:5268
+    Referer: http://localhost:5268/swagger/index.html
+    Content-Length: 173
+    sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:55:01.6050||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 500
+[ResponseContentType]: application/problem+json; charset=utf-8
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:57:02.3163||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 03-05-2024 09:57:02
+[Method]: POST
+[Path]: /api/CLCHD01/AddChild
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Basic ZGltcGxlOmRpbXBsZQ==
+    Content-Type: application/json
+    Origin: http://localhost:5268
+    Referer: http://localhost:5268/swagger/index.html
+    Content-Length: 173
+    sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:57:18.0158||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 200
+[ResponseContentType]: application/json; charset=utf-8
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:57:57.5747||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 03-05-2024 09:57:57
+[Method]: POST
+[Path]: /api/CLBCR01/AddRequest
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Basic ZGltcGxlOmRpbXBsZQ==
+    Content-Type: application/json
+    Origin: http://localhost:5268
+    Referer: http://localhost:5268/swagger/index.html
+    Content-Length: 32
+    sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:57:58.2467||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 200
+[ResponseContentType]: application/json; charset=utf-8
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:58:14.0998||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 03-05-2024 09:58:13
+[Method]: GET
+[Path]: /api/CLBCR01/GetPendingRequest
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Basic ZGltcGxlOmRpbXBsZQ==
+    Referer: http://localhost:5268/swagger/index.html
+    sec-ch-ua: "Google Chrome";v="123", "Not:A-Brand";v="8", "Chromium";v="123"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-05-03 09:58:14.2534||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 403
+[ResponseContentType]: application/problem+json; charset=utf-8
+--------------------------------------------------------------------------
+ 

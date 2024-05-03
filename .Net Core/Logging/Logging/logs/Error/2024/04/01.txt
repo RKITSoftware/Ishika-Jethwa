@@ -1,0 +1,8 @@
+2024-04-01 12:04:47.4990||ERROR|Logging.Controllers.WeatherForecastController|Log Error 
+2024-04-01 12:06:03.0226||ERROR|Logging.Controllers.WeatherForecastController|Log Error 
+2024-04-01 12:37:41.1960||ERROR|Logging.Controllers.WeatherForecastController|Log Error 
+2024-04-01 12:40:17.8961||ERROR|Logging.Controllers.WeatherForecastController|Log Error 
+2024-04-01 12:42:21.2597||ERROR|Logging.Controllers.WeatherForecastController|Log Error 
+2024-04-01 12:45:18.3285||ERROR|Logging.Controllers.WeatherForecastController|Log Error 
+2024-04-01 12:46:50.2820||ERROR|Logging.Controllers.WeatherForecastController|Log Error 
+2024-04-01 12:48:25.8971||ERROR|Logging.Controllers.WeatherForecastController|Log Error 

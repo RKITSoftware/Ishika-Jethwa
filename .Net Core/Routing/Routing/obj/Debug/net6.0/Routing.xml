@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Routing</name>
+    </assembly>
+    <members>
+        <member name="T:Routing.Controllers.CLEmployeeController">
+            <summary>
+            Controller for managing employee data.
+            </summary>
+        </member>
+        <member name="M:Routing.Controllers.CLEmployeeController.GetAllEmployees">
+            <summary>
+            Retrieves all employees.
+            </summary>
+        </member>
+        <member name="M:Routing.Controllers.CLEmployeeController.GetEmployeeById(System.Int32)">
+            <summary>
+            Retrieves an employee by ID.
+            </summary>
+            <param name="id">The ID of the employee to retrieve.</param>
+        </member>
+        <member name="M:Routing.Controllers.CLEmployeeController.CreateEmployee(Routing.MAL.Emp01)">
+            <summary>
+            Adds a new employee.
+            </summary>
+            <param name="objEmployee">The employee object to add.</param>
+        </member>
+        <member name="M:Routing.Controllers.CLEmployeeController.UpdateEmployee(Routing.MAL.Emp01)">
+            <summary>
+            Updates an existing employee.
+            </summary>
+            <param name="objEmployee">The updated employee object.</param>
+        </member>
+        <member name="M:Routing.Controllers.CLEmployeeController.DeleteEmployee(System.Int32)">
+            <summary>
+            Removes an employee by ID.
+            </summary>
+            <param name="id">The ID of the employee to remove.</param>
+        </member>
+        <member name="T:Routing.MAL.Emp01">
+            <summary>
+            Represents an employee entity.
+            </summary>
+        </member>
+        <member name="P:Routing.MAL.Emp01.p01f01">
+            <summary>
+            Gets or sets the unique identifier of the employee.
+            </summary>
+            <example>0</example>
+        </member>
+        <member name="P:Routing.MAL.Emp01.p01f02">
+            <summary>
+            Gets or sets the name of the employee.
+            </summary>
+            <example>Ishika</example>
+        </member>
+        <member name="P:Routing.MAL.Emp01.p01f03">
+            <summary>
+            Gets or sets the position of the employee.
+            </summary>
+            <example>Full-stack</example>
+        </member>
+        <member name="P:Routing.MAL.Emp01.p01f04">
+            <summary>
+            Gets or sets the salary of the employee.
+            </summary>
+            <example>10000</example>
+        </member>
+        <member name="T:Routing.Middleware.BasicAuthenticationHandler">
+            <summary>
+            Middleware for basic authentication.
+            </summary>
+        </member>
+        <member name="M:Routing.Middleware.BasicAuthenticationHandler.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Initializes a new instance  class.
+            </summary>
+            <param name="next">The request delegate representing the next middleware in the pipeline.</param>
+        </member>
+        <member name="M:Routing.Middleware.BasicAuthenticationHandler.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Handles the HTTP request.
+            </summary>
+            <param name="context">The HTTP context for the request.</param>
+        </member>
+        <member name="T:Routing.Program">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="M:Routing.Program.Main(System.String[])">
+            <summary>
+            The main entry point of the application.
+            </summary>
+            <param name="args">Command-line arguments passed to the application.</param>
+        </member>
+        <member name="T:Routing.Startup">
+            <summary>
+            Configures the application's services and HTTP request pipeline.
+            </summary>
+        </member>
+        <member name="P:Routing.Startup.Configuration">
+            <summary>
+            Gets the configuration of the application.
+            </summary>
+        </member>
+        <member name="M:Routing.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance class.
+            </summary>
+            <param name="configuration">The configuration of the application.</param>
+        </member>
+        <member name="M:Routing.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the services used by the application.
+            </summary>
+            <param name="services">The collection of services to configure.</param>
+        </member>
+        <member name="M:Routing.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configures the HTTP request pipeline.
+            </summary>
+            <param name="app">The application builder.</param>
+            <param name="env">The hosting environment.</param>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,7 @@
+2024-04-01 12:06:03.1136||FATAL|Logging.Controllers.WeatherForecastController|Log critical 
+2024-04-01 12:37:41.1960||FATAL|Logging.Controllers.WeatherForecastController|Log critical 
+2024-04-01 12:40:17.9076||FATAL|Logging.Controllers.WeatherForecastController|Log critical 
+2024-04-01 12:42:21.2597||FATAL|Logging.Controllers.WeatherForecastController|Log critical 
+2024-04-01 12:45:18.3285||FATAL|Logging.Controllers.WeatherForecastController|Log critical 
+2024-04-01 12:46:50.2820||FATAL|Logging.Controllers.WeatherForecastController|Log critical 
+2024-04-01 12:48:25.9111||FATAL|Logging.Controllers.WeatherForecastController|Log critical 

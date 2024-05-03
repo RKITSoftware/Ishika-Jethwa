@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Birth_Certificate_Generator.props" />
+</Project>

@@ -1,0 +1,8 @@
+2024-04-01 12:04:47.4787||WARN|Logging.Controllers.WeatherForecastController|Log warning 
+2024-04-01 12:06:02.9295||WARN|Logging.Controllers.WeatherForecastController|Log warning 
+2024-04-01 12:37:41.1590||WARN|Logging.Controllers.WeatherForecastController|Log warning 
+2024-04-01 12:40:17.8301||WARN|Logging.Controllers.WeatherForecastController|Log warning 
+2024-04-01 12:42:21.2597||WARN|Logging.Controllers.WeatherForecastController|Log warning 
+2024-04-01 12:45:18.3214||WARN|Logging.Controllers.WeatherForecastController|Log warning 
+2024-04-01 12:46:50.2525||WARN|Logging.Controllers.WeatherForecastController|Log warning 
+2024-04-01 12:48:25.8971||WARN|Logging.Controllers.WeatherForecastController|Log warning 

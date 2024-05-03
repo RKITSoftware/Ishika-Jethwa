@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "RDF+3ammZ4W52JQ8YFSf6lxoX8R5KGL+2AJYsgAwETIZq4z5E+ZSosTlHPGrB4USG0MXTCLEATqdqty1qNgWPw==",
+  "success": true,
+  "projectFilePath": "F:\\Demo\\ASP.NET Core\\API\\Routing\\Routing\\Routing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ishika.j\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ishika.j\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ishika.j\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ishika.j\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ishika.j\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ishika.j\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

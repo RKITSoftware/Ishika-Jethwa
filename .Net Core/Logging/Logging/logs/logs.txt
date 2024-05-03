@@ -1,0 +1,42 @@
+2024-04-01 12:47:50.1753 Info Loading assembly name: NLog.Targets.MySql
+2024-04-01 12:47:50.2043 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Targets.MySql
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Targets.MySql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Targets.MySql, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(ObjectHandleOnStack assemblyName, ObjectHandleOnStack requestingAssembly, StackCrawlMarkHandle stackMark, Boolean throwOnFileNotFound, ObjectHandleOnStack assemblyLoadContext, ObjectHandleOnStack retAssembly)
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, RuntimeAssembly requestingAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-04-01 12:47:50.5001 Info Registered target NLog.Targets.FileTarget(Name=Trace)
+2024-04-01 12:47:50.5001 Info Registered target NLog.Targets.FileTarget(Name=Debug)
+2024-04-01 12:47:50.5001 Info Registered target NLog.Targets.FileTarget(Name=Information)
+2024-04-01 12:47:50.5001 Info Registered target NLog.Targets.FileTarget(Name=Warning)
+2024-04-01 12:47:50.5001 Info Registered target NLog.Targets.FileTarget(Name=Error)
+2024-04-01 12:47:50.5001 Info Registered target NLog.Targets.FileTarget(Name=Critical)
+2024-04-01 12:47:50.6222 Info Registered target NLog.Targets.DatabaseTarget(Name=Database)
+2024-04-01 12:47:50.7409 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-04-01 12:47:50.7908 Info Validating config: Targets=7, ConfigItems=155, FilePath=F:\Demo\ASP.NET Core\API\Logging\Logging\bin\Debug\net6.0\nlog.config
+2024-04-01 12:47:51.1188 Info Configuration initialized.
+2024-04-01 12:47:52.3553 Info Validating config: Targets=7, ConfigItems=155, FilePath=F:\Demo\ASP.NET Core\API\Logging\Logging\bin\Debug\net6.0\nlog.config
+2024-04-09 13:00:23.3476 Info Loading assembly name: NLog.Targets.MySql
+2024-04-09 13:00:23.6096 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Targets.MySql
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Targets.MySql, Culture=neutral, PublicKeyToken=null'. The system cannot find the file specified.
+File name: 'NLog.Targets.MySql, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(ObjectHandleOnStack assemblyName, ObjectHandleOnStack requestingAssembly, StackCrawlMarkHandle stackMark, Boolean throwOnFileNotFound, ObjectHandleOnStack assemblyLoadContext, ObjectHandleOnStack retAssembly)
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, RuntimeAssembly requestingAssembly, StackCrawlMark& stackMark, Boolean throwOnFileNotFound, AssemblyLoadContext assemblyLoadContext)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2024-04-09 13:00:24.7285 Info Registered target NLog.Targets.FileTarget(Name=Trace)
+2024-04-09 13:00:24.7285 Info Registered target NLog.Targets.FileTarget(Name=Debug)
+2024-04-09 13:00:24.7285 Info Registered target NLog.Targets.FileTarget(Name=Information)
+2024-04-09 13:00:24.7285 Info Registered target NLog.Targets.FileTarget(Name=Warning)
+2024-04-09 13:00:24.7285 Info Registered target NLog.Targets.FileTarget(Name=Error)
+2024-04-09 13:00:24.7285 Info Registered target NLog.Targets.FileTarget(Name=Critical)
+2024-04-09 13:00:25.2767 Info Registered target NLog.Targets.DatabaseTarget(Name=Database)
+2024-04-09 13:00:25.5242 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-04-09 13:00:26.0062 Info Validating config: Targets=7, ConfigItems=155, FilePath=C:\demo\ASP.NET Core\API\Logging\Logging\bin\Debug\net6.0\nlog.config

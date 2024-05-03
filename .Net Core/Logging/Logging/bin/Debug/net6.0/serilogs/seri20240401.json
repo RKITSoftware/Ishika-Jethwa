@@ -1,0 +1,479 @@
+{
+  "Timestamp": "2024-04-01T11:24:22.4313976+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Now listening on: {address}",
+  "Properties": {
+    "address": "https://localhost:7298",
+    "EventId": {
+      "Id": 14,
+      "Name": "ListeningOnAddress"
+    },
+    "SourceContext": "Microsoft.Hosting.Lifetime"
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:22.9664281+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Now listening on: {address}",
+  "Properties": {
+    "address": "http://localhost:5064",
+    "EventId": {
+      "Id": 14,
+      "Name": "ListeningOnAddress"
+    },
+    "SourceContext": "Microsoft.Hosting.Lifetime"
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:23.2327617+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Application started. Press Ctrl+C to shut down.",
+  "Properties": { "SourceContext": "Microsoft.Hosting.Lifetime" }
+} {
+  "Timestamp": "2024-04-01T11:24:23.2309341+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestStartingLog:l}",
+  "TraceId": "a489536739385e340340aada6be3385e",
+  "SpanId": "f35cfc6708e25c60",
+  "Properties": {
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "ContentType": null,
+    "ContentLength": null,
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/swagger/index.html",
+    "QueryString": "",
+    "HostingRequestStartingLog": "Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - -",
+    "EventId": { "Id": 1 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000001",
+    "RequestPath": "/swagger/index.html",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestStartingLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - -"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:23.2627218+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Hosting environment: {envName}",
+  "Properties": {
+    "envName": "Development",
+    "SourceContext": "Microsoft.Hosting.Lifetime"
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:23.4124991+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Content root path: {contentRoot}",
+  "Properties": {
+    "contentRoot": "F:\\Demo\\ASP.NET Core\\API\\Logging\\Logging",
+    "SourceContext": "Microsoft.Hosting.Lifetime"
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:24.2309386+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestStartingLog:l}",
+  "TraceId": "6203f99009bfed4a0b21ed5c808e07df",
+  "SpanId": "9f418cb56ee867ce",
+  "Properties": {
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "ContentType": null,
+    "ContentLength": null,
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/_framework/aspnetcore-browser-refresh.js",
+    "QueryString": "",
+    "HostingRequestStartingLog": "Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - -",
+    "EventId": { "Id": 1 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000003",
+    "RequestPath": "/_framework/aspnetcore-browser-refresh.js",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestStartingLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - -"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:24.2520658+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestFinishedLog:l}",
+  "TraceId": "a489536739385e340340aada6be3385e",
+  "SpanId": "f35cfc6708e25c60",
+  "Properties": {
+    "ElapsedMilliseconds": 1033.1206,
+    "StatusCode": 200,
+    "ContentType": "text/html;charset=utf-8",
+    "ContentLength": null,
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/swagger/index.html",
+    "QueryString": "",
+    "HostingRequestFinishedLog": "Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 1033.1206ms",
+    "EventId": { "Id": 2 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000001",
+    "RequestPath": "/swagger/index.html",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestFinishedLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 1033.1206ms"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:24.2610897+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestStartingLog:l}",
+  "TraceId": "ca5bfcbbf8a4165250c67576e96a7d77",
+  "SpanId": "61133df6db4076cc",
+  "Properties": {
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "ContentType": null,
+    "ContentLength": null,
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/_vs/browserLink",
+    "QueryString": "",
+    "HostingRequestStartingLog": "Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - -",
+    "EventId": { "Id": 1 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000005",
+    "RequestPath": "/_vs/browserLink",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestStartingLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - -"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:24.2624292+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestFinishedLog:l}",
+  "TraceId": "6203f99009bfed4a0b21ed5c808e07df",
+  "SpanId": "9f418cb56ee867ce",
+  "Properties": {
+    "ElapsedMilliseconds": 31.5372,
+    "StatusCode": 200,
+    "ContentType": "application/javascript; charset=utf-8",
+    "ContentLength": 11984,
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/_framework/aspnetcore-browser-refresh.js",
+    "QueryString": "",
+    "HostingRequestFinishedLog": "Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 31.5372ms",
+    "EventId": { "Id": 2 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000003",
+    "RequestPath": "/_framework/aspnetcore-browser-refresh.js",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestFinishedLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 31.5372ms"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:24.4471050+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestFinishedLog:l}",
+  "TraceId": "ca5bfcbbf8a4165250c67576e96a7d77",
+  "SpanId": "61133df6db4076cc",
+  "Properties": {
+    "ElapsedMilliseconds": 185.9776,
+    "StatusCode": 200,
+    "ContentType": "text/javascript; charset=UTF-8",
+    "ContentLength": null,
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/_vs/browserLink",
+    "QueryString": "",
+    "HostingRequestFinishedLog": "Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 185.9776ms",
+    "EventId": { "Id": 2 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000005",
+    "RequestPath": "/_vs/browserLink",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestFinishedLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 185.9776ms"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:24.5436545+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestStartingLog:l}",
+  "TraceId": "9cc54532eff71341a7e7063989321d4a",
+  "SpanId": "ac955d9e81f52088",
+  "Properties": {
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "ContentType": null,
+    "ContentLength": null,
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/swagger/v1/swagger.json",
+    "QueryString": "",
+    "HostingRequestStartingLog": "Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - -",
+    "EventId": { "Id": 1 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000007",
+    "RequestPath": "/swagger/v1/swagger.json",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestStartingLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - -"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:24.7021633+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestFinishedLog:l}",
+  "TraceId": "9cc54532eff71341a7e7063989321d4a",
+  "SpanId": "ac955d9e81f52088",
+  "Properties": {
+    "ElapsedMilliseconds": 158.4874,
+    "StatusCode": 200,
+    "ContentType": "application/json;charset=utf-8",
+    "ContentLength": null,
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/swagger/v1/swagger.json",
+    "QueryString": "",
+    "HostingRequestFinishedLog": "Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.4874ms",
+    "EventId": { "Id": 2 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000007",
+    "RequestPath": "/swagger/v1/swagger.json",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestFinishedLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 158.4874ms"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:28.3411310+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestStartingLog:l}",
+  "TraceId": "a6352ef4cc77da75a516da535dcd7185",
+  "SpanId": "9380fba6e1172f79",
+  "Properties": {
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "ContentType": null,
+    "ContentLength": null,
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/WeatherForecast",
+    "QueryString": "",
+    "HostingRequestStartingLog": "Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - -",
+    "EventId": { "Id": 1 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000009",
+    "RequestPath": "/WeatherForecast",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestStartingLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - -"
+      }
+    ]
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:28.3927048+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Executing endpoint '{EndpointName}'",
+  "TraceId": "a6352ef4cc77da75a516da535dcd7185",
+  "SpanId": "9380fba6e1172f79",
+  "Properties": {
+    "EndpointName": "Logging.Controllers.WeatherForecastController.Get (Logging)",
+    "EventId": { "Name": "ExecutingEndpoint" },
+    "SourceContext": "Microsoft.AspNetCore.Routing.EndpointMiddleware",
+    "RequestId": "0HN2I20MV0VVF:00000009",
+    "RequestPath": "/WeatherForecast",
+    "ConnectionId": "0HN2I20MV0VVF"
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:28.4409609+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Route matched with {RouteData}. Executing controller action with signature {MethodInfo} on controller {Controller} ({AssemblyName}).",
+  "TraceId": "a6352ef4cc77da75a516da535dcd7185",
+  "SpanId": "9380fba6e1172f79",
+  "Properties": {
+    "RouteData": "{action = \"Get\", controller = \"WeatherForecast\"}",
+    "MethodInfo": "Void Get()",
+    "Controller": "Logging.Controllers.WeatherForecastController",
+    "AssemblyName": "Logging",
+    "EventId": {
+      "Id": 3,
+      "Name": "ControllerActionExecuting"
+    },
+    "SourceContext": "Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker",
+    "ActionId": "75d8d3dd-2cdd-45b8-be6a-0d4e836bc434",
+    "ActionName": "Logging.Controllers.WeatherForecastController.Get (Logging)",
+    "RequestId": "0HN2I20MV0VVF:00000009",
+    "RequestPath": "/WeatherForecast",
+    "ConnectionId": "0HN2I20MV0VVF"
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:28.5801844+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Executed action {ActionName} in {ElapsedMilliseconds}ms",
+  "TraceId": "a6352ef4cc77da75a516da535dcd7185",
+  "SpanId": "9380fba6e1172f79",
+  "Properties": {
+    "ActionName": "Logging.Controllers.WeatherForecastController.Get (Logging)",
+    "ElapsedMilliseconds": 95.2824,
+    "EventId": {
+      "Id": 2,
+      "Name": "ActionExecuted"
+    },
+    "SourceContext": "Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker",
+    "RequestId": "0HN2I20MV0VVF:00000009",
+    "RequestPath": "/WeatherForecast",
+    "ConnectionId": "0HN2I20MV0VVF"
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:28.6043594+05:30",
+  "Level": "Information",
+  "MessageTemplate": "Executed endpoint '{EndpointName}'",
+  "TraceId": "a6352ef4cc77da75a516da535dcd7185",
+  "SpanId": "9380fba6e1172f79",
+  "Properties": {
+    "EndpointName": "Logging.Controllers.WeatherForecastController.Get (Logging)",
+    "EventId": {
+      "Id": 1,
+      "Name": "ExecutedEndpoint"
+    },
+    "SourceContext": "Microsoft.AspNetCore.Routing.EndpointMiddleware",
+    "RequestId": "0HN2I20MV0VVF:00000009",
+    "RequestPath": "/WeatherForecast",
+    "ConnectionId": "0HN2I20MV0VVF"
+  }
+} {
+  "Timestamp": "2024-04-01T11:24:28.6128288+05:30",
+  "Level": "Information",
+  "MessageTemplate": "{HostingRequestFinishedLog:l}",
+  "TraceId": "a6352ef4cc77da75a516da535dcd7185",
+  "SpanId": "9380fba6e1172f79",
+  "Properties": {
+    "ElapsedMilliseconds": 271.8702,
+    "StatusCode": 200,
+    "ContentType": null,
+    "ContentLength": 0,
+    "Protocol": "HTTP/2",
+    "Method": "GET",
+    "Scheme": "https",
+    "Host": "localhost:7298",
+    "PathBase": "",
+    "Path": "/WeatherForecast",
+    "QueryString": "",
+    "HostingRequestFinishedLog": "Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 271.8702ms",
+    "EventId": { "Id": 2 },
+    "SourceContext": "Microsoft.AspNetCore.Hosting.Diagnostics",
+    "RequestId": "0HN2I20MV0VVF:00000009",
+    "RequestPath": "/WeatherForecast",
+    "ConnectionId": "0HN2I20MV0VVF"
+  },
+  "Renderings": {
+    "HostingRequestFinishedLog": [
+      {
+        "Format": "l",
+        "Rendering": "Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 271.8702ms"
+      }
+    ]
+  }
+}
+{"Timestamp":"2024-04-01T11:52:02.0559736+05:30","Level":"Information","MessageTemplate":"Now listening on: {address}","Properties":{"address":"https://localhost:7298","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:52:02.1355160+05:30","Level":"Information","MessageTemplate":"Now listening on: {address}","Properties":{"address":"http://localhost:5064","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:52:02.1662452+05:30","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:52:02.1701522+05:30","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:52:02.1731282+05:30","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"F:\\Demo\\ASP.NET Core\\API\\Logging\\Logging","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:52:03.1639284+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"b31aeb3427dff955ec942b25c237bd5b","SpanId":"66a347ce7a805230","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/swagger/index.html","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP4:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HN2I2G5M4TP4"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - -"}]}}
+{"Timestamp":"2024-04-01T11:52:04.5545766+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"b31aeb3427dff955ec942b25c237bd5b","SpanId":"66a347ce7a805230","Properties":{"ElapsedMilliseconds":1413.9281,"StatusCode":200,"ContentType":"text/html;charset=utf-8","ContentLength":null,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/swagger/index.html","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 1413.9281ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP4:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HN2I2G5M4TP4"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 1413.9281ms"}]}}
+{"Timestamp":"2024-04-01T11:52:04.5619484+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"ff79892eafcf360ecb405ab9af8b9640","SpanId":"01ba829d333b8988","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/_framework/aspnetcore-browser-refresh.js","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP4:00000003","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HN2I2G5M4TP4"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - -"}]}}
+{"Timestamp":"2024-04-01T11:52:04.5883645+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"717c353e8ce80a74c999f4a7c410ff2c","SpanId":"ebfee5d1caf0c617","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/_vs/browserLink","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP4:00000005","RequestPath":"/_vs/browserLink","ConnectionId":"0HN2I2G5M4TP4"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - -"}]}}
+{"Timestamp":"2024-04-01T11:52:04.6074954+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"ff79892eafcf360ecb405ab9af8b9640","SpanId":"01ba829d333b8988","Properties":{"ElapsedMilliseconds":45.5187,"StatusCode":200,"ContentType":"application/javascript; charset=utf-8","ContentLength":11984,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/_framework/aspnetcore-browser-refresh.js","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 45.5187ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP4:00000003","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HN2I2G5M4TP4"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 45.5187ms"}]}}
+{"Timestamp":"2024-04-01T11:52:04.9800803+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"717c353e8ce80a74c999f4a7c410ff2c","SpanId":"ebfee5d1caf0c617","Properties":{"ElapsedMilliseconds":392.1309,"StatusCode":200,"ContentType":"text/javascript; charset=UTF-8","ContentLength":null,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/_vs/browserLink","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 392.1309ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP4:00000005","RequestPath":"/_vs/browserLink","ConnectionId":"0HN2I2G5M4TP4"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 392.1309ms"}]}}
+{"Timestamp":"2024-04-01T11:52:05.0764411+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"1668ba2e4939efcb6a270246c0e6dbce","SpanId":"b02b9c59cc3413bb","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/swagger/v1/swagger.json","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP4:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HN2I2G5M4TP4"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - -"}]}}
+{"Timestamp":"2024-04-01T11:52:05.2099776+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"1668ba2e4939efcb6a270246c0e6dbce","SpanId":"b02b9c59cc3413bb","Properties":{"ElapsedMilliseconds":133.5293,"StatusCode":200,"ContentType":"application/json;charset=utf-8","ContentLength":null,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/swagger/v1/swagger.json","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.5293ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP4:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HN2I2G5M4TP4"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 133.5293ms"}]}}
+{"Timestamp":"2024-04-01T11:52:09.5203949+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"738c233508c8c63799961f938cee28cf","SpanId":"86ebef42b86c4470","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/WeatherForecast","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP5:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2G5M4TP5"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - -"}]}}
+{"Timestamp":"2024-04-01T11:52:09.5886308+05:30","Level":"Information","MessageTemplate":"Executing endpoint '{EndpointName}'","TraceId":"738c233508c8c63799961f938cee28cf","SpanId":"86ebef42b86c4470","Properties":{"EndpointName":"Logging.Controllers.WeatherForecastController.Get (Logging)","EventId":{"Name":"ExecutingEndpoint"},"SourceContext":"Microsoft.AspNetCore.Routing.EndpointMiddleware","RequestId":"0HN2I2G5M4TP5:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2G5M4TP5"}}
+{"Timestamp":"2024-04-01T11:52:09.6508603+05:30","Level":"Information","MessageTemplate":"Route matched with {RouteData}. Executing controller action with signature {MethodInfo} on controller {Controller} ({AssemblyName}).","TraceId":"738c233508c8c63799961f938cee28cf","SpanId":"86ebef42b86c4470","Properties":{"RouteData":"{action = \"Get\", controller = \"WeatherForecast\"}","MethodInfo":"Void Get()","Controller":"Logging.Controllers.WeatherForecastController","AssemblyName":"Logging","EventId":{"Id":3,"Name":"ControllerActionExecuting"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"6fbea6e5-34ae-4c1f-a0b3-35a803355654","ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","RequestId":"0HN2I2G5M4TP5:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2G5M4TP5"}}
+{"Timestamp":"2024-04-01T11:52:09.6895897+05:30","Level":"Information","MessageTemplate":"Executing action method {ActionName} - Validation state: {ValidationState}","TraceId":"738c233508c8c63799961f938cee28cf","SpanId":"86ebef42b86c4470","Properties":{"ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","ValidationState":"Valid","EventId":{"Id":1,"Name":"ActionMethodExecuting"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"6fbea6e5-34ae-4c1f-a0b3-35a803355654","RequestId":"0HN2I2G5M4TP5:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2G5M4TP5"}}
+{"Timestamp":"2024-04-01T11:52:09.7693034+05:30","Level":"Information","MessageTemplate":"Executed action method {ActionName}, returned result {ActionResult} in {ElapsedMilliseconds}ms.","TraceId":"738c233508c8c63799961f938cee28cf","SpanId":"86ebef42b86c4470","Properties":{"ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","ActionResult":"Microsoft.AspNetCore.Mvc.EmptyResult","ElapsedMilliseconds":45.9276,"EventId":{"Id":2,"Name":"ActionMethodExecuted"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"6fbea6e5-34ae-4c1f-a0b3-35a803355654","RequestId":"0HN2I2G5M4TP5:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2G5M4TP5"}}
+{"Timestamp":"2024-04-01T11:52:09.7901879+05:30","Level":"Information","MessageTemplate":"Executed action {ActionName} in {ElapsedMilliseconds}ms","TraceId":"738c233508c8c63799961f938cee28cf","SpanId":"86ebef42b86c4470","Properties":{"ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","ElapsedMilliseconds":102.6379,"EventId":{"Id":2,"Name":"ActionExecuted"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","RequestId":"0HN2I2G5M4TP5:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2G5M4TP5"}}
+{"Timestamp":"2024-04-01T11:52:09.8177601+05:30","Level":"Information","MessageTemplate":"Executed endpoint '{EndpointName}'","TraceId":"738c233508c8c63799961f938cee28cf","SpanId":"86ebef42b86c4470","Properties":{"EndpointName":"Logging.Controllers.WeatherForecastController.Get (Logging)","EventId":{"Id":1,"Name":"ExecutedEndpoint"},"SourceContext":"Microsoft.AspNetCore.Routing.EndpointMiddleware","RequestId":"0HN2I2G5M4TP5:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2G5M4TP5"}}
+{"Timestamp":"2024-04-01T11:52:09.8205002+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"738c233508c8c63799961f938cee28cf","SpanId":"86ebef42b86c4470","Properties":{"ElapsedMilliseconds":300.137,"StatusCode":200,"ContentType":null,"ContentLength":0,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/WeatherForecast","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 300.1370ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2G5M4TP5:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2G5M4TP5"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 300.1370ms"}]}}
+{"Timestamp":"2024-04-01T11:55:58.1845065+05:30","Level":"Information","MessageTemplate":"Now listening on: {address}","Properties":{"address":"https://localhost:7298","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:55:58.3018659+05:30","Level":"Information","MessageTemplate":"Now listening on: {address}","Properties":{"address":"http://localhost:5064","EventId":{"Id":14,"Name":"ListeningOnAddress"},"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:55:58.3370877+05:30","Level":"Information","MessageTemplate":"Application started. Press Ctrl+C to shut down.","Properties":{"SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:55:58.3403720+05:30","Level":"Information","MessageTemplate":"Hosting environment: {envName}","Properties":{"envName":"Development","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:55:58.3506044+05:30","Level":"Information","MessageTemplate":"Content root path: {contentRoot}","Properties":{"contentRoot":"F:\\Demo\\ASP.NET Core\\API\\Logging\\Logging","SourceContext":"Microsoft.Hosting.Lifetime"}}
+{"Timestamp":"2024-04-01T11:55:58.6226345+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"4f9fa7c19a3e5a3105d466a0cd859530","SpanId":"ffe667dfbd71ad0d","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/swagger/index.html","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDP:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HN2I2IBUJFDP"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/swagger/index.html - -"}]}}
+{"Timestamp":"2024-04-01T11:55:59.4332186+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"ff83786d9a11bebc579c03450419cbe7","SpanId":"0da702b97e06a0a0","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/_framework/aspnetcore-browser-refresh.js","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDP:00000003","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HN2I2IBUJFDP"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - -"}]}}
+{"Timestamp":"2024-04-01T11:55:59.4453946+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"4f9fa7c19a3e5a3105d466a0cd859530","SpanId":"ffe667dfbd71ad0d","Properties":{"ElapsedMilliseconds":834.1718,"StatusCode":200,"ContentType":"text/html;charset=utf-8","ContentLength":null,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/swagger/index.html","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 834.1718ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDP:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HN2I2IBUJFDP"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/swagger/index.html - - - 200 - text/html;charset=utf-8 834.1718ms"}]}}
+{"Timestamp":"2024-04-01T11:55:59.4453984+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"ff83786d9a11bebc579c03450419cbe7","SpanId":"0da702b97e06a0a0","Properties":{"ElapsedMilliseconds":10.1197,"StatusCode":200,"ContentType":"application/javascript; charset=utf-8","ContentLength":11984,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/_framework/aspnetcore-browser-refresh.js","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 10.1197ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDP:00000003","RequestPath":"/_framework/aspnetcore-browser-refresh.js","ConnectionId":"0HN2I2IBUJFDP"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/_framework/aspnetcore-browser-refresh.js - - - 200 11984 application/javascript;+charset=utf-8 10.1197ms"}]}}
+{"Timestamp":"2024-04-01T11:55:59.4640650+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"9d2c2e6c1623ffc171c61890c9ee7f0a","SpanId":"6f59455b2cd63750","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/_vs/browserLink","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDP:00000005","RequestPath":"/_vs/browserLink","ConnectionId":"0HN2I2IBUJFDP"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/_vs/browserLink - -"}]}}
+{"Timestamp":"2024-04-01T11:55:59.5110309+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"9d2c2e6c1623ffc171c61890c9ee7f0a","SpanId":"6f59455b2cd63750","Properties":{"ElapsedMilliseconds":47.0756,"StatusCode":200,"ContentType":"text/javascript; charset=UTF-8","ContentLength":null,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/_vs/browserLink","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.0756ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDP:00000005","RequestPath":"/_vs/browserLink","ConnectionId":"0HN2I2IBUJFDP"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.0756ms"}]}}
+{"Timestamp":"2024-04-01T11:55:59.6354206+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"3b1579cce2c89ef95c449e1cdb77c92c","SpanId":"503d0c5e7602f6fc","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/swagger/v1/swagger.json","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDP:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HN2I2IBUJFDP"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - -"}]}}
+{"Timestamp":"2024-04-01T11:55:59.7478381+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"3b1579cce2c89ef95c449e1cdb77c92c","SpanId":"503d0c5e7602f6fc","Properties":{"ElapsedMilliseconds":112.5738,"StatusCode":200,"ContentType":"application/json;charset=utf-8","ContentLength":null,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/swagger/v1/swagger.json","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.5738ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDP:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HN2I2IBUJFDP"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 112.5738ms"}]}}
+{"Timestamp":"2024-04-01T11:56:10.1957903+05:30","Level":"Information","MessageTemplate":"{HostingRequestStartingLog:l}","TraceId":"17d4e5229bb5e9e2f2901cf234991db0","SpanId":"57c1cce8ac67558b","Properties":{"Protocol":"HTTP/2","Method":"GET","ContentType":null,"ContentLength":null,"Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/WeatherForecast","QueryString":"","HostingRequestStartingLog":"Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - -","EventId":{"Id":1},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDQ:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2IBUJFDQ"},"Renderings":{"HostingRequestStartingLog":[{"Format":"l","Rendering":"Request starting HTTP/2 GET https://localhost:7298/WeatherForecast - -"}]}}
+{"Timestamp":"2024-04-01T11:56:10.2635308+05:30","Level":"Information","MessageTemplate":"Executing endpoint '{EndpointName}'","TraceId":"17d4e5229bb5e9e2f2901cf234991db0","SpanId":"57c1cce8ac67558b","Properties":{"EndpointName":"Logging.Controllers.WeatherForecastController.Get (Logging)","EventId":{"Name":"ExecutingEndpoint"},"SourceContext":"Microsoft.AspNetCore.Routing.EndpointMiddleware","RequestId":"0HN2I2IBUJFDQ:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2IBUJFDQ"}}
+{"Timestamp":"2024-04-01T11:56:10.3343786+05:30","Level":"Information","MessageTemplate":"Route matched with {RouteData}. Executing controller action with signature {MethodInfo} on controller {Controller} ({AssemblyName}).","TraceId":"17d4e5229bb5e9e2f2901cf234991db0","SpanId":"57c1cce8ac67558b","Properties":{"RouteData":"{action = \"Get\", controller = \"WeatherForecast\"}","MethodInfo":"Void Get()","Controller":"Logging.Controllers.WeatherForecastController","AssemblyName":"Logging","EventId":{"Id":3,"Name":"ControllerActionExecuting"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"a38968b0-ab01-4251-98d2-6269d7cd2563","ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","RequestId":"0HN2I2IBUJFDQ:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2IBUJFDQ"}}
+{"Timestamp":"2024-04-01T11:56:10.3686641+05:30","Level":"Information","MessageTemplate":"Executing action method {ActionName} - Validation state: {ValidationState}","TraceId":"17d4e5229bb5e9e2f2901cf234991db0","SpanId":"57c1cce8ac67558b","Properties":{"ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","ValidationState":"Valid","EventId":{"Id":1,"Name":"ActionMethodExecuting"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"a38968b0-ab01-4251-98d2-6269d7cd2563","RequestId":"0HN2I2IBUJFDQ:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2IBUJFDQ"}}
+{"Timestamp":"2024-04-01T11:56:10.4351993+05:30","Level":"Information","MessageTemplate":"Executed action method {ActionName}, returned result {ActionResult} in {ElapsedMilliseconds}ms.","TraceId":"17d4e5229bb5e9e2f2901cf234991db0","SpanId":"57c1cce8ac67558b","Properties":{"ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","ActionResult":"Microsoft.AspNetCore.Mvc.EmptyResult","ElapsedMilliseconds":42.1875,"EventId":{"Id":2,"Name":"ActionMethodExecuted"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","ActionId":"a38968b0-ab01-4251-98d2-6269d7cd2563","RequestId":"0HN2I2IBUJFDQ:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2IBUJFDQ"}}
+{"Timestamp":"2024-04-01T11:56:10.4527463+05:30","Level":"Information","MessageTemplate":"Executed action {ActionName} in {ElapsedMilliseconds}ms","TraceId":"17d4e5229bb5e9e2f2901cf234991db0","SpanId":"57c1cce8ac67558b","Properties":{"ActionName":"Logging.Controllers.WeatherForecastController.Get (Logging)","ElapsedMilliseconds":90.7646,"EventId":{"Id":2,"Name":"ActionExecuted"},"SourceContext":"Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker","RequestId":"0HN2I2IBUJFDQ:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2IBUJFDQ"}}
+{"Timestamp":"2024-04-01T11:56:10.4569456+05:30","Level":"Information","MessageTemplate":"Executed endpoint '{EndpointName}'","TraceId":"17d4e5229bb5e9e2f2901cf234991db0","SpanId":"57c1cce8ac67558b","Properties":{"EndpointName":"Logging.Controllers.WeatherForecastController.Get (Logging)","EventId":{"Id":1,"Name":"ExecutedEndpoint"},"SourceContext":"Microsoft.AspNetCore.Routing.EndpointMiddleware","RequestId":"0HN2I2IBUJFDQ:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2IBUJFDQ"}}
+{"Timestamp":"2024-04-01T11:56:10.4586941+05:30","Level":"Information","MessageTemplate":"{HostingRequestFinishedLog:l}","TraceId":"17d4e5229bb5e9e2f2901cf234991db0","SpanId":"57c1cce8ac67558b","Properties":{"ElapsedMilliseconds":262.8817,"StatusCode":200,"ContentType":null,"ContentLength":0,"Protocol":"HTTP/2","Method":"GET","Scheme":"https","Host":"localhost:7298","PathBase":"","Path":"/WeatherForecast","QueryString":"","HostingRequestFinishedLog":"Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 262.8817ms","EventId":{"Id":2},"SourceContext":"Microsoft.AspNetCore.Hosting.Diagnostics","RequestId":"0HN2I2IBUJFDQ:00000001","RequestPath":"/WeatherForecast","ConnectionId":"0HN2I2IBUJFDQ"},"Renderings":{"HostingRequestFinishedLog":[{"Format":"l","Rendering":"Request finished HTTP/2 GET https://localhost:7298/WeatherForecast - - - 200 0 - 262.8817ms"}]}}

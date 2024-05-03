@@ -1,0 +1,354 @@
+2024-04-01 12:04:37.1343||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:04:38.2405||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:04:38.8543||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 73B7ADE333B55C7093FBB5930F2CDD15A0834910) 
+2024-04-01 12:04:38.9918||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging 
+2024-04-01 12:04:38.9918||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-01 12:04:38.9918||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-01 12:04:39.0218||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-01 12:04:39.2234||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I2N785EGS" received FIN. 
+2024-04-01 12:04:39.2430||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2N785EGS" accepted. 
+2024-04-01 12:04:39.2430||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2N785EGS" started. 
+2024-04-01 12:04:39.4130||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:04:39.4517||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2N785EGS" stopped. 
+2024-04-01 12:04:39.4743||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I2N785EGS" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:04:39.6665||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2N785EGT" accepted. 
+2024-04-01 12:04:39.6665||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2N785EGT" started. 
+2024-04-01 12:04:40.2010||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I2N785EGT established using the following protocol: Tls12 
+2024-04-01 12:04:40.6234||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-01 12:04:41.5538||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-01 12:04:42.2604||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-01 12:04:47.2457||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-04-01 12:04:47.3011||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2024-04-01 12:04:47.3091||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2024-04-01 12:04:47.3091||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:04:47.3836||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-01 12:04:47.3836||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-01 12:04:47.3836||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-04-01 12:04:47.3836||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-01 12:04:47.3836||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-01 12:04:47.3836||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:04:47.3836||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:04:47.4094||DEBUG|Logging.Controllers.WeatherForecastController|Log debug 
+2024-04-01 12:04:51.6713||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I2N785EGT" received FIN. 
+2024-04-01 12:04:51.6779||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I2N785EGT" is closed. The last processed stream ID was 9. 
+2024-04-01 12:04:51.6779||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I2N785EGT" sending FIN because: "The client closed the connection." 
+2024-04-01 12:04:51.6779||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2N785EGT" stopped. 
+2024-04-01 12:05:56.0654||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:05:56.3884||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:05:56.7074||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 73B7ADE333B55C7093FBB5930F2CDD15A0834910) 
+2024-04-01 12:05:56.7612||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging 
+2024-04-01 12:05:56.7612||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-01 12:05:56.7612||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-01 12:05:56.7756||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-01 12:05:56.8596||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I2NUCI4E3" received FIN. 
+2024-04-01 12:05:56.8666||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2NUCI4E3" accepted. 
+2024-04-01 12:05:56.8666||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2NUCI4E3" started. 
+2024-04-01 12:05:56.8923||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:05:56.9419||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2NUCI4E3" stopped. 
+2024-04-01 12:05:56.9475||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I2NUCI4E3" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:05:57.1253||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2NUCI4E4" accepted. 
+2024-04-01 12:05:57.1253||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2NUCI4E4" started. 
+2024-04-01 12:05:57.1875||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I2NUCI4E4 established using the following protocol: Tls12 
+2024-04-01 12:05:57.3584||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-01 12:05:57.9840||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-01 12:05:58.6926||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-01 12:06:01.7327||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I2NUCI4E4" received FIN. 
+2024-04-01 12:06:01.7327||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I2NUCI4E4" is closed. The last processed stream ID was 7. 
+2024-04-01 12:06:01.7327||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I2NUCI4E4" sending FIN because: "The client closed the connection." 
+2024-04-01 12:06:01.7327||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2NUCI4E4" stopped. 
+2024-04-01 12:06:02.6760||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2NUCI4E5" accepted. 
+2024-04-01 12:06:02.6760||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I2NUCI4E5" started. 
+2024-04-01 12:06:02.6809||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I2NUCI4E5 established using the following protocol: Tls12 
+2024-04-01 12:06:02.6809||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-04-01 12:06:02.7434||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2024-04-01 12:06:02.7434||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2024-04-01 12:06:02.7434||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:06:02.8185||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-01 12:06:02.8185||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-01 12:06:02.8200||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-04-01 12:06:02.8200||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-01 12:06:02.8200||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-01 12:06:02.8200||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:06:02.8200||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:06:02.8378||DEBUG|Logging.Controllers.WeatherForecastController|Log debug 
+2024-04-01 12:37:28.1651||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:37:28.8813||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:37:30.1490||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 73B7ADE333B55C7093FBB5930F2CDD15A0834910) 
+2024-04-01 12:37:30.2890||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging 
+2024-04-01 12:37:30.2890||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-01 12:37:30.2890||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-01 12:37:30.3685||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-01 12:37:30.6690||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I39IPARBK" received FIN. 
+2024-04-01 12:37:30.6690||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I39IPARBL" received FIN. 
+2024-04-01 12:37:30.6847||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBK" accepted. 
+2024-04-01 12:37:30.6847||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBL" accepted. 
+2024-04-01 12:37:30.6847||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBL" started. 
+2024-04-01 12:37:30.6933||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBK" started. 
+2024-04-01 12:37:30.7376||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:37:30.7376||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:37:30.7581||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBL" stopped. 
+2024-04-01 12:37:30.7581||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBK" stopped. 
+2024-04-01 12:37:30.8110||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I39IPARBK" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:37:30.8602||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I39IPARBL" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:37:30.9229||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBM" accepted. 
+2024-04-01 12:37:30.9229||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBM" started. 
+2024-04-01 12:37:31.0533||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I39IPARBM established using the following protocol: Tls12 
+2024-04-01 12:37:32.0824||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-01 12:37:33.1998||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-01 12:37:34.0492||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-01 12:37:37.6056||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I39IPARBM" received FIN. 
+2024-04-01 12:37:37.6056||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I39IPARBM" is closed. The last processed stream ID was 7. 
+2024-04-01 12:37:37.6056||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I39IPARBM" sending FIN because: "The client closed the connection." 
+2024-04-01 12:37:37.6152||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBM" stopped. 
+2024-04-01 12:37:40.9613||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBN" accepted. 
+2024-04-01 12:37:40.9613||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBN" started. 
+2024-04-01 12:37:40.9843||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I39IPARBN established using the following protocol: Tls12 
+2024-04-01 12:37:40.9931||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-04-01 12:37:41.0360||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2024-04-01 12:37:41.0448||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2024-04-01 12:37:41.0448||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:37:41.0957||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-01 12:37:41.0957||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-01 12:37:41.0957||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-04-01 12:37:41.0957||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-01 12:37:41.0957||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-01 12:37:41.0957||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:37:41.0957||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:37:41.1004||DEBUG|Logging.Controllers.WeatherForecastController|Log debug 
+2024-04-01 12:37:42.6104||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I39IPARBN" received FIN. 
+2024-04-01 12:37:42.6104||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I39IPARBN" sending FIN because: "The client closed the connection." 
+2024-04-01 12:37:42.6104||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I39IPARBN" is closed. The last processed stream ID was 1. 
+2024-04-01 12:37:42.6104||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I39IPARBN" stopped. 
+2024-04-01 12:39:51.8458||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:39:52.8262||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:40:06.9841||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:40:08.1002||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:40:08.6944||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 73B7ADE333B55C7093FBB5930F2CDD15A0834910) 
+2024-04-01 12:40:08.8695||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging 
+2024-04-01 12:40:08.8695||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-01 12:40:08.8695||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-01 12:40:08.9354||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-01 12:40:09.1151||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3B20CPDF" received FIN. 
+2024-04-01 12:40:09.1307||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDF" accepted. 
+2024-04-01 12:40:09.1331||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDF" started. 
+2024-04-01 12:40:09.1927||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:40:09.2144||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDF" stopped. 
+2024-04-01 12:40:09.2144||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3B20CPDF" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:40:09.4128||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDG" accepted. 
+2024-04-01 12:40:09.4128||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDG" started. 
+2024-04-01 12:40:09.6506||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3B20CPDG established using the following protocol: Tls12 
+2024-04-01 12:40:10.1096||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-01 12:40:10.7563||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-01 12:40:11.1092||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-01 12:40:12.7793||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3B20CPDG" received FIN. 
+2024-04-01 12:40:12.7924||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I3B20CPDG" is closed. The last processed stream ID was 7. 
+2024-04-01 12:40:12.7924||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3B20CPDG" sending FIN because: "The client closed the connection." 
+2024-04-01 12:40:12.7924||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDG" stopped. 
+2024-04-01 12:40:17.5898||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDH" accepted. 
+2024-04-01 12:40:17.5898||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDH" started. 
+2024-04-01 12:40:17.5898||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3B20CPDH established using the following protocol: Tls12 
+2024-04-01 12:40:17.6053||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-04-01 12:40:17.6428||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2024-04-01 12:40:17.6527||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2024-04-01 12:40:17.6527||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:40:17.7255||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-01 12:40:17.7255||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-01 12:40:17.7270||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-04-01 12:40:17.7270||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-01 12:40:17.7270||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-01 12:40:17.7270||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:40:17.7270||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:40:17.7270||DEBUG|Logging.Controllers.WeatherForecastController|Log debug 
+2024-04-01 12:40:22.7002||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3B20CPDH" received FIN. 
+2024-04-01 12:40:22.7002||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I3B20CPDH" is closed. The last processed stream ID was 1. 
+2024-04-01 12:40:22.7002||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3B20CPDH" sending FIN because: "The client closed the connection." 
+2024-04-01 12:40:22.7002||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3B20CPDH" stopped. 
+2024-04-01 12:42:15.2874||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:42:15.6383||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:42:15.8534||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 73B7ADE333B55C7093FBB5930F2CDD15A0834910) 
+2024-04-01 12:42:15.9200||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging 
+2024-04-01 12:42:15.9200||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-01 12:42:15.9200||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-01 12:42:15.9323||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-01 12:42:16.1090||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3C7RFI4S" received FIN. 
+2024-04-01 12:42:16.1090||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3C7RFI4S" accepted. 
+2024-04-01 12:42:16.1090||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3C7RFI4S" started. 
+2024-04-01 12:42:16.1437||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:42:16.1604||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3C7RFI4S" stopped. 
+2024-04-01 12:42:16.1604||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3C7RFI4S" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:42:16.4570||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3C7RFI4T" accepted. 
+2024-04-01 12:42:16.4649||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3C7RFI4T" started. 
+2024-04-01 12:42:16.6247||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3C7RFI4T established using the following protocol: Tls12 
+2024-04-01 12:42:16.8596||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-01 12:42:17.2676||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-01 12:42:17.5687||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-01 12:42:21.1128||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-04-01 12:42:21.1426||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2024-04-01 12:42:21.1426||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2024-04-01 12:42:21.1426||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:42:21.1882||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-01 12:42:21.1882||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-01 12:42:21.1882||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-04-01 12:42:21.1882||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-01 12:42:21.1882||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-01 12:42:21.1882||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:42:21.1882||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:42:21.2048||DEBUG|Logging.Controllers.WeatherForecastController|Log debug 
+2024-04-01 12:42:27.7574||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3C7RFI4T" received FIN. 
+2024-04-01 12:42:27.7634||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I3C7RFI4T" is closed. The last processed stream ID was 9. 
+2024-04-01 12:42:27.7634||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3C7RFI4T" sending FIN because: "The client closed the connection." 
+2024-04-01 12:42:27.7634||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3C7RFI4T" stopped. 
+2024-04-01 12:43:41.7274||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:43:41.9675||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:43:42.1755||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 73B7ADE333B55C7093FBB5930F2CDD15A0834910) 
+2024-04-01 12:43:42.2837||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging 
+2024-04-01 12:43:42.2837||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-01 12:43:42.2837||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-01 12:43:42.3082||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-01 12:43:42.4361||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3D1IP30E" received FIN. 
+2024-04-01 12:43:42.4361||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3D1IP30D" received FIN. 
+2024-04-01 12:43:42.4495||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30D" accepted. 
+2024-04-01 12:43:42.4495||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30E" accepted. 
+2024-04-01 12:43:42.4495||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30D" started. 
+2024-04-01 12:43:42.4495||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30E" started. 
+2024-04-01 12:43:42.4844||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:43:42.4844||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:43:42.4987||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30D" stopped. 
+2024-04-01 12:43:42.4987||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30E" stopped. 
+2024-04-01 12:43:42.5114||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3D1IP30D" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:43:42.5114||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3D1IP30E" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:43:42.6313||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30F" accepted. 
+2024-04-01 12:43:42.6313||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30F" started. 
+2024-04-01 12:43:42.6971||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3D1IP30F established using the following protocol: Tls12 
+2024-04-01 12:43:42.8457||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-01 12:43:43.1808||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-01 12:43:43.3752||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-01 12:43:52.7808||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3D1IP30F" received FIN. 
+2024-04-01 12:43:52.7808||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I3D1IP30F" is closed. The last processed stream ID was 7. 
+2024-04-01 12:43:52.7808||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3D1IP30F" sending FIN because: "The client closed the connection." 
+2024-04-01 12:43:52.7808||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30F" stopped. 
+2024-04-01 12:45:18.1010||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30G" accepted. 
+2024-04-01 12:45:18.1172||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3D1IP30G" started. 
+2024-04-01 12:45:18.1336||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3D1IP30G established using the following protocol: Tls12 
+2024-04-01 12:45:18.1752||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-04-01 12:45:18.2009||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2024-04-01 12:45:18.2009||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2024-04-01 12:45:18.2009||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:45:18.2502||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-01 12:45:18.2502||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-01 12:45:18.2502||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-04-01 12:45:18.2502||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-01 12:45:18.2502||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-01 12:45:18.2502||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:45:18.2502||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:45:18.2723||DEBUG|Logging.Controllers.WeatherForecastController|Log debug 
+2024-04-01 12:46:42.5870||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:46:43.2237||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:46:43.6734||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 73B7ADE333B55C7093FBB5930F2CDD15A0834910) 
+2024-04-01 12:46:43.7888||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3ENK9KMC" received FIN. 
+2024-04-01 12:46:43.8011||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3ENK9KMC" accepted. 
+2024-04-01 12:46:43.8011||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3ENK9KMC" started. 
+2024-04-01 12:46:43.8615||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging 
+2024-04-01 12:46:43.8615||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-01 12:46:43.8615||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-01 12:46:43.9557||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:46:43.9904||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3ENK9KMC" stopped. 
+2024-04-01 12:46:44.0308||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3ENK9KMC" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:46:44.0308||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-01 12:46:44.1535||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3ENK9KMD" accepted. 
+2024-04-01 12:46:44.1535||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3ENK9KMD" started. 
+2024-04-01 12:46:44.3090||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3ENK9KMD established using the following protocol: Tls12 
+2024-04-01 12:46:44.5260||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-01 12:46:45.0259||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-01 12:46:45.3177||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-01 12:46:47.8256||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3ENK9KMD" received FIN. 
+2024-04-01 12:46:47.8309||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I3ENK9KMD" is closed. The last processed stream ID was 7. 
+2024-04-01 12:46:47.8309||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3ENK9KMD" sending FIN because: "The client closed the connection." 
+2024-04-01 12:46:47.8309||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3ENK9KMD" stopped. 
+2024-04-01 12:46:50.0090||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3ENK9KME" accepted. 
+2024-04-01 12:46:50.0090||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3ENK9KME" started. 
+2024-04-01 12:46:50.0195||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3ENK9KME established using the following protocol: Tls12 
+2024-04-01 12:46:50.0629||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-04-01 12:46:50.1059||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2024-04-01 12:46:50.1128||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2024-04-01 12:46:50.1128||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:46:50.1616||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-01 12:46:50.1616||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-01 12:46:50.1616||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-04-01 12:46:50.1616||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-01 12:46:50.1616||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-01 12:46:50.1725||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:46:50.1725||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:46:50.1885||DEBUG|Logging.Controllers.WeatherForecastController|Log debug 
+2024-04-01 12:47:52.3790||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting 
+2024-04-01 12:47:52.6251||DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-04-01 12:47:52.8384||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServer|Using development certificate: CN=localhost (Thumbprint: 73B7ADE333B55C7093FBB5930F2CDD15A0834910) 
+2024-04-01 12:47:53.0002||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3FC8B91L" received FIN. 
+2024-04-01 12:47:53.0002||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91L" accepted. 
+2024-04-01 12:47:53.0002||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91L" started. 
+2024-04-01 12:47:53.0450||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection. System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-04-01 12:47:53.0581||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91L" stopped. 
+2024-04-01 12:47:53.0581||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3FC8B91L" sending FIN because: "The Socket transport's send loop completed gracefully." 
+2024-04-01 12:47:53.4686||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91M" accepted. 
+2024-04-01 12:47:53.4686||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91M" started. 
+2024-04-01 12:47:54.0024||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3FC8B91M established using the following protocol: Tls12 
+2024-04-01 12:47:54.9619||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Logging 
+2024-04-01 12:47:54.9619||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-04-01 12:47:54.9619||DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-04-01 12:47:54.9848||DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started 
+2024-04-01 12:47:55.0264||DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed. 
+2024-04-01 12:47:55.3244||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection. 
+2024-04-01 12:47:55.4724||DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection. 
+2024-04-01 12:47:57.8503||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3FC8B91M" received FIN. 
+2024-04-01 12:47:57.8503||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I3FC8B91M" is closed. The last processed stream ID was 7. 
+2024-04-01 12:47:57.8503||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3FC8B91M" sending FIN because: "The client closed the connection." 
+2024-04-01 12:47:57.8503||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91M" stopped. 
+2024-04-01 12:48:25.7537||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91N" accepted. 
+2024-04-01 12:48:25.7537||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91N" started. 
+2024-04-01 12:48:25.7537||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN2I3FC8B91N established using the following protocol: Tls12 
+2024-04-01 12:48:25.7727||DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The request path  does not match the path filter 
+2024-04-01 12:48:25.8006||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/WeatherForecast' 
+2024-04-01 12:48:25.8006||DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' with route pattern 'WeatherForecast' is valid for the request path '/WeatherForecast' 
+2024-04-01 12:48:25.8006||DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'Logging.Controllers.WeatherForecastController.Get (Logging)' 
+2024-04-01 12:48:25.8476||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None 
+2024-04-01 12:48:25.8476||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None 
+2024-04-01 12:48:25.8476||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000) 
+2024-04-01 12:48:25.8476||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None 
+2024-04-01 12:48:25.8476||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000) 
+2024-04-01 12:48:25.8476||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:48:25.8476||DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller Logging.Controllers.WeatherForecastController (Logging) 
+2024-04-01 12:48:25.8620||DEBUG|Logging.Controllers.WeatherForecastController|Log debug 
+2024-04-01 12:48:27.8590||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3FC8B91N" received FIN. 
+2024-04-01 12:48:27.8597||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN2I3FC8B91N" is closed. The last processed stream ID was 1. 
+2024-04-01 12:48:27.8597||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN2I3FC8B91N" sending FIN because: "The client closed the connection." 
+2024-04-01 12:48:27.8597||DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN2I3FC8B91N" stopped. 
