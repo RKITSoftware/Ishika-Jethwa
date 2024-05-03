@@ -35,7 +35,7 @@ namespace Birth_Certificate_Generator.BL.Handler
 
         #region Constructor
         /// <summary>
-        /// Initializes a new instance of the BLBCR01Handler with the specified database factory and context.
+        /// COnstructor for Initialisng DbFactory and DBBCR01Context.
         /// </summary>
         /// <param name="dbFactory">The ORM Lite connection factory for database operations.</param>
         /// <param name="obj">The repository context for birth certificate request data operations.</param>

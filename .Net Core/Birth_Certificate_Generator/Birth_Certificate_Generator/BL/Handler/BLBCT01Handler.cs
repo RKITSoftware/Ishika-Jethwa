@@ -18,27 +18,27 @@ namespace Birth_Certificate_Generator.BL.Handler
     {
         #region Private Members
         /// <summary>
-        /// The context for birth certificate request data operations.
+        /// Instance of DBBCR01Context.
         /// </summary>
         private readonly DBBCR01Context _objDbBCR01;
 
         /// <summary>
-        /// ORM Lite connection factory for database operations.
+        /// Instance of DbFactory.
         /// </summary>
         private readonly OrmLiteConnectionFactory _dbFactory;
 
         /// <summary>
-        /// The path where generated certificate PDFs are stored.
+        /// Path String (Downloads Path).
         /// </summary>
         private string _path = Directory.GetCurrentDirectory() + "\\Certificate\\";
         #endregion
 
         #region Constructor
         /// <summary>
-        /// Initializes a new instance of the BLBCT01Handler class with the specified context and ORM Lite factory.
+        /// Constructor for Initialising Db Factory and DBBCR01Context
         /// </summary>
-        /// <param name="dbBCR01Context">Database context for birth certificate requests.</param>
-        /// <param name="dbFactory">ORM Lite connection factory for database operations.</param>
+        /// <param name="dbBCR01Context">DBBCR01Context Instance</param>
+        /// <param name="dbFactory">DbFactory Instance</param>
         public BLBCT01Handler(DBBCR01Context dbBCR01Context, OrmLiteConnectionFactory dbFactory)
         {
             _objDbBCR01 = dbBCR01Context;
@@ -50,8 +50,8 @@ namespace Birth_Certificate_Generator.BL.Handler
         /// <summary>
         /// Validates whether a certificate request with the given ID already exists.
         /// </summary>
-        /// <param name="requestId">The ID of the certificate request to validate.</param>
-        /// <returns>A Response object indicating validation success or failure.</returns>
+        /// <param name="requestId">Request Id</param>
+        /// <returns>Response with Validation Message.</returns>
         public Response Validation(int requestId)
         {
             Response response = new Response();
@@ -71,7 +71,7 @@ namespace Birth_Certificate_Generator.BL.Handler
         /// <summary>
         /// Generates a birth certificate PDF and updates the database with the new certificate.
         /// </summary>
-        /// <param name="id">The index of the certificate request to generate.</param>
+        /// <param name="id">Id</param>
         /// <returns>A Response object with the file path or error message.</returns>
         public Response FinalCertificate(int id)
         {

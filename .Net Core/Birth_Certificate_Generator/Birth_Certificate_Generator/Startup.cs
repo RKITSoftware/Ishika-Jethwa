@@ -91,8 +91,6 @@ namespace Birth_Certificate_Generator
             });
             services.AddEndpointsApiExplorer();
 
-            
-
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -137,8 +135,6 @@ namespace Birth_Certificate_Generator
             // app.UseAuthenticationMiddleware();
             //   app.UseMiddleware<BasicAuthenticationMiddleware>();
             app.UseMiddleware<RequestLoggingMiddleware>();
-
-
 
             app.UseEndpoints(endpoints =>
             {
