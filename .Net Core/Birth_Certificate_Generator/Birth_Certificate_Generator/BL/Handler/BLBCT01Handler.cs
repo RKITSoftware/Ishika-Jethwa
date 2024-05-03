@@ -78,154 +78,161 @@ namespace Birth_Certificate_Generator.BL.Handler
             Response response = new Response();
             DataSet dtResult = _objDbBCR01.GetAllData(); // Get all data from the context
 
-            if (dtResult.Tables.Count != 0 && dtResult.Tables[0].Rows.Count > 0)
+            try
             {
-                DataRow row = dtResult.Tables[0].Rows[id - 1]; // Get the row by index
-                string childFirstName = row["D01F02"].ToString();
-                string RequestID = row["C01F01"].ToString();
-                string certificateNumber = Guid.NewGuid().ToString(); // Unique certificate number
-                DateTime issueDate = DateTime.Now;
-
-                _path = _path + "Certi_" + RequestID + "_" + childFirstName + "_" + ".pdf"; // Path for the generated PDF
-
-                // Create the PDF document
-                using (FileStream fs = new FileStream(_path, FileMode.Create))
+                if (dtResult.Tables.Count != 0 && dtResult.Tables[0].Rows.Count > 0)
                 {
-                    Document doc = new Document();
-                    PdfWriter writer = PdfWriter.GetInstance(doc, fs);
+                    DataRow row = dtResult.Tables[0].Rows[id - 1]; // Get the row by index
+                    string childFirstName = row["D01F02"].ToString();
+                    string RequestID = row["C01F01"].ToString();
+                    string certificateNumber = Guid.NewGuid().ToString(); // Unique certificate number
+                    DateTime issueDate = DateTime.Now;
 
-                    // Apply the custom page event for page borders
-                    writer.PageEvent = new PageBorderEvent(3f, 20f); // Border thickness and margin
+                    _path = _path + "Certi_" + RequestID + "_" + childFirstName + "_" + ".pdf"; // Path for the generated PDF
 
-                    doc.Open(); // Open the document for writing
-
-                    // Title with underline and proper spacing
-                    Font titleFont = new Font(Font.FontFamily.HELVETICA, 24, Font.BOLD);
-                    Chunk titleChunk = new Chunk("Birth Certificate", titleFont);
-                    titleChunk.SetUnderline(1f, -2f); // Underline the title
-                    Paragraph titleParagraph = new Paragraph(titleChunk)
+                    // Create the PDF document
+                    using (FileStream fs = new FileStream(_path, FileMode.Create))
                     {
-                        Alignment = Element.ALIGN_CENTER,
-                        SpacingAfter = 30 // Space after the title
-                    };
+                        Document doc = new Document();
+                        PdfWriter writer = PdfWriter.GetInstance(doc, fs);
 
-                    doc.Add(titleParagraph);
+                        // Apply the custom page event for page borders
+                        writer.PageEvent = new PageBorderEvent(3f, 20f); // Border thickness and margin
 
-                    // Create the table for certificate number and date of issue
-                    PdfPTable mainTable = new PdfPTable(2)
-                    {
-                        WidthPercentage = 100, // The table spans the entire width
-                        HorizontalAlignment = Element.ALIGN_CENTER,
-                        SpacingBefore = 20 // Space between the title and the table
-                    };
+                        doc.Open(); // Open the document for writing
 
-                    // Add certificate number and date of issue to the table
-                    void AddMainTableRow(string key, string value)
-                    {
-                        Font cellFont = new Font(Font.FontFamily.HELVETICA, 12, Font.BOLD);
-                        PdfPCell keyCell = new PdfPCell(new Phrase(key, cellFont))
+                        // Title with underline and proper spacing
+                        Font titleFont = new Font(Font.FontFamily.HELVETICA, 24, Font.BOLD);
+                        Chunk titleChunk = new Chunk("Birth Certificate", titleFont);
+                        titleChunk.SetUnderline(1f, -2f); // Underline the title
+                        Paragraph titleParagraph = new Paragraph(titleChunk)
                         {
-                            Border = PdfPCell.BOX, // Borders for the cell
-                            BorderWidth = 1f,
-                            Padding = 10f // Padding within the cell
+                            Alignment = Element.ALIGN_CENTER,
+                            SpacingAfter = 30 // Space after the title
                         };
 
-                        PdfPCell valueCell = new PdfPCell(new Phrase(value, cellFont))
+                        doc.Add(titleParagraph);
+
+                        // Create the table for certificate number and date of issue
+                        PdfPTable mainTable = new PdfPTable(2)
                         {
-                            Border = PdfPCell.BOX,
-                            BorderWidth = 1f,
-                            Padding = 10f // Padding within the cell
+                            WidthPercentage = 100, // The table spans the entire width
+                            HorizontalAlignment = Element.ALIGN_CENTER,
+                            SpacingBefore = 20 // Space between the title and the table
                         };
 
-                        mainTable.AddCell(keyCell); // Add key-value pairs to the table
-                        mainTable.AddCell(valueCell);
+                        // Add certificate number and date of issue to the table
+                        void AddMainTableRow(string key, string value)
+                        {
+                            Font cellFont = new Font(Font.FontFamily.HELVETICA, 12, Font.BOLD);
+                            PdfPCell keyCell = new PdfPCell(new Phrase(key, cellFont))
+                            {
+                                Border = PdfPCell.BOX, // Borders for the cell
+                                BorderWidth = 1f,
+                                Padding = 10f // Padding within the cell
+                            };
+
+                            PdfPCell valueCell = new PdfPCell(new Phrase(value, cellFont))
+                            {
+                                Border = PdfPCell.BOX,
+                                BorderWidth = 1f,
+                                Padding = 10f // Padding within the cell
+                            };
+
+                            mainTable.AddCell(keyCell); // Add key-value pairs to the table
+                            mainTable.AddCell(valueCell);
+                        }
+
+                        AddMainTableRow("Certificate Number", certificateNumber); // Add certificate number
+                        AddMainTableRow("Date of Issue", issueDate.ToString("dd-MM-yyyy HH:mm:ss")); // Add date of issue
+
+                        doc.Add(mainTable); // Add the first table to the document
+
+                        // Create the second table for additional personal information
+                        PdfPTable infoTable = new PdfPTable(2)
+                        {
+                            WidthPercentage = 100, // The table spans the entire width
+                            HorizontalAlignment = Element.ALIGN_CENTER,
+                            SpacingBefore = 20 // Space between the tables
+                        };
+
+                        // Adding rows for personal information to the second table
+                        void AddInfoTableRow(string key, string value)
+                        {
+                            Font cellFont = new Font(Font.FontFamily.HELVETICA, 12);
+                            PdfPCell keyCell = new PdfPCell(new Phrase(key, cellFont))
+                            {
+                                Border = PdfPCell.BOX,
+                                BorderWidth = 1f,
+                                Padding = 10f // Padding within the cell
+                            };
+
+                            PdfPCell valueCell = new PdfPCell(new Phrase(value, cellFont))
+                            {
+                                Border = PdfPCell.BOX,
+                                BorderWidth = 1f,
+                                Padding = 10f
+                            };
+
+                            infoTable.AddCell(keyCell); // Add key-value pairs to the second table
+                            infoTable.AddCell(valueCell);
+                        }
+
+                        // Add personal information to the second table
+                        AddInfoTableRow("Child's First Name", childFirstName); // Add child's first name
+                        AddInfoTableRow("Child's Last Name", row["D01F03"].ToString()); // Add child's last name
+                        AddInfoTableRow("Date of Birth", row["D01F04"].ToString()); // Add date of birth
+                        AddInfoTableRow("Place of Birth", row["D01F05"].ToString()); // Add place of birth
+                        AddInfoTableRow("Gender", row["D01F06"].ToString()); // Add gender
+                        AddInfoTableRow("Parent's Name", row["D01F07"].ToString()); // Add parent's name
+                        AddInfoTableRow("Submission Date", row["C01F03"].ToString()); // Add submission date
+
+                        doc.Add(infoTable); // Add the second table to the document
+
+                        // Authorized signature and underline
+                        Paragraph signatureParagraph = new Paragraph("Authorized Signature:", new Font(Font.FontFamily.HELVETICA, 14, Font.BOLD))
+                        {
+                            SpacingBefore = 270,
+                            Alignment = Element.ALIGN_RIGHT
+                        };
+
+                        doc.Add(signatureParagraph); // Add authorized signature section
+
+                        LineSeparator signatureLine = new LineSeparator(1f, 60f, BaseColor.BLACK, Element.ALIGN_RIGHT, -10f); // Signature line
+                        doc.Add(new Chunk(signatureLine)); // Add signature line
+
+                        // Insert the certificate record into the database
+                        BCT01 certificate = new BCT01
+                        {
+                            T01F02 = int.Parse(RequestID), // Request ID
+                            T01F03 = _path, // Path to the generated certificate
+                            T01F04 = issueDate // Certificate issue date
+                        };
+
+                        using (IDbConnection db = _dbFactory.OpenDbConnection())
+                        {
+                            db.Insert(certificate); // Insert the certificate record into the database
+
+                            BCR01 feildToUpdate = new BCR01
+                            {
+                                C01F01 = int.Parse(RequestID), // Certificate request ID
+                                C01F04 = EnmStatus.A.ToString() // Update the status to approved
+                            };
+
+                            db.UpdateOnlyFields<BCR01>(feildToUpdate, fields => new { fields.C01F04 }, where => where.C01F01 == int.Parse(RequestID));
+                        }
+
+                        doc.Close(); // Always close the document to save changes
                     }
 
-                    AddMainTableRow("Certificate Number", certificateNumber); // Add certificate number
-                    AddMainTableRow("Date of Issue", issueDate.ToString("dd-MM-yyyy HH:mm:ss")); // Add date of issue
-
-                    doc.Add(mainTable); // Add the first table to the document
-
-                    // Create the second table for additional personal information
-                    PdfPTable infoTable = new PdfPTable(2)
-                    {
-                        WidthPercentage = 100, // The table spans the entire width
-                        HorizontalAlignment = Element.ALIGN_CENTER,
-                        SpacingBefore = 20 // Space between the tables
-                    };
-
-                    // Adding rows for personal information to the second table
-                    void AddInfoTableRow(string key, string value)
-                    {
-                        Font cellFont = new Font(Font.FontFamily.HELVETICA, 12);
-                        PdfPCell keyCell = new PdfPCell(new Phrase(key, cellFont))
-                        {
-                            Border = PdfPCell.BOX,
-                            BorderWidth = 1f,
-                            Padding = 10f // Padding within the cell
-                        };
-
-                        PdfPCell valueCell = new PdfPCell(new Phrase(value, cellFont))
-                        {
-                            Border = PdfPCell.BOX,
-                            BorderWidth = 1f,
-                            Padding = 10f
-                        };
-
-                        infoTable.AddCell(keyCell); // Add key-value pairs to the second table
-                        infoTable.AddCell(valueCell);
-                    }
-
-                    // Add personal information to the second table
-                    AddInfoTableRow("Child's First Name", childFirstName); // Add child's first name
-                    AddInfoTableRow("Child's Last Name", row["D01F03"].ToString()); // Add child's last name
-                    AddInfoTableRow("Date of Birth", row["D01F04"].ToString()); // Add date of birth
-                    AddInfoTableRow("Place of Birth", row["D01F05"].ToString()); // Add place of birth
-                    AddInfoTableRow("Gender", row["D01F06"].ToString()); // Add gender
-                    AddInfoTableRow("Parent's Name", row["D01F07"].ToString()); // Add parent's name
-                    AddInfoTableRow("Submission Date", row["C01F03"].ToString()); // Add submission date
-
-                    doc.Add(infoTable); // Add the second table to the document
-
-                    // Authorized signature and underline
-                    Paragraph signatureParagraph = new Paragraph("Authorized Signature:", new Font(Font.FontFamily.HELVETICA, 14, Font.BOLD))
-                    {
-                        SpacingBefore = 270,
-                        Alignment = Element.ALIGN_RIGHT
-                    };
-
-                    doc.Add(signatureParagraph); // Add authorized signature section
-
-                    LineSeparator signatureLine = new LineSeparator(1f, 60f, BaseColor.BLACK, Element.ALIGN_RIGHT, -10f); // Signature line
-                    doc.Add(new Chunk(signatureLine)); // Add signature line
-
-                    // Insert the certificate record into the database
-                    BCT01 certificate = new BCT01
-                    {
-                        T01F02 = int.Parse(RequestID), // Request ID
-                        T01F03 = _path, // Path to the generated certificate
-                        T01F04 = issueDate // Certificate issue date
-                    };
-
-                    using (IDbConnection db = _dbFactory.OpenDbConnection())
-                    {
-                        db.Insert(certificate); // Insert the certificate record into the database
-
-                        BCR01 feildToUpdate = new BCR01
-                        {
-                            C01F01 = int.Parse(RequestID), // Certificate request ID
-                            C01F04 = EnmStatus.A.ToString() // Update the status to approved
-                        };
-
-                        db.UpdateOnlyFields<BCR01>(feildToUpdate, fields => new { fields.C01F04 }, where => where.C01F01 == int.Parse(RequestID));
-                    }
-
-                    doc.Close(); // Always close the document to save changes
+                    response.Message = _path; // Path to the generated certificate PDF
                 }
 
-                response.Message = _path; // Path to the generated certificate PDF
             }
-
+            catch (Exception ex)
+            {
+                response.Message = ex.Message;
+            }
             return response; // Return the response object
         }
 

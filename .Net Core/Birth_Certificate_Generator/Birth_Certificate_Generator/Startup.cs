@@ -3,6 +3,8 @@ using Birth_Certificate_Generator.BL.Interface;
 using Birth_Certificate_Generator.DL;
 using Birth_Certificate_Generator.Filters;
 using Birth_Certificate_Generator.Middleware;
+using Birth_Certificate_Generator.Other;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.OpenApi.Models;
 using NLog.Extensions.Logging;
 using ServiceStack.OrmLite;
@@ -97,15 +99,35 @@ namespace Birth_Certificate_Generator
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI();
+                app.UseDeveloperExceptionPage(new DeveloperExceptionPageOptions
+                {
+                    SourceCodeLineCount = 10
+                });
             }
-            else
+
+
+            //app.UseExceptionHandler(a => a.Run(async context =>
+            //{
+            //    await CustomExceptionHandler.HandleExceptionAsync(context);
+            //}));
+
+            //Using UseDeveloperExceptionPage Middleware to Show Exception Details
+            app.UseExceptionHandler(a => a.Run(async context =>
             {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
-            }
+                var exceptionHandlerPathFeature = context.Features.Get<IExceptionHandlerPathFeature>();
+                var exception = exceptionHandlerPathFeature.Error;
+
+                context.Response.ContentType = "text/html";
+                await context.Response.WriteAsync("<html><body>\r\n");
+                await context.Response.WriteAsync("Custom Error Page<br><br>\r\n");
+
+                // Display custom error details
+                await context.Response.WriteAsync($"<strong>Error:</strong> {exception.Message}<br>\r\n");
+                await context.Response.WriteAsync("</body></html>\r\n");
+            }));
+
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

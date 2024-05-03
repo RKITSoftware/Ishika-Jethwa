@@ -56,7 +56,7 @@ namespace Birth_Certificate_Generator.Controllers
 
                     if (!System.IO.File.Exists(path))
                     {
-                        return NotFound("PDF file not found."); 
+                        return NotFound(response.Message); 
                     }
 
                    
