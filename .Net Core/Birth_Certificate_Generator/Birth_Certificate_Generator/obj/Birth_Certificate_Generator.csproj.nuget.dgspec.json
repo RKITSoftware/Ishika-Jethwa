@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\demo\\ASP.NET Core\\API\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj": {}
+    "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj": {}
   },
   "projects": {
-    "C:\\demo\\ASP.NET Core\\API\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj": {
+    "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\demo\\ASP.NET Core\\API\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj",
+        "projectUniqueName": "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj",
         "projectName": "Birth_Certificate_Generator",
-        "projectPath": "C:\\demo\\ASP.NET Core\\API\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj",
+        "projectPath": "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj",
         "packagesPath": "C:\\Users\\ishika.j\\.nuget\\packages\\",
-        "outputPath": "C:\\demo\\ASP.NET Core\\API\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\obj\\",
+        "outputPath": "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ishika.j\\AppData\\Roaming\\NuGet\\NuGet.Config",
