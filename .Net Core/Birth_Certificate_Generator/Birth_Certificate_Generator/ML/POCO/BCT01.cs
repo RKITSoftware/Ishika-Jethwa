@@ -1,6 +1,4 @@
-﻿
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using ServiceStack.DataAnnotations;
 
 namespace Birth_Certificate_Generator.ML.POCO
 {
@@ -12,32 +10,26 @@ namespace Birth_Certificate_Generator.ML.POCO
         /// <summary>
         /// CertificateId
         /// </summary>
-
-        [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [PrimaryKey]
+        [AutoIncrement]
         public int T01F01 { get; set; }
 
         /// <summary>
         /// RequestId
         /// </summary>
-        [Required(ErrorMessage = "requestid must not be empty")]
+        [System.ComponentModel.DataAnnotations.Required(ErrorMessage = "requestid must not be empty")]
         public int T01F02 { get; set; }
 
         /// <summary>
         /// CertificateNumber
         /// </summary>
-        [Required(ErrorMessage = "CertificateNumber must not be empty")]
+        [System.ComponentModel.DataAnnotations.Required(ErrorMessage = "CertificateNumber must not be empty")]
         public string T01F03 { get; set; }
 
         /// <summary>
         /// IssueDate
         /// </summary>
-        [Required(ErrorMessage = "IssueDate must not be empty")]
-        public DateTime T01F04 { get; set; }
-
-      
+        [System.ComponentModel.DataAnnotations.Required(ErrorMessage = "IssueDate must not be empty")]
+        public DateTime T01F04 { get; set; }  
     }
-
-
 }

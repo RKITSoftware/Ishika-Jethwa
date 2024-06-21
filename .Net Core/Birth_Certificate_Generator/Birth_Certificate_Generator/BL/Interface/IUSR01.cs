@@ -4,7 +4,7 @@ using Birth_Certificate_Generator.ML;
 namespace Birth_Certificate_Generator.BL.Interface
 {
     /// <summary>
-    /// Interface for user-related operations, including retrieval, validation, and CRUD operations.
+    /// Interface for user-related operations.
     /// </summary>
     public interface IUSR01
     {
@@ -22,19 +22,19 @@ namespace Birth_Certificate_Generator.BL.Interface
         Response GetUserByusername(string username);
 
         /// <summary>
-        /// Prepares a user record for saving, including data conversion and default values.
+        /// Presave a user record including data conversion and default values.
         /// </summary>
-        /// <param name="objDtoUse01">The data transfer object representing the user record.</param>
+        /// <param name="objDtoUse01">The DTO representing the user record.</param>
         void PreSave(DTOUSR01 objDtoUse01);
 
         /// <summary>
-        /// Validates a user record to ensure it meets business rules and doesn't duplicate existing records.
+        /// Validates a user record .
         /// </summary>
         /// <returns>A Response object indicating validation success or failure.</returns>
         Response Validate();
 
         /// <summary>
-        /// Saves a user record to the database, either by inserting a new record or updating an existing one.
+        /// Saves a user record to the database,inserting or updating.
         /// </summary>
         /// <returns>A Response object indicating the success or failure of the operation.</returns>
         Response Save();

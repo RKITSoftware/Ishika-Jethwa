@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DevExtreme File Upload Demo</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <style>
+        .group-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .group-label {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background-color: white;
+            padding: 0 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="photo-container">
+            <img id="uploadedPhoto" class="uploaded-photo" alt="Uploaded Photo">
+        </div>
+        <div id="fileUploaderContainer"></div>
+        <div class="content" id="selected-files">
+            <div>
+                <h4>Selected Files</h4>
+            </div>
+        </div>
+    </div>
+    <div class="options">
+        <div id="accept-option"></div>
+        <div id="upload-option"></div>
+        <div id="multiple-option"></div>
+    </div>
+
+    <script src="fileupload.js"></script>
+</body>
+
+</html>

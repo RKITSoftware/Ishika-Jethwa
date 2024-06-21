@@ -1,0 +1,400 @@
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.dll.config
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.pdb
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.exe
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.exe.config
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.rsp
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.exe
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.exe.config
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.rsp
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.AppContext.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Collections.Immutable.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Console.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Globalization.Calendars.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.Compression.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.FileSystem.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Net.Http.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Net.Sockets.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Reflection.Metadata.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.ValueTuple.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XPath.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.exe
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.exe.config
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.rsp
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\VBCSCompiler.exe
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\VBCSCompiler.exe.config
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\BouncyCastle.Cryptography.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Dapper.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.Streams.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Hash.xxHash.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Json.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Physical.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Primitives.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\MySql.Data.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Newtonsoft.Json.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Common.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Interfaces.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Text.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Buffers.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Configuration.ConfigurationManager.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Diagnostics.DiagnosticSource.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.IO.Pipelines.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Memory.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Net.Http.Formatting.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Numerics.Vectors.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Runtime.CompilerServices.Unsafe.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Encodings.Web.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Json.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Threading.Tasks.Extensions.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.ValueTuple.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.WebHost.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ZstdSharp.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\BouncyCastle.Cryptography.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Dapper.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.pdb
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.Streams.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Hash.xxHash.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Bcl.AsyncInterfaces.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Json.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Physical.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Primitives.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\MySql.Data.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Common.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Text.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Buffers.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Diagnostics.DiagnosticSource.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.IO.Pipelines.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Memory.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Numerics.Vectors.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Runtime.CompilerServices.Unsafe.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Encodings.Web.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Json.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Threading.Tasks.Extensions.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.ValueTuple.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Newtonsoft.Json.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Net.Http.Formatting.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.WebHost.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csproj.AssemblyReference.cache
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csproj.CoreCompileInputs.cache
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csproj.CopyComplete
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.pdb
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Web.Infrastructure.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Swashbuckle.Core.dll
+F:\Demo\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\WebActivatorEx.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csprojAssemblyReference.cache
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csproj.CoreCompileInputs.cache
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.pdb
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.dll.config
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.pdb
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.exe
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.exe.config
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.rsp
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.exe
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.exe.config
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.rsp
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.AppContext.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Collections.Immutable.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Console.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Globalization.Calendars.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.Compression.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.FileSystem.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Net.Http.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Net.Sockets.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Reflection.Metadata.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.ValueTuple.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XPath.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.exe
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.exe.config
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.rsp
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\VBCSCompiler.exe
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\VBCSCompiler.exe.config
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\BouncyCastle.Cryptography.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Dapper.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.Streams.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Hash.xxHash.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Json.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Primitives.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Web.Infrastructure.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\MySql.Data.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Newtonsoft.Json.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Common.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Interfaces.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.MySql.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Text.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Swashbuckle.Core.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Buffers.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Configuration.ConfigurationManager.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.IO.Pipelines.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Memory.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Net.Http.Formatting.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Numerics.Vectors.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Encodings.Web.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Json.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Threading.Tasks.Extensions.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.ValueTuple.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.WebHost.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\WebActivatorEx.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ZstdSharp.dll
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\BouncyCastle.Cryptography.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Dapper.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.pdb
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.Streams.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Hash.xxHash.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Json.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Physical.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Primitives.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\MySql.Data.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Common.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.MySql.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Text.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Buffers.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.IO.Pipelines.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Memory.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Numerics.Vectors.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Encodings.Web.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Json.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Threading.Tasks.Extensions.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.ValueTuple.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Newtonsoft.Json.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Net.Http.Formatting.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.WebHost.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Desktop\ASP.NET Core\API\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csproj.CopyComplete
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.dll.config
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\DBCrudFrmaework.pdb
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.exe
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.exe.config
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csc.rsp
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.exe
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.exe.config
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\csi.rsp
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Managed.Core.targets
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.AppContext.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Collections.Immutable.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Console.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Globalization.Calendars.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.Compression.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.FileSystem.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Net.Http.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Net.Sockets.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Reflection.Metadata.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.ValueTuple.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XmlDocument.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XPath.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.exe
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.exe.config
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\vbc.rsp
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\VBCSCompiler.exe
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\roslyn\VBCSCompiler.exe.config
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\BouncyCastle.Cryptography.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Dapper.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.Streams.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Hash.xxHash.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Json.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Physical.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Primitives.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Web.Infrastructure.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\MySql.Data.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Newtonsoft.Json.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Common.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Interfaces.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.MySql.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Text.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Swashbuckle.Core.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Buffers.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Configuration.ConfigurationManager.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Diagnostics.DiagnosticSource.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.IO.Pipelines.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Memory.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Net.Http.Formatting.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Numerics.Vectors.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Encodings.Web.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Json.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Threading.Tasks.Extensions.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.ValueTuple.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.WebHost.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\WebActivatorEx.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ZstdSharp.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\BouncyCastle.Cryptography.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Dapper.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.pdb
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Google.Protobuf.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Compression.LZ4.Streams.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\K4os.Hash.xxHash.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Configuration.Json.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileProviders.Physical.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.Extensions.Primitives.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\MySql.Data.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Common.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.OrmLite.MySql.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\ServiceStack.Text.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Buffers.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Diagnostics.DiagnosticSource.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.IO.Pipelines.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Memory.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Numerics.Vectors.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Encodings.Web.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Text.Json.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Threading.Tasks.Extensions.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.ValueTuple.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Newtonsoft.Json.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Net.Http.Formatting.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\System.Web.Http.WebHost.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csproj.AssemblyReference.cache
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csproj.CoreCompileInputs.cache
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.csproj.CopyComplete
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.dll
+C:\demo\advanceTopic\DBCrudFrmaework\DBCrudFrmaework\obj\Debug\DBCrudFrmaework.pdb

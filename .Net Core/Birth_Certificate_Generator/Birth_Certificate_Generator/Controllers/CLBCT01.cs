@@ -2,8 +2,6 @@
 using Birth_Certificate_Generator.Filters;
 using Birth_Certificate_Generator.ML;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
 
 namespace Birth_Certificate_Generator.Controllers
 {
@@ -27,22 +25,23 @@ namespace Birth_Certificate_Generator.Controllers
         #endregion
 
         /// <summary>
-        /// Initializes a new instance of the CLBCT01 controller with the specified birth certificate service.
+        /// instance of the CLBCT01 controller with the specified birth certificate service.
         /// </summary>
-        /// <param name="obj">Service for birth certificate operations.</param>
-        public CLBCT01(IBCT01 obj)
+        /// <param name="objBCT01">Service for birth certificate operations.</param>
+        public CLBCT01(IBCT01 objBCT01)
         {
-            _objBCT01 = obj;
+            _objBCT01 = objBCT01;
+           
         }
 
         /// <summary>
-        /// Retrieves a birth certificate by its ID, generates it if needed, and returns it as a PDF file.
+        /// Retrieves a birth certificate by its ID and also send it to the user's email.
         /// </summary>
         /// <param name="id">The ID of the birth certificate to retrieve.</param>
-        /// <returns>The PDF file of the birth certificate or an appropriate HTTP status if an error occurs.</returns>
+        /// <returns>The PDF file of the birth certificate.</returns>
         [HttpGet]
         [Route("GetCertificate/{id}")]
-        [AuthorizationFilter("Admin")]
+        [AuthorizationFilter("A")]
         public IActionResult GetCertificate(int id)
         {
             response = _objBCT01.Validation(id); 
@@ -56,13 +55,9 @@ namespace Birth_Certificate_Generator.Controllers
 
                     if (!System.IO.File.Exists(path))
                     {
-                        return NotFound(response.Message); 
+                        return Ok(response); 
                     }
-
-                   
                     byte[] pdfBytes = System.IO.File.ReadAllBytes(path);
-
-                   
                     return File(pdfBytes, "application/pdf", Path.GetFileName(path));
                 }
             }

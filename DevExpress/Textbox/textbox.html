@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DevExtreme TextBox Demo</title>
+    <!-- Include necessary libraries and stylesheets -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <style>
+        /* CSS for TextBox-container and label */
+        .TextBox-table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .TextBox-table th,
+        .TextBox-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .TextBox-table td:first-child,
+        .TextBox-table th:first-child {
+            min-width: 150px;
+            text-align: center;
+        }
+
+
+        .TextBox-container .dx-TextBox {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="TextBox-table">
+        <tr>
+            <th>Label</th>
+            <th>TextBox</th>
+        </tr>
+        <tr>
+            <td>All Configuration</td>
+            <td id="simple"></td>
+        </tr>
+        <tr>
+            <td>placeholder TextBox</td>
+            <td id="placeholder"></td>
+        </tr>
+        <tr>
+            <td>clear-button TextBox</td>
+            <td id="clear-button"></td>
+        </tr>
+        <tr>
+            <td>password TextBox</td>
+            <td id="password"></td>
+        </tr>
+        <tr>
+            <td>mask TextBox</td>
+            <td id="mask"></td>
+        </tr>
+        <tr>
+            <td>disabled</td>
+            <td id="disabled"></td>
+        </tr>
+        <tr>
+            <td>full-name </td>
+            <td id="full-name"></td>
+        </tr>
+        <tr>
+            <td>email </td>
+            <td id="email"></td>
+        </tr>
+        
+    </table>
+
+   
+
+    <script src="textbox.js"></script>
+</body>
+
+</html>

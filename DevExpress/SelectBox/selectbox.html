@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DevExtreme SelectBox Demo</title>
+    <!-- Include necessary libraries and stylesheets -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <style>
+        /* CSS for SelectBox-container and label */
+        .SelectBox-table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .SelectBox-table th,
+        .SelectBox-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .SelectBox-table td:first-child,
+        .SelectBox-table th:first-child {
+            min-width: 150px;
+            text-align: center;
+        }
+
+
+        .SelectBox-container .dx-SelectBox {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="SelectBox-table">
+        <tr>
+            <th>Label</th>
+            <th>SelectBox</th>
+        </tr>
+        <tr>
+            <td>All Configuration</td>
+            <td id="SelectBox1-container"></td>
+        </tr>
+        <tr>
+            <td>products</td>
+            <td id="products-simple"></td>
+        </tr>
+        <tr>
+            <td>products-placeholder</td>
+            <td id="products-placeholder"></td>
+        </tr>
+        <tr>
+            <td>products-read-only</td>
+            <td id="products-read-only"></td>
+        </tr>
+        <tr>
+            <td>products-disabled</td>
+            <td id="products-disabled"></td>
+        </tr>
+     
+        <tr>
+            <td>product-handler</td>
+            <td id="product-handler"></td>
+        </tr>
+        <tr>
+            <td>State of Domicile</td>
+            <td id="stateOfDomicile"></td>
+        </tr>
+     
+    </table>
+<script src="data.js"></script>
+ 
+    <script src="SelectBox.js"></script>
+</body>
+
+</html>

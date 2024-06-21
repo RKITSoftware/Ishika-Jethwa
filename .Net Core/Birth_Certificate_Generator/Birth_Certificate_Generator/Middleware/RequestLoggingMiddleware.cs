@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using NLog;
+using System.Text;
 
 namespace Birth_Certificate_Generator.Middleware
 {
@@ -8,17 +9,35 @@ namespace Birth_Certificate_Generator.Middleware
     public class RequestLoggingMiddleware
     {
         #region Private Members
+        // Private field to hold the next middleware delegate
         private readonly RequestDelegate _next;
-        private readonly ILogger<RequestLoggingMiddleware> _logger;
+        // NLog logger instance
+        private static readonly Logger _logger = LogManager.GetCurrentClassLogger();
+
+        #endregion
+
+        #region Constructor
+
+        /// <summary>
+        /// Constructor for RequestLoggingMiddleware.
+        /// </summary>
+        /// <param name="next">The next middleware in the pipeline.</param>
+
+        public RequestLoggingMiddleware(RequestDelegate next)
+        {
+            _next = next;
+        }
+
         #endregion
 
         #region Private Method
 
         /// <summary>
-        /// Logs the details of the HTTP request.
+        /// Logs the incoming HTTP request.
         /// </summary>
-        /// <param name="request">The HTTP request to log.</param>
-        private void LogRequest(HttpRequest request)
+        /// <param name="request">The HTTP request.</param>
+        /// <returns>The log message for the request.</returns>
+        private string LogRequest(HttpRequest request)
         {
             StringBuilder logMessage = new StringBuilder();
             logMessage.AppendLine($"[Timestamp]: {DateTime.Now}");
@@ -32,74 +51,101 @@ namespace Birth_Certificate_Generator.Middleware
             }
             logMessage.AppendLine("--------------------------------------------------------------------------");
 
-            // Log the request information
-            _logger.LogInformation(logMessage.ToString());
+            return logMessage.ToString();
         }
-
         /// <summary>
-        /// Logs the details of the HTTP response.
+        /// Logs the outgoing HTTP response.
         /// </summary>
-        /// <param name="response">The HTTP response to log.</param>
-        private void LogResponse(HttpResponse response)
+        /// <param name="response">The HTTP response.</param>
+        /// <param name="responseBody">The response body stream.</param>
+        /// <returns>The log message for the response.</returns>
+        private string LogResponse(HttpResponse response, Stream responseBody)
         {
             StringBuilder logMessage = new StringBuilder();
             logMessage.AppendLine($"[ResponseStatusCode]: {response.StatusCode}");
             logMessage.AppendLine($"[ResponseContentType]: {response.ContentType}");
+            logMessage.AppendLine("[ResponseBody]:");
+
+            responseBody.Seek(0, SeekOrigin.Begin);
+            using (StreamReader reader = new StreamReader(responseBody, Encoding.UTF8, true, 1024, true))
+            {
+                logMessage.AppendLine(reader.ReadToEnd());
+            }
+
             logMessage.AppendLine("--------------------------------------------------------------------------");
 
-            // Log the response information
-            _logger.LogInformation(logMessage.ToString());
+            return logMessage.ToString();
         }
         #endregion
 
-
         #region Public Method
-        /// <summary>
-        /// Initializes a new instance of the RequestLoggingMiddleware class.
-        /// </summary>
-        /// <param name="next">The next middleware in the pipeline.</param>
-        /// <param name="logger">Logger for recording request and response details.</param>
-        public RequestLoggingMiddleware(RequestDelegate next, ILogger<RequestLoggingMiddleware> logger)
-        {
-            _next = next;
-            _logger = logger;
-        }
 
         /// <summary>
-        /// Middleware invoke method that logs incoming requests and outgoing responses.
+        /// Middleware Invoke method to handle logging of requests and responses.
         /// </summary>
-        /// <param name="httpContext">The HTTP context for the request and response.</param>
-        /// <returns>A task representing the asynchronous operation.</returns>
+        /// <param name="httpContext">HTTP context.</param>
         public async Task Invoke(HttpContext httpContext)
         {
-            // Log request details
-            LogRequest(httpContext.Request);
+            string requestLog = LogRequest(httpContext.Request);
+            string responseBodyText = string.Empty;
 
-            // Call the next middleware in the pipeline
-            await _next(httpContext);
-
-            // Log response details, if available
-            if (httpContext.Response != null)
+            if (httpContext.Request.Headers.TryGetValue("Authorization", out var token))
             {
-                LogResponse(httpContext.Response);
+                if (token.ToString().StartsWith("Bearer "))
+                {
+                    var jwtToken = token.ToString().Substring(7); // Remove "Bearer " prefix
+                    var logEvent = new LogEventInfo(NLog.LogLevel.Info, _logger.Name, requestLog);
+                    logEvent.Properties["jwt"] = jwtToken;
+
+                    _logger.Log(logEvent);
+                }
+            }
+
+            var originalResponseBodyStream = httpContext.Response.Body;
+
+            using (var responseBodyStream = new MemoryStream())
+            {
+                httpContext.Response.Body = responseBodyStream;
+
+                await _next(httpContext);
+
+                httpContext.Response.Body.Seek(0, SeekOrigin.Begin);
+                responseBodyText = LogResponse(httpContext.Response, responseBodyStream);
+                httpContext.Response.Body.Seek(0, SeekOrigin.Begin);
+
+                await responseBodyStream.CopyToAsync(originalResponseBodyStream);
+            }
+            //originalResponseBodyStream.Position = 0;
+
+            if (!string.IsNullOrEmpty(responseBodyText))
+            {
+                if (httpContext.Request.Headers.TryGetValue("Authorization", out var tokena))
+                {
+                    if (tokena.ToString().StartsWith("Bearer "))
+                    {
+                        var jwtToken = token.ToString().Substring(7);
+                        var logEvent = new LogEventInfo(NLog.LogLevel.Info, _logger.Name, responseBodyText);
+                        logEvent.Properties["jwt"] = jwtToken;
+
+                        _logger.Log(logEvent);
+                    }
+                }
             }
         }
 
         #endregion
-
-
     }
 
     /// <summary>
-    /// Extension methods for adding middleware to the application pipeline.
+    /// Extension method for adding RequestLoggingMiddleware to the application's middleware pipeline.
     /// </summary>
     public static class MiddlewareExtensions
     {
         /// <summary>
-        /// Adds the RequestLoggingMiddleware to the application pipeline.
+        /// Adds the RequestLoggingMiddleware to the application's middleware pipeline.
         /// </summary>
-        /// <param name="builder">The application builder.</param>
-        /// <returns>The application builder with the middleware added.</returns>
+        /// <param name="builder">The IApplicationBuilder instance.</param>
+        /// <returns>The IApplicationBuilder instance.</returns>
         public static IApplicationBuilder UseRequestLogging(this IApplicationBuilder builder)
         {
             return builder.UseMiddleware<RequestLoggingMiddleware>();

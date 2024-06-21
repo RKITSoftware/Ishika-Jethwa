@@ -1,5 +1,6 @@
 ﻿using Birth_Certificate_Generator.BL.Interface;
-using Birth_Certificate_Generator.DL;
+using Birth_Certificate_Generator.Connection;
+using Birth_Certificate_Generator.DL.Interface;
 using Birth_Certificate_Generator.ML;
 using Birth_Certificate_Generator.ML.POCO;
 using Birth_Certificate_Generator.Other;
@@ -18,31 +19,39 @@ namespace Birth_Certificate_Generator.BL.Handler
     {
         #region Private Members
         /// <summary>
-        /// Instance of DBBCR01Context.
+        /// interface for birth certificate request data operations.
         /// </summary>
-        private readonly DBBCR01Context _objDbBCR01;
+        private readonly IBCR01Repository _objBCR01Service;
 
         /// <summary>
-        /// Instance of DbFactory.
+        /// Service for Email Operation
         /// </summary>
-        private readonly OrmLiteConnectionFactory _dbFactory;
+        private readonly IEmailService _email;
 
         /// <summary>
-        /// Path String (Downloads Path).
+        /// ORM Lite connection factory for database operations.
+        /// </summary>
+        private readonly IOrmLiteContext _dbFactory;
+
+        /// <summary>
+        /// The path where generated certificate PDFs are stored.
         /// </summary>
         private string _path = Directory.GetCurrentDirectory() + "\\Certificate\\";
         #endregion
 
         #region Constructor
+
         /// <summary>
-        /// Constructor for Initialising Db Factory and DBBCR01Context
+        /// instance of the BLBCT01Handler class with the specified interface Repository ,ORM Lite factory and Email service.
         /// </summary>
-        /// <param name="dbBCR01Context">DBBCR01Context Instance</param>
-        /// <param name="dbFactory">DbFactory Instance</param>
-        public BLBCT01Handler(DBBCR01Context dbBCR01Context, OrmLiteConnectionFactory dbFactory)
+        /// <param name="objBCR01Service">Database context for birth certificate requests.</param>
+        /// <param name="dbFactory">ORM Lite connection factory for database operations.</param>
+        /// <param name="email">Email Service For Sending Certificate to user's email</param>
+        public BLBCT01Handler(IBCR01Repository objBCR01Service, IOrmLiteContext dbFactory, IEmailService email)
         {
-            _objDbBCR01 = dbBCR01Context;
+            _objBCR01Service = objBCR01Service;
             _dbFactory = dbFactory;
+            _email = email;
         }
         #endregion
 
@@ -50,39 +59,39 @@ namespace Birth_Certificate_Generator.BL.Handler
         /// <summary>
         /// Validates whether a certificate request with the given ID already exists.
         /// </summary>
-        /// <param name="requestId">Request Id</param>
-        /// <returns>Response with Validation Message.</returns>
+        /// <param name="requestId">The ID of the certificate request to validate.</param>
+        /// <returns>A Response object indicating validation success or failure.</returns>
         public Response Validation(int requestId)
         {
             Response response = new Response();
-            using (IDbConnection db = _dbFactory.OpenDbConnection())
+            int count;
+            using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
             {
-                int count = (int)db.Count<BCT01>(x => x.T01F02 == requestId); // Check if the request ID exists
-                if (count > 0)
-                {
-                    response.IsSuccess = false;
-                    response.Message = $"Request ID {requestId} already exists."; // Handle duplicate case
-                }
+                count = (int)db.Count<BCT01>(x => x.T01F02 == requestId); // Check if the request ID exists
             }
-
+            if (count > 0)
+            {
+                response.IsSuccess = false;
+                response.Message = $"Request ID {requestId} already exists."; // Handle duplicate case
+            }
             return response;
         }
 
         /// <summary>
         /// Generates a birth certificate PDF and updates the database with the new certificate.
         /// </summary>
-        /// <param name="id">Id</param>
+        /// <param name="id">the certificate requestId  to generate.</param>
         /// <returns>A Response object with the file path or error message.</returns>
         public Response FinalCertificate(int id)
         {
             Response response = new Response();
-            DataSet dtResult = _objDbBCR01.GetAllData(); // Get all data from the context
+            DataTable dtResult = _objBCR01Service.GetDataByID(id); // Get all data from the context
 
             try
             {
-                if (dtResult.Tables.Count != 0 && dtResult.Tables[0].Rows.Count > 0)
+                if (dtResult.Rows.Count > 0)
                 {
-                    DataRow row = dtResult.Tables[0].Rows[id - 1]; // Get the row by index
+                    DataRow row = dtResult.Rows[0]; // Get the row by index
                     string childFirstName = row["D01F02"].ToString();
                     string RequestID = row["C01F01"].ToString();
                     string certificateNumber = Guid.NewGuid().ToString(); // Unique certificate number
@@ -209,7 +218,7 @@ namespace Birth_Certificate_Generator.BL.Handler
                             T01F04 = issueDate // Certificate issue date
                         };
 
-                        using (IDbConnection db = _dbFactory.OpenDbConnection())
+                        using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
                         {
                             db.Insert(certificate); // Insert the certificate record into the database
 
@@ -218,7 +227,7 @@ namespace Birth_Certificate_Generator.BL.Handler
                                 C01F01 = int.Parse(RequestID), // Certificate request ID
                                 C01F04 = EnmStatus.A.ToString() // Update the status to approved
                             };
-
+                            
                             db.UpdateOnlyFields<BCR01>(feildToUpdate, fields => new { fields.C01F04 }, where => where.C01F01 == int.Parse(RequestID));
                         }
 
@@ -226,6 +235,9 @@ namespace Birth_Certificate_Generator.BL.Handler
                     }
 
                     response.Message = _path; // Path to the generated certificate PDF
+                    string email = row["D01F09"].ToString();
+                    byte[] pdfBytes = System.IO.File.ReadAllBytes(_path);
+                    _email.Send(email, "Certificate", pdfBytes);
                 }
 
             }
@@ -250,8 +262,9 @@ namespace Birth_Certificate_Generator.BL.Handler
 
         #endregion
 
+        #region Public Method
         /// <summary>
-        /// Initializes a new instance of the PageBorderEvent with the specified border thickness and margin.
+        /// instance of the PageBorderEvent with the specified border thickness and margin.
         /// </summary>
         /// <param name="borderThickness">The thickness of the border to draw.</param>
         /// <param name="margin">The margin within which the border is drawn.</param>
@@ -284,5 +297,7 @@ namespace Birth_Certificate_Generator.BL.Handler
 
             content.Stroke(); // Draw the border
         }
+
+        #endregion 
     }
 }

@@ -11,7 +11,7 @@
   "profiles": {
     "Birth_Certificate_Generator": {
       "commandName": "Project",
-      "dotnetRunMessages": true,
+      "dotnetRunMessages": false,
       "launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5268",

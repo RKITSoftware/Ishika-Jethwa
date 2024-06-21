@@ -6,7 +6,7 @@ namespace Birth_Certificate_Generator.Connection
     /// <summary>
     /// Provides an ORM Lite context for establishing database connections.
     /// </summary>
-    public class OrmLiteContext
+    public class OrmLiteContext : IOrmLiteContext
     {
         /// <summary>
         /// The database connection factory used to create connections.
@@ -14,7 +14,7 @@ namespace Birth_Certificate_Generator.Connection
         public IDbConnectionFactory DbFactory { get; }
 
         /// <summary>
-        /// Initializes a new instance of the OrmLiteContext with a specified connection string.
+        /// instance of the OrmLiteContext with a specified connection string.
         /// </summary>
         /// <param name="connectionString">The database connection string.</param>
         public OrmLiteContext(string connectionString)

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DevExtreme CheckBox Demo</title>
+    <!-- Include necessary libraries and stylesheets -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <style>
+        /* CSS for checkbox-container and label */
+        .checkbox-table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .checkbox-table th,
+        .checkbox-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .checkbox-table td:first-child,
+        .checkbox-table th:first-child {
+            min-width: 150px;
+           text-align: center;
+        }
+
+       
+        .checkbox-container .dx-checkbox {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="checkbox-table">
+        <tr>
+            <th>Label</th>
+            <th>Checkbox</th>
+        </tr>
+        <tr>
+            <td>All Configuration</td>
+            <td id="checkbox1-container"></td>
+        </tr>
+        <tr>
+            <td>Checked CheckBox</td>
+            <td id="Checked"></td>
+        </tr>
+        <tr>
+            <td>un-Checked CheckBox</td>
+            <td id="un-Checked"></td>
+        </tr>
+        <tr>
+            <td>Disable CheckBox</td>
+            <td id="Disable"></td>
+        </tr>
+        <tr>
+            <td>ReadOnly CheckBox</td>
+            <td id="ReadOnly"></td>
+        </tr>
+        <tr>
+            <td>AccessKey</td>
+            <td id="AccessKey"></td>
+        </tr>
+        <tr>
+            <td>InValid CheckBox</td>
+            <td id="InValid"></td>
+        </tr>
+        <tr>
+            <td>Labeled CheckBox</td>
+            <td id="Labeled"></td>
+        </tr>
+        <tr>
+            <td>Update Value</td>
+            <td id="Update"></td>
+        </tr>
+    </table>
+
+    <button id="focusButton">Focus CheckBox</button>
+    <button id="disposeButton">Dispose CheckBox</button>
+    <button id="updateOptionButton">Update Text Option</button>
+    <button id="resetOptionButton">Reset Option</button>
+  
+    <script src="checkbox.js"></script>
+</body>
+
+</html>

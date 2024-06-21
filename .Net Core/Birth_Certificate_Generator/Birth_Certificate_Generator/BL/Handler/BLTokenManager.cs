@@ -38,7 +38,6 @@ namespace Birth_Certificate_Generator.BL.Handler
         /// Generates access tokens
         /// </summary>
         /// <param name="user">object of USR01</param>
-        /// <returns>Token</returns>
         public void GenerateToken(USR01 user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -49,7 +48,7 @@ namespace Birth_Certificate_Generator.BL.Handler
                 Subject = new ClaimsIdentity(new[]
                 {
                     new Claim(ClaimTypes.Name, user.R01F02),
-                    new Claim(ClaimTypes.Role, user.R01F05.ToString()) // Add roles as claims
+                    new Claim(ClaimTypes.Role, user.R01F05.ToString()) 
  
                 }),
                 Expires = DateTime.UtcNow.AddMinutes(20),

@@ -1,0 +1,144 @@
+2024-06-11 11:07:42.7694||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 11-06-2024 11:07:42
+[Method]: GET
+[Path]: /api/CLBCR01/GetAll
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImlzaGlrYSIsInJvbGUiOiJBIiwibmJmIjoxNzE4MDg0MjQ2LCJleHAiOjE3MTgwODU0NDYsImlhdCI6MTcxODA4NDI0Nn0.5rTVdGs6EA4Qj_MJ4aV0kOtM6eF4iHQL5fEAGsQCFP4
+    Referer: http://localhost:5268/swagger/index.html
+    sec-ch-ua: "Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:07:49.4203||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 200
+[ResponseContentType]: application/json; charset=utf-8
+[ResponseBody]:
+{"isSuccess":true,"data":[{"c01F01":1,"c01F03":"2024-04-30T15:06:21","c01F04":"Approved","d01F01":1,"d01F02":"hridhan","d01F03":"sathwara","d01F04":"2024-04-30T06:48:37","d01F05":"rajkot","d01F06":"Male","d01F07":"payal sathwara"},{"c01F01":2,"c01F03":"2024-04-30T15:06:21","c01F04":"Approved","d01F01":2,"d01F02":"khushi","d01F03":"bhayani","d01F04":"2024-04-30T12:18:48","d01F05":"Porbandar","d01F06":"Female","d01F07":"Pratik Bhundiya"},{"c01F01":3,"c01F03":"2024-04-30T15:06:21","c01F04":"Approved","d01F01":3,"d01F02":"Kajal","d01F03":"Vayda","d01F04":"2024-04-30T12:18:48","d01F05":"Diu","d01F06":"Female","d01F07":"Minakshi Vayda"},{"c01F01":4,"c01F03":"2024-05-03T09:57:58","c01F04":"Approved","d01F01":4,"d01F02":"Dimple","d01F03":"Mithiya","d01F04":"2024-05-03T04:26:30","d01F05":"Rajkot","d01F06":"Female","d01F07":"Sakriben Mithiya"},{"c01F01":7,"c01F03":"2024-05-09T12:37:40","c01F04":"Approved","d01F01":5,"d01F02":"arti","d01F03":"vagheliya","d01F04":"2024-05-09T05:34:07","d01F05":"Morbi","d01F06":"Female","d01F07":"Jayeshbhai vagheliya"},{"c01F01":8,"c01F03":"2024-05-09T13:23:25","c01F04":"Approved","d01F01":6,"d01F02":"Binal","d01F03":"Mehta","d01F04":"2024-05-09T05:34:07","d01F05":"Delhi","d01F06":"Female","d01F07":"Pankaj Mehta"},{"c01F01":9,"c01F03":"2024-06-10T15:48:18","c01F04":"Approved","d01F01":8,"d01F02":"prince","d01F03":"Parmar","d01F04":"2024-06-10T10:13:03","d01F05":"Morbi","d01F06":"Male","d01F07":"Rakesh Parmar"}],"message":null}
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:08:20.8182||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 11-06-2024 11:08:20
+[Method]: POST
+[Path]: /api/CLUSR01/AddUser
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImlzaGlrYSIsInJvbGUiOiJBIiwibmJmIjoxNzE4MDg0MjQ2LCJleHAiOjE3MTgwODU0NDYsImlhdCI6MTcxODA4NDI0Nn0.5rTVdGs6EA4Qj_MJ4aV0kOtM6eF4iHQL5fEAGsQCFP4
+    Content-Type: application/json-patch+json
+    Origin: http://localhost:5268
+    Referer: http://localhost:5268/swagger/index.html
+    Content-Length: 119
+    sec-ch-ua: "Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:08:20.8754||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 200
+[ResponseContentType]: application/json; charset=utf-8
+[ResponseBody]:
+{"isSuccess":false,"data":null,"message":"Duplicate entry found"}
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:09:09.6990||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 11-06-2024 11:09:09
+[Method]: POST
+[Path]: /api/CLUSR01/AddUser
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImlzaGlrYSIsInJvbGUiOiJBIiwibmJmIjoxNzE4MDg0MjQ2LCJleHAiOjE3MTgwODU0NDYsImlhdCI6MTcxODA4NDI0Nn0.5rTVdGs6EA4Qj_MJ4aV0kOtM6eF4iHQL5fEAGsQCFP4
+    Content-Type: application/json-patch+json
+    Origin: http://localhost:5268
+    Referer: http://localhost:5268/swagger/index.html
+    Content-Length: 116
+    sec-ch-ua: "Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:09:09.7095||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 200
+[ResponseContentType]: application/json; charset=utf-8
+[ResponseBody]:
+{"isSuccess":false,"data":null,"message":"Duplicate entry found"}
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:09:20.0759||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 11-06-2024 11:09:20
+[Method]: POST
+[Path]: /api/CLUSR01/AddUser
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImlzaGlrYSIsInJvbGUiOiJBIiwibmJmIjoxNzE4MDg0MjQ2LCJleHAiOjE3MTgwODU0NDYsImlhdCI6MTcxODA4NDI0Nn0.5rTVdGs6EA4Qj_MJ4aV0kOtM6eF4iHQL5fEAGsQCFP4
+    Content-Type: application/json-patch+json
+    Origin: http://localhost:5268
+    Referer: http://localhost:5268/swagger/index.html
+    Content-Length: 111
+    sec-ch-ua: "Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:09:20.1653||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 200
+[ResponseContentType]: application/json; charset=utf-8
+[ResponseBody]:
+{"isSuccess":true,"data":null,"message":"Record inserted successfully."}
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:42:26.4898||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[Timestamp]: 11-06-2024 11:42:26
+[Method]: GET
+[Path]: /api/CLBCR01/GetAll
+[QueryString]: 
+[Headers]:
+    Accept: */*
+    Connection: keep-alive
+    Host: localhost:5268
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36
+    Accept-Encoding: gzip, deflate, br, zstd
+    Accept-Language: en-US,en;q=0.9
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImlzaGlrYSIsInJvbGUiOiJBIiwibmJmIjoxNzE4MDg2MzI2LCJleHAiOjE3MTgwODc1MjYsImlhdCI6MTcxODA4NjMyNn0.ZAuwQi1Sx_mjeuLUgI_yUPrlt5OYdA-WEbWb4ww3WOI
+    Referer: http://localhost:5268/swagger/index.html
+    sec-ch-ua: "Google Chrome";v="125", "Chromium";v="125", "Not.A/Brand";v="24"
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
+    Sec-Fetch-Site: same-origin
+    Sec-Fetch-Mode: cors
+    Sec-Fetch-Dest: empty
+--------------------------------------------------------------------------
+ 
+2024-06-11 11:42:26.8527||INFO|Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware|[ResponseStatusCode]: 200
+[ResponseContentType]: application/json; charset=utf-8
+[ResponseBody]:
+{"isSuccess":true,"data":[{"c01F01":1,"c01F03":"2024-04-30T15:06:21","c01F04":"Approved","d01F01":1,"d01F02":"hridhan","d01F03":"sathwara","d01F04":"2024-04-30T06:48:37","d01F05":"rajkot","d01F06":"Male","d01F07":"payal sathwara"},{"c01F01":2,"c01F03":"2024-04-30T15:06:21","c01F04":"Approved","d01F01":2,"d01F02":"khushi","d01F03":"bhayani","d01F04":"2024-04-30T12:18:48","d01F05":"Porbandar","d01F06":"Female","d01F07":"Pratik Bhundiya"},{"c01F01":3,"c01F03":"2024-04-30T15:06:21","c01F04":"Approved","d01F01":3,"d01F02":"Kajal","d01F03":"Vayda","d01F04":"2024-04-30T12:18:48","d01F05":"Diu","d01F06":"Female","d01F07":"Minakshi Vayda"},{"c01F01":4,"c01F03":"2024-05-03T09:57:58","c01F04":"Approved","d01F01":4,"d01F02":"Dimple","d01F03":"Mithiya","d01F04":"2024-05-03T04:26:30","d01F05":"Rajkot","d01F06":"Female","d01F07":"Sakriben Mithiya"},{"c01F01":7,"c01F03":"2024-05-09T12:37:40","c01F04":"Approved","d01F01":5,"d01F02":"arti","d01F03":"vagheliya","d01F04":"2024-05-09T05:34:07","d01F05":"Morbi","d01F06":"Female","d01F07":"Jayeshbhai vagheliya"},{"c01F01":8,"c01F03":"2024-05-09T13:23:25","c01F04":"Approved","d01F01":6,"d01F02":"Binal","d01F03":"Mehta","d01F04":"2024-05-09T05:34:07","d01F05":"Delhi","d01F06":"Female","d01F07":"Pankaj Mehta"},{"c01F01":9,"c01F03":"2024-06-10T15:48:18","c01F04":"Approved","d01F01":8,"d01F02":"prince","d01F03":"Parmar","d01F04":"2024-06-10T10:13:03","d01F05":"Morbi","d01F06":"Male","d01F07":"Rakesh Parmar"}],"message":null}
+--------------------------------------------------------------------------
+ 

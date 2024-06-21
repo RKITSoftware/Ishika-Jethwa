@@ -7,8 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Birth_Certificate_Generator.Controllers
 {
     /// <summary>
-    /// Controller for managing birth certificate requests.
-    /// Provides CRUD operations and query methods for request-related tasks.
+    /// Controller for managing birth certificate requests
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -18,22 +17,22 @@ namespace Birth_Certificate_Generator.Controllers
         /// <summary>
         /// Service interface for managing birth certificate requests.
         /// </summary>
-        private readonly IBCR01 _requestService;
+        private readonly IBCR01 _objBCR01Service;
 
         /// <summary>
-        /// General response object for holding operation results.
+        /// General response object for operation results.
         /// </summary>
         private Response response;
 
         #endregion
 
         /// <summary>
-        /// Initializes a new instance of the CLBCR01 controller with the specified service.
+        ///instance of the CLBCR01 controller with the specified service.
         /// </summary>
         /// <param name="requestService">Service for birth certificate request operations.</param>
-        public CLBCR01(IBCR01 requestService)
+        public CLBCR01(IBCR01 objBCR01Service)
         {
-            _requestService = requestService;
+            _objBCR01Service = objBCR01Service;
         }
 
         /// <summary>
@@ -41,10 +40,11 @@ namespace Birth_Certificate_Generator.Controllers
         /// </summary>
         /// <returns>A list of all birth certificate requests.</returns>
         [HttpGet("GetAll")]
-        [AuthorizationFilter("Admin")]
+       // [AllowAnonymous]
+        [AuthorizationFilter("A")]
         public IActionResult GetAllRequests()
         {
-            response = _requestService.GetAll(); 
+            response = _objBCR01Service.GetAll(); 
             if (response.IsSuccess)
             {
                 return Ok(response); 
@@ -56,12 +56,12 @@ namespace Birth_Certificate_Generator.Controllers
         /// Retrieves a birth certificate request by its ID.
         /// </summary>
         /// <param name="id">The ID of the birth certificate request to retrieve.</param>
-        /// <returns>The request if found, otherwise a suitable response.</returns>
+        /// <returns>The response get if found, otherwise  response with response message.</returns>
         [HttpGet("GetById/{id}")]
-        [AuthorizationFilter("Admin")]
+        [AuthorizationFilter("A")]
         public IActionResult GetRequestById(int id)
         {
-            response = _requestService.GetById(id);
+            response = _objBCR01Service.GetById(id);
             if (response.IsSuccess)
             {
                 return Ok(response); 
@@ -72,17 +72,17 @@ namespace Birth_Certificate_Generator.Controllers
         /// <summary>
         /// Adds a new birth certificate request.
         /// </summary>
-        /// <param name="request">Data transfer object representing the new request.</param>
+        /// <param name="request">DTO representing the new request.</param>
         /// <returns>The result of the addition operation.</returns>
         [HttpPost("AddRequest")]
-        [AuthorizationFilter("User")]
+        [AuthorizationFilter("U")]
         public IActionResult AddRequest([FromBody] DTOBCR01 request)
         {
-            _requestService.PreSave(request); 
-            response = _requestService.Validate();
+            _objBCR01Service.PreSave(request); 
+            response = _objBCR01Service.Validate();
             if (response.IsSuccess)
             {
-                response = _requestService.Save(); 
+                response = _objBCR01Service.Save(); 
             }
             return Ok(response);
         }
@@ -93,10 +93,10 @@ namespace Birth_Certificate_Generator.Controllers
         /// <returns>All pending requests.</returns>
         [HttpGet]
         [Route("GetPendingRequest")]
-        [AuthorizationFilter("Admin")]
+        [AuthorizationFilter("A")]
         public IActionResult GetPendingRequest()
         {
-            response = _requestService.GetPending();
+            response = _objBCR01Service.GetPending();
             if (response.IsSuccess)
             {
                 return Ok(response); 
@@ -110,10 +110,10 @@ namespace Birth_Certificate_Generator.Controllers
         /// <param name="id">The ID of the request to delete.</param>
         /// <returns>The result of the deletion operation.</returns>
         [HttpDelete("{id}")]
-        [AuthorizationFilter("Admin,User")]
+        [AuthorizationFilter("A,U")]
         public IActionResult DeleteRequest(int id)
         {
-            response = _requestService.Delete(id); 
+            response = _objBCR01Service.Delete(id); 
             return Ok(response); 
         }
     }

@@ -3,22 +3,22 @@
 namespace Birth_Certificate_Generator.ML
 {
     /// <summary>
-    /// Represents a generic response structure for API responses.
+    /// Represents response for API responses.
     /// </summary>
     public class Response
     {
         /// <summary>
-        /// Indicates whether the operation was successful or not.
+        /// operation was successful or not.
         /// </summary>
         public bool IsSuccess { get; set; } = true;
 
         /// <summary>
-        /// Contains the data returned by the API operation.
+        /// Contains the data.
         /// </summary>
-        public DataSet Data { get; set; }
+        public DataTable Data { get; set; }
 
         /// <summary>
-        /// Provides additional information or error messages related to the API operation.
+        /// Provides additional information.
         /// </summary>
         public string? Message { get; set; }
     }

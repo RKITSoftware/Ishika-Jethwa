@@ -11,9 +11,9 @@ namespace Birth_Certificate_Generator.ML.DTO
         /// <summary>
         /// Unique identifier for the birth certificate request.
         /// </summary>
-        [Key]
         [Required]
         [JsonProperty("C01101")]
+        [Range(1, int.MaxValue)]
         public int C01F01 { get; set; }
 
         /// <summary>
@@ -21,6 +21,9 @@ namespace Birth_Certificate_Generator.ML.DTO
         /// </summary>
         [JsonProperty("C01102")]
         [Required(ErrorMessage = "Child Id is required")]
-        public int C01F02 { get; set; }
+        [Range(1, int.MaxValue)]
+        public int C01F02 { get; set; } 
+        
+       
     }
 }

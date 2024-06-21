@@ -1,0 +1,6 @@
+F:\Demo\advanceTopic\BCLDemo\BCLDemoLibrary\bin\Debug\BCLDemoLibrary.dll
+F:\Demo\advanceTopic\BCLDemo\BCLDemoLibrary\bin\Debug\BCLDemoLibrary.pdb
+F:\Demo\advanceTopic\BCLDemo\BCLDemoLibrary\obj\Debug\BCLDemoLibrary.csproj.AssemblyReference.cache
+F:\Demo\advanceTopic\BCLDemo\BCLDemoLibrary\obj\Debug\BCLDemoLibrary.csproj.CoreCompileInputs.cache
+F:\Demo\advanceTopic\BCLDemo\BCLDemoLibrary\obj\Debug\BCLDemoLibrary.dll
+F:\Demo\advanceTopic\BCLDemo\BCLDemoLibrary\obj\Debug\BCLDemoLibrary.pdb

@@ -1,0 +1,8 @@
+F:\Demo\advanceTopic\DemoDebugging\DemoDebugging\bin\Debug\DemoDebugging.exe.config
+F:\Demo\advanceTopic\DemoDebugging\DemoDebugging\bin\Debug\DemoDebugging.exe
+F:\Demo\advanceTopic\DemoDebugging\DemoDebugging\bin\Debug\DemoDebugging.pdb
+F:\Demo\advanceTopic\DemoDebugging\DemoDebugging\obj\Debug\DemoDebugging.csproj.AssemblyReference.cache
+F:\Demo\advanceTopic\DemoDebugging\DemoDebugging\obj\Debug\DemoDebugging.csproj.SuggestedBindingRedirects.cache
+F:\Demo\advanceTopic\DemoDebugging\DemoDebugging\obj\Debug\DemoDebugging.csproj.CoreCompileInputs.cache
+F:\Demo\advanceTopic\DemoDebugging\DemoDebugging\obj\Debug\DemoDebugging.exe
+F:\Demo\advanceTopic\DemoDebugging\DemoDebugging\obj\Debug\DemoDebugging.pdb

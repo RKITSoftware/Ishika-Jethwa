@@ -1,6 +1,5 @@
 ﻿using Birth_Certificate_Generator.BL.Handler;
 using Birth_Certificate_Generator.ML.POCO;
-using Birth_Certificate_Generator.Other;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Newtonsoft.Json.Linq;
@@ -10,6 +9,9 @@ using System.Text;
 
 namespace Birth_Certificate_Generator.Filters
 {
+    /// <summary>
+    /// Authorization Filter For cheking Roles 
+    /// </summary>
     public class AuthorizationFilter : Attribute, IAuthorizationFilter 
     {
        
@@ -79,7 +81,7 @@ namespace Birth_Certificate_Generator.Filters
 
                 JObject json = JObject.Parse(decodedPayload);
                 BLLogin bl = Activator.CreateInstance<BLLogin>();
-                USR01 user = bl.GetUser().DatasetToList<USR01>().FirstOrDefault(u => u.R01F02 == json["unique_name"].ToString());
+                USR01 user = bl.GetUser().FirstOrDefault(u => u.R01F02 == json["unique_name"].ToString());
 
                 string[] userRoles = Roles.ToString().Split(',');
 
@@ -115,8 +117,6 @@ namespace Birth_Certificate_Generator.Filters
                 actionContext.Result = new StatusCodeResult(StatusCodes.Status400BadRequest);
             }
         }
-
-       
     }
 
 }

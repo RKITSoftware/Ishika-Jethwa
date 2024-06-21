@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DevExtreme RadioGroup Button Demo</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <style>
+        .group-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .group-label {
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            background-color: white;
+            padding: 0 5px;
+            font-weight: bold;
+        }
+
+         .dx-radiobutton.success .dx-radiobutton-icon-dot {
+            background-color: green !important; /* Change color to desired value */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="group-container">
+        <div class="group-label">Button Type</div>
+        <div id="radioGroupButtonType"></div>
+    </div>
+    <div class="group-container">
+        <div class="group-label">Background Color</div>
+        <div id="radioGroupBackgroundColor"></div>
+    </div>
+    <div class="group-container">
+        <div class="group-label">Foreground Color</div>
+        <div id="radioGroupForegroundColor"></div>
+    </div>
+    <div class="group-container">
+        <div class="group-label">Styling Mode</div>
+        <div id="stylingModeSelectBox"></div>
+    </div>
+    <div id="buttons">
+        <div id="dangerButton"></div>
+        <div id="successButton"></div>
+        <div id="defaultButton"></div>
+        <div id="normalButton"></div>
+    </div>
+    <div id="toastContainer"></div>
+    <script src="radiogroup.js"></script>
+
+   
+</body>
+
+</html>

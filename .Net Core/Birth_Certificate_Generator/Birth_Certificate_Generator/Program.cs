@@ -1,3 +1,7 @@
+using Birth_Certificate_Generator.Other;
+using NLog;
+using NLog.LayoutRenderers;
+
 namespace Birth_Certificate_Generator
 {
     /// <summary>
@@ -11,16 +15,33 @@ namespace Birth_Certificate_Generator
         /// <param name="args">Command-line arguments passed to the application.</param>
         public static void Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
-            var startup = new Startup(builder.Configuration);
+            var logger = LogManager.GetCurrentClassLogger();
 
-            startup.ConfigureServices(builder.Services);
-            var app = builder.Build();
+            try
+            {
+                var builder = WebApplication.CreateBuilder(args);
+                var startup = new Startup(builder.Configuration);
 
-            startup.Configure(app, builder.Environment);
+                startup.ConfigureServices(builder.Services);
+                var app = builder.Build();
 
-            app.Run();
+                startup.Configure(app, builder.Environment);
 
+                // Register custom layout renderer
+                LayoutRenderer.Register<UsernameLayoutRenderer>("username");
+
+               
+                app.Run();
+            }
+            catch (Exception ex)
+            {
+                logger.Error(ex, "Application stopped because of an exception");
+                throw;
+            }
+            finally
+            {
+                LogManager.Shutdown();
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Birth_Certificate_Generator.Controllers
 {
     /// <summary>
-    /// Controller for managing child records, providing CRUD operations and specific queries.
+    /// Controller for managing child records its operation.
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
@@ -19,7 +19,7 @@ namespace Birth_Certificate_Generator.Controllers
         /// <summary>
         /// Service interface for child-related operations.
         /// </summary>
-        private readonly ICHD01 _childService;
+        private readonly ICHD01 _objCHD01Service;
 
         /// <summary>
         /// Response object for returning results.
@@ -28,12 +28,12 @@ namespace Birth_Certificate_Generator.Controllers
         #endregion
 
         /// <summary>
-        /// Initializes a new instance of the CLCHD01 controller with the specified child service.
+        /// instance of the CLCHD01 controller with the specified child service.
         /// </summary>
-        /// <param name="childService">Service layer for child-related operations.</param>
-        public CLCHD01(ICHD01 childService)
+        /// <param name="childService">Service for child-related operations.</param>
+        public CLCHD01(ICHD01 objCHD01Service)
         {
-            _childService = childService;
+            _objCHD01Service = objCHD01Service;
         }
 
         /// <summary>
@@ -41,10 +41,10 @@ namespace Birth_Certificate_Generator.Controllers
         /// </summary>
         /// <returns>All child records as a response.</returns>
         [HttpGet("GetAll")]
-        [AuthorizationFilter("Admin")]
+        [AuthorizationFilter("A")]
         public IActionResult GetAllChildren()
         {
-            response = _childService.GetAll(); 
+            response = _objCHD01Service.GetAll(); 
             if (response.IsSuccess)
             {
                 return Ok(response); 
@@ -56,12 +56,12 @@ namespace Birth_Certificate_Generator.Controllers
         /// Retrieves a child record by its ID.
         /// </summary>
         /// <param name="id">The ID of the child record to retrieve.</param>
-        /// <returns>The child record, if found; otherwise, a 404 response.</returns>
+        /// <returns>The child record as response</returns>
         [HttpGet("GetById/{id}")]
-        [AuthorizationFilter("Admin,User")]
+        [AuthorizationFilter("A,U")]
         public IActionResult GetChildById(int id)
         {
-            response = _childService.GetById(id); 
+            response = _objCHD01Service.GetById(id); 
             if (response.IsSuccess)
             {
                 return Ok(response);
@@ -72,18 +72,18 @@ namespace Birth_Certificate_Generator.Controllers
         /// <summary>
         /// Adds a new child record.
         /// </summary>
-        /// <param name="childDto">Data transfer object representing the new child.</param>
+        /// <param name="objCHD01Dto">DTO representing the new child.</param>
         /// <returns>The result of the addition operation.</returns>
         [HttpPost("AddChild")]
-        [AuthorizationFilter("User")]
-        public IActionResult AddChild(DTOCHD01 childDto)
+        [AuthorizationFilter("U")]
+        public IActionResult AddChild(DTOCHD01 objCHD01Dto)
         {
             BLCHD01Handler.Operation = EnmOperation.I;
-            _childService.PreSave(childDto);
-            response = _childService.Validate();
+            _objCHD01Service.PreSave(objCHD01Dto);
+            response = _objCHD01Service.Validate();
             if (response.IsSuccess)
             {
-                return Ok(_childService.Save()); 
+                return Ok(_objCHD01Service.Save()); 
             }
             return Ok(response); 
         }
@@ -91,18 +91,18 @@ namespace Birth_Certificate_Generator.Controllers
         /// <summary>
         /// Updates an existing child record.
         /// </summary>
-        /// <param name="childDto">Data transfer object representing the child to be updated.</param>
+        /// <param name="objCHD01Dto">DTO representing the child to be updated.</param>
         /// <returns>Result of the update operation.</returns>
         [HttpPut("UpdateChild")]
-        [AuthorizationFilter("Admin")]
-        public IActionResult UpdateChild(DTOCHD01 childDto)
+        [AuthorizationFilter("A")]
+        public IActionResult UpdateChild(DTOCHD01 objCHD01Dto)
         {
             BLCHD01Handler.Operation = EnmOperation.U;
-            _childService.PreSave(childDto);
-            response = _childService.Validate();
+            _objCHD01Service.PreSave(objCHD01Dto);
+            response = _objCHD01Service.Validate();
             if (response.IsSuccess)
             {
-                return Ok(_childService.Save()); 
+                return Ok(_objCHD01Service.Save()); 
             }
             return Ok(response); 
         }
@@ -111,13 +111,13 @@ namespace Birth_Certificate_Generator.Controllers
         /// Deletes a child record by its ID.
         /// </summary>
         /// <param name="id">The ID of the child record to delete.</param>
-        /// <returns>Success result or a 404 response if the record is not found.</returns>
+        /// <returns>Return result as response</returns>
         [HttpDelete("{id}")]
-        [AuthorizationFilter("Admin")]
+        [AuthorizationFilter("A")]
         public IActionResult DeleteChild(int id)
         {
             BLCHD01Handler.Operation = EnmOperation.D;
-            response = _childService.Delete(id); // Delete the child record by ID
+            response = _objCHD01Service.Delete(id); // Delete the child record by ID
             if (response.IsSuccess)
             {
                 return Ok(response); // Return success message

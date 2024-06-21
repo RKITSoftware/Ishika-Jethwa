@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DevExtreme numberbox Demo</title>
+    <!-- Include necessary libraries and stylesheets -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <style>
+        /* CSS for numberbox-container and label */
+        .numberbox-table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .numberbox-table th,
+        .numberbox-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .numberbox-table td:first-child,
+        .numberbox-table th:first-child {
+            min-width: 150px;
+            text-align: center;
+        }
+
+
+        .numberbox-container .dx-numberbox {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="numberbox-table">
+        <tr>
+            <th>Label</th>
+            <th>numberbox</th>
+        </tr>
+        <tr>
+            <td>All Configuration</td>
+            <td id="numberbox"></td>
+        </tr>
+        <tr>
+            <td>Default</td>
+            <td id="default"></td>
+        </tr>
+        <tr>
+            <td>With spin and clear buttons</td>
+            <td id="spin_clear"></td>
+        </tr>
+        <tr>
+            <td>With max and min values</td>
+            <td id="max_min"></td>
+        </tr>
+        <tr>
+            <td>Disabled</td>
+            <td id="disabled"></td>
+        </tr>
+        <tr>
+            <td>This month sales</td>
+            <td id="sales"></td>
+        </tr>
+        <tr>
+            <td>Stock</td>
+            <td id="stock"></td>
+        </tr>
+        
+       
+        
+    </table>
+
+
+
+    <script src="numberbox.js"></script>
+</body>
+
+</html>

@@ -8,24 +8,31 @@ using Microsoft.AspNetCore.Mvc;
 namespace Birth_Certificate_Generator.Controllers
 {
     /// <summary>
-    /// Controller for managing users, providing CRUD operations and user-specific queries.
+    /// Controller for managing users.
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class CLUSR01 : ControllerBase
     {
         #region Private Members
-        private readonly IUSR01 _userService;
+        /// <summary>
+        /// instance of IUSR01 for user services
+        /// </summary>
+        private readonly IUSR01 _objUSR01Service;
+
+        /// <summary>
+        ///  Response object for returning results.
+        /// </summary>
         private Response response;
         #endregion
 
         /// <summary>
-        /// Initializes a new instance of the CLUSR01 controller.
+        /// instance of the CLUSR01 controller.
         /// </summary>
-        /// <param name="userService">Service interface for user-related operations.</param>
-        public CLUSR01(IUSR01 userService)
+        /// <param name="objUSR01Service">Service interface for user-related operations.</param>
+        public CLUSR01(IUSR01 objUSR01Service)
         {
-            _userService = userService;
+            _objUSR01Service = objUSR01Service;
         }
 
         /// <summary>
@@ -35,43 +42,36 @@ namespace Birth_Certificate_Generator.Controllers
         [HttpGet("GetAll")]
         public IActionResult GetAll()
         {
-            Response result = _userService.GetAll();
+            Response result = _objUSR01Service.GetAll();
             return Ok(result);
         }
 
         /// <summary>
         /// Retrieves a user by their username.
         /// </summary>
-        /// <param name="username">The username to search for.</param>
-        /// <returns>User data if found, or a 404 Not Found status if not found.</returns>
+        /// <param name="username">The username to search.</param>
+        /// <returns>User data if found as response.</returns>
         [HttpGet("GetByUsername")]
         public IActionResult GetUserByUsername(string username)
         {
-            Response result = _userService.GetUserByusername(username);
-            if (result.IsSuccess)
-            {
-                return Ok(result);
-            }
-            else
-            {
-                return NotFound(result.Message);
-            }
+            Response result = _objUSR01Service.GetUserByusername(username);
+            return Ok(result);
         }
 
         /// <summary>
-        /// Adds a new user to the system.
+        /// Adds a new user.
         /// </summary>
-        /// <param name="objUSR01Dto">Data transfer object representing the new user.</param>
+        /// <param name="objUSR01Dto">DTO representing the new user.</param>
         /// <returns>Result of the operation.</returns>
         [HttpPost("AddUser")]
         public IActionResult AddUser(DTOUSR01 objUSR01Dto)
         {
             BLUSR01Handler.Operation = EnmOperation.I;
-            _userService.PreSave(objUSR01Dto);
-            response = _userService.Validate();
+            _objUSR01Service.PreSave(objUSR01Dto);
+            response = _objUSR01Service.Validate();
             if (response.IsSuccess)
             {
-                return Ok(_userService.Save());
+                return Ok(_objUSR01Service.Save());
             }
             return Ok(response);
         }
@@ -79,17 +79,17 @@ namespace Birth_Certificate_Generator.Controllers
         /// <summary>
         /// Updates an existing user's information.
         /// </summary>
-        /// <param name="objUSR01Dto">Data transfer object representing the updated user information.</param>
+        /// <param name="objUSR01Dto">DTO representing the updated user information.</param>
         /// <returns>Result of the operation.</returns>
         [HttpPut("Update")]
         public IActionResult UpdateUser(DTOUSR01 objUSR01Dto)
         {
             BLUSR01Handler.Operation = EnmOperation.U;
-            _userService.PreSave(objUSR01Dto);
-            response = _userService.Validate();
+            _objUSR01Service.PreSave(objUSR01Dto);
+            response = _objUSR01Service.Validate();
             if (response.IsSuccess)
             {
-                return Ok(_userService.Save());
+                return Ok(_objUSR01Service.Save());
             }
             return Ok(response);
         }
@@ -102,14 +102,14 @@ namespace Birth_Certificate_Generator.Controllers
         [HttpDelete("{id}")]
         public IActionResult DeleteUser(int id)
         {
-            Response result = _userService.Delete(id);
+            Response result = _objUSR01Service.Delete(id);
             if (result.IsSuccess)
             {
                 return Ok(result);
             }
             else
             {
-                return NotFound(result.Message);
+                return Ok(result.Message);
             }
         }
     }

@@ -10,7 +10,6 @@
         /// </summary>
         I,
 
-
         /// <summary>
         /// Record deleted successfully.
         /// </summary>
@@ -21,6 +20,9 @@
         /// </summary>
         U
     }
+    /// <summary>
+    /// Certificate Status
+    /// </summary>
     public enum EnmStatus
     {
         /// <summary>
@@ -30,12 +32,21 @@
         /// <summary>
         /// Pending
         /// </summary>
-        P,
-        /// <summary>
-        /// Rejected
-        /// </summary>
-        R
+        P
     }
+    /// <summary>
+    /// Roles
+    /// </summary>
+    public enum EnmRoles
+    {
+        /// <summary>
+        /// Admin
+        /// </summary>
+        A,
+        /// <summary>
+        /// User
+        /// </summary>
+        U
 
-   
+    }
 }

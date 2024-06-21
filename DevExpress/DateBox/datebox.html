@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DevExtreme DateBox Demo</title>
+    <!-- Include necessary libraries and stylesheets -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <style>
+        /* CSS for datebox-container and label */
+        .datebox-table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .datebox-table th,
+        .datebox-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .datebox-table td:first-child,
+        .datebox-table th:first-child {
+            min-width: 150px;
+            text-align: center;
+        }
+
+
+        .datebox-container .dx-datebox {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="datebox-table">
+        <tr>
+            <th>Label</th>
+            <th>datebox</th>
+        </tr>
+        <tr>
+            <td>All Configuration</td>
+            <td id="datebox"></td>
+        </tr>
+        <tr>
+            <td>Date</td>
+            <td id="date"></td>
+        </tr>
+        <tr>
+            <td>Time</td>
+            <td id="time"></td>
+        </tr>
+        <tr>
+            <td>Date and Time</td>
+            <td id="datetime"></td>
+        </tr>
+        <tr>
+            <td>Custom Formating</td>
+            <td id="custom"></td>
+        </tr>
+        <tr>
+            <td>DatePicker</td>
+            <td id="date-by-picker"></td>
+        </tr>
+        <tr>
+            <td>With Clear</td>
+            <td id="clear"></td>
+        </tr>
+        <tr>
+            <td>Disabled</td>
+            <td id="disabledDates"></td>
+        </tr>
+        <tr>
+            <td>Disable Certain Date</td>
+            <td id="Disable-Certain-Date"></td>
+        </tr>
+        <tr>
+            <td>BirthDate</td>
+            <td id="birthday"></td>
+           
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td id="age"></td>
+        </tr>
+    </table>
+
+   
+
+    <script src="datebox.js"></script>
+</body>
+
+</html>

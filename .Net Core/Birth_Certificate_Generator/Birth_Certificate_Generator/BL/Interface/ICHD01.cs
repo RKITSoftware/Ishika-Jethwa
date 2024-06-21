@@ -4,7 +4,7 @@ using Birth_Certificate_Generator.ML;
 namespace Birth_Certificate_Generator.BL.Interface
 {
     /// <summary>
-    /// Interface for child-related operations, including retrieval, validation, and CRUD operations.
+    /// Interface for child-related operations.
     /// </summary>
     public interface ICHD01
     {
@@ -22,13 +22,13 @@ namespace Birth_Certificate_Generator.BL.Interface
         Response GetById(int id);
 
         /// <summary>
-        /// Prepares a child record for saving, including data conversion and setting default values.
+        /// Presave for converting dto to poco and setting default values.
         /// </summary>
-        /// <param name="objDtoChd01">The data transfer object representing the child record.</param>
+        /// <param name="objDtoChd01">The DTO representing the child record.</param>
         void PreSave(DTOCHD01 objDtoChd01);
 
         /// <summary>
-        /// Validates a child record to ensure it meets business rules and doesn't duplicate existing records.
+        /// Validates a child record.
         /// </summary>
         /// <returns>A Response object indicating validation success or failure.</returns>
         Response Validate();

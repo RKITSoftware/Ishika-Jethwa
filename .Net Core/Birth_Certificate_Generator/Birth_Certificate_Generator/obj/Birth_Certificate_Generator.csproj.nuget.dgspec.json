@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj": {}
+    "C:\\Users\\ishika.j\\source\\repos\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj": {
+    "C:\\Users\\ishika.j\\source\\repos\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj",
+        "projectUniqueName": "C:\\Users\\ishika.j\\source\\repos\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj",
         "projectName": "Birth_Certificate_Generator",
-        "projectPath": "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj",
+        "projectPath": "C:\\Users\\ishika.j\\source\\repos\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\Birth_Certificate_Generator.csproj",
         "packagesPath": "C:\\Users\\ishika.j\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ishika.j\\Source\\Repos\\Ishika-Jethwa\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\obj\\",
+        "outputPath": "C:\\Users\\ishika.j\\source\\repos\\Birth_Certificate_Generator\\Birth_Certificate_Generator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ishika.j\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "NLog": {
               "target": "Package",
               "version": "[5.2.8, )"
@@ -74,7 +82,11 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Newtonsoft": {
+              "target": "Package",
+              "version": "[6.6.2, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",

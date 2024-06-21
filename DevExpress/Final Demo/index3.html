@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Upload</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form id="documentUploadForm" action="submit.html" enctype="multipart/form-data">
+        <div class="dx-fieldset">
+            <legend>Upload Documents</legend>
+            <div class="form-group">
+                <label for="photoUpload">Upload your photo</label>
+                <div id="photoUpload"></div>
+                <span id="photoUploadError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="signatureUpload">Upload your signature</label>
+                <div id="signatureUpload"></div>
+                <span id="signatureUploadError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="marksheetUpload">Upload your marksheet</label>
+                <div id="marksheetUpload"></div>
+                <span id="marksheetUploadError" class="error-message"></span>
+            </div>
+            <div class="form-group">
+                <label for="certificateUpload">Upload your certificate</label>
+                <div id="certificateUpload"></div>
+                <span id="certificateUploadError" class="error-message"></span>
+            </div>
+        </div>
+        <div id="submitButtonContainer" class="center"></div>
+    </form>
+
+    <script src="./js/index3.js"></script>
+</body>
+
+</html>

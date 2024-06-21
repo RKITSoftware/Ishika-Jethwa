@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form id="detailForm" action="index2.html" >
+        <div class="dx-fieldset">
+            <legend>1. Candidate's Name (as per 12th marksheet): <b>FILL IN CAPITAL LETTERS ONLY</b></legend>
+            <div>
+                <div class="form-group">
+                    <label for="firstname">Firstname</label>
+                    <div id="firstname"></div>
+                </div>
+                <div class="form-group">
+                    <label for="middlename">Middlename</label>
+                    <div id="middlename"></div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Lastname</label>
+                    <div id="lastname"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dx-fieldset">
+            <legend>2. General Information</legend>
+            <div class="form-group">
+                <label for="dateOfBirth">Date of Birth</label>
+                <div id="dateOfBirth"></div>
+            </div>
+            <div class="form-group">
+                <label for="category">Category</label>
+                <div id="category"></div>
+            </div>
+            <div class="form-group">
+                <label for="religion">Religion</label>
+                <div id="religion"></div>
+            </div>
+            <div class="form-group">
+                <label for="caste">Caste</label>
+                <div id="caste"></div>
+            </div>
+            <div class="form-group">
+                <label for="nationality">Nationality</label>
+                <div id="nationality"></div>
+            </div>
+            <div class="form-group">
+                <label for="stateOfDomicile">State of Domicile</label>
+                <div id="stateOfDomicile"></div>
+            </div>
+            <div class="form-group">
+                <label for="bloodGroup">Blood Group</label>
+                <div id="bloodGroup"></div>
+            </div>
+            <div class="form-group">
+                <label for="aadhar">Aadhar card no.</label>
+                <div id="aadhar"></div>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <div id="gender"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID</label>
+                <div id="email"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div id="password"></div>
+            </div>
+        <div class="form-group">
+            <label for="candidatePhone">Candidate's Mob No.</label>
+            <div>
+                <div id="candidatePhoneCountryCode" style="display: inline-block;"></div>
+                <div id="candidatePhoneNumber" style="display: inline-block; margin-left: 10px;"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="parentPhone">Parent's Mob No.</label>
+            <div>
+                <div id="parentPhoneCountryCode" style="display: inline-block;"></div>
+                <div id="parentPhoneNumber" style="display: inline-block; margin-left: 10px;"></div>
+            </div>
+        </div>
+        </div>
+
+        <div class="dx-fieldset">
+            <legend>3. Correspondence Address</legend>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <div id="address"></div>
+            </div>
+            <div class="form-group">
+                <label for="city">Town/City</label>
+                <div id="city"></div>
+            </div>
+            <div class="form-group">
+                <label for="district">District</label>
+                <div id="district"></div>
+            </div>
+            <div class="form-group">
+                <label for="pinCode">Pin Code</label>
+                <div id="pinCode"></div>
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <div id="state"></div>
+            </div>
+        </div>
+
+        <div class="dx-fieldset">
+            <legend>Other Information</legend>
+            <div class="form-group">
+                <label for="fatherName">Father's name</label>
+                <div id="fatherName"></div>
+            </div>
+            <div class="form-group">
+                <label for="motherName">Mother's name</label>
+                <div id="motherName"></div>
+            </div>
+            <div class="form-group">
+                <label for="fatherOccupation">Father's occupation</label>
+                <div id="fatherOccupation"></div>
+            </div>
+            <div class="form-group">
+                <label for="motherOccupation">Mother's occupation</label>
+                <div id="motherOccupation"></div>
+            </div>
+            <div class="form-group">
+                <label for="familyIncome">Total Family Annual Income</label>
+                <div id="familyIncome"></div>
+            </div>
+        </div>
+
+        <div id="submitButtonContainer" class="center"></div>
+    </form>
+
+   <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,10 +1,15 @@
-﻿using System.Data;
+﻿using Birth_Certificate_Generator.BL.Handler;
+using Birth_Certificate_Generator.BL.Interface;
+using Birth_Certificate_Generator.Connection;
+using Birth_Certificate_Generator.DL.Context;
+using Birth_Certificate_Generator.DL.Interface;
+using System.Configuration;
 using System.Reflection;
 
 namespace Birth_Certificate_Generator.Other
 {
     /// <summary>
-    /// Convertor for Dto-Poco
+    /// static class Convertor with extension method
     /// </summary>
     public static class Convertor
     {
@@ -59,42 +64,25 @@ namespace Birth_Certificate_Generator.Other
             }
         }
 
-        /// <summary>
-        /// Convert DataSet To List
-        /// </summary>
-        /// <param name="dataSet">Dataset that you want to convert</param>
-        /// <returns> returns List<T></returns>
-
-        public static List<T> DatasetToList<T>(this DataSet dataSet) where T : new()
+        public static IServiceCollection MyServices(this IServiceCollection services,  IConfiguration configuration)
         {
-            if (dataSet == null || dataSet.Tables.Count == 0)
-            {
-                return new List<T>();
-            }
+            // Registering email service
+            services.AddScoped<IEmailService, BLEmailHandler>();
 
-            DataTable dataTable = dataSet.Tables[0];
-            List<T> resultList = new List<T>();
-
-            foreach (DataRow row in dataTable.Rows)
-            {
-                T instance = new T();
-                foreach (var property in typeof(T).GetProperties())
-                {
-                    if (dataTable.Columns.Contains(property.Name) && property.CanWrite)
-                    {
-                        object value = row[property.Name];
-
-                        if (value != DBNull.Value)
-                        {
-                            property.SetValue(instance, Convert.ChangeType(value, property.PropertyType));
-                        }
-                    }
-                }
-                resultList.Add(instance);
-            }
-
-            return resultList;
+            // Registering business logic handlers and data contexts
+            services.AddScoped<IUSR01, BLUSR01Handler>();
+            services.AddScoped<IUSR01Repository, DBUSR01Context>();
+            services.AddScoped<IBCR01, BLBCR01Handler>();
+            services.AddScoped<IBCR01Repository, DBBCR01Context>();
+            services.AddScoped<IBCT01, BLBCT01Handler>();
+            services.AddScoped<ICHD01, BLCHD01Handler>();
+            services.AddScoped<ICHD01Repository, DBCHD01Context>();
+            services.AddSingleton<IOrmLiteContext>(provider =>
+               new OrmLiteContext(configuration.GetConnectionString("Default")));
+            return services;
         }
+
+      
         #endregion
     }
 }

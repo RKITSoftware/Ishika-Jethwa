@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\.Net Core",
-    "\\.Net Core\\Birth_Certificate_Generator"
+    ""
   ],
-  "SelectedNode": "\\.Net Core\\Birth_Certificate_Generator\\Birth_Certificate_Generator.sln",
+  "SelectedNode": "\\WebApi.sln",
   "PreviewInSolutionExplorer": false
 }

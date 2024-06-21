@@ -1,39 +1,36 @@
 ﻿using Birth_Certificate_Generator.BL.Interface;
-using Birth_Certificate_Generator.ML.DTO;
+using Birth_Certificate_Generator.Connection;
+using Birth_Certificate_Generator.DL.Interface;
 using Birth_Certificate_Generator.ML;
-using ServiceStack.OrmLite;
-using System.Data;
+using Birth_Certificate_Generator.ML.DTO;
 using Birth_Certificate_Generator.ML.POCO;
 using Birth_Certificate_Generator.Other;
-using Birth_Certificate_Generator.DL;
+using ServiceStack.OrmLite;
+using System.Data;
 
 namespace Birth_Certificate_Generator.BL.Handler
 {
     /// <summary>
-    /// Business logic handler for user-related operations, including CRUD and validation.
+    /// Business logic handler for user-related operations.
     /// </summary>
     public class BLUSR01Handler : IUSR01
     {
         #region Private Members
         /// <summary>
-        /// Repository context for user data operations.
+        /// Interface Repository for user data operations.
         /// </summary>
-        private readonly DBUSR01Context _userRepository;
+        private readonly IUSR01Repository _objUSR01Service;
 
         /// <summary>
-        /// The current user object for pre-save and validation operations.
+        /// The current user object.
         /// </summary>
-        private USR01? objUSR01;
+        private USR01 objUSR01;
 
         /// <summary>
         /// ORM Lite connection factory for database connections.
         /// </summary>
-        private readonly OrmLiteConnectionFactory _dbFactory;
+        private readonly IOrmLiteContext _dbFactory;
 
-        /// <summary>
-        /// Database connection string for connecting to MySQL.
-        /// </summary>
-        private readonly string _connectionString;
 
         #endregion
 
@@ -48,14 +45,13 @@ namespace Birth_Certificate_Generator.BL.Handler
         #region Constructor
 
         /// <summary>
-        /// Constructor for BLUSR01Handler with injected configuration and connection factory.
+        /// Constructor for BLUSR01Handler for connection factory and userRepository.
         /// </summary>
-        /// <param name="configuration">Configuration object for accessing connection strings.</param>
         /// <param name="dbFactory">ORM Lite connection factory.</param>
-        public BLUSR01Handler(IConfiguration configuration, OrmLiteConnectionFactory dbFactory)
+        /// <param name="userrepository">Interface For User Related Data operation</param>
+        public BLUSR01Handler(IOrmLiteContext dbFactory, IUSR01Repository userrepository)
         {
-            _connectionString = configuration.GetConnectionString("Default");
-            _userRepository = new DBUSR01Context(_connectionString);
+            _objUSR01Service = userrepository;
             _dbFactory = dbFactory;
         }
 
@@ -69,11 +65,11 @@ namespace Birth_Certificate_Generator.BL.Handler
         public Response GetAll()
         {
             Response response = new Response();
-            DataSet dtResult = _userRepository.GetAllUser();
-            if (dtResult.Tables.Count == 0 || dtResult.Tables[0].Rows.Count == 0)
+            DataTable dtResult = _objUSR01Service.GetAllUser();
+            if (dtResult == null || dtResult.Rows.Count == 0)
             {
                 response.IsSuccess = false;
-                response.Message = "User Not Found"; 
+                response.Message = "User Not Found";
             }
             response.Data = dtResult;
             return response;
@@ -87,18 +83,18 @@ namespace Birth_Certificate_Generator.BL.Handler
         public Response GetUserByusername(string username)
         {
             Response response = new Response();
-            DataSet dtResult = _userRepository.GetUserByUserName(username);
-            if (dtResult.Tables.Count == 0 || dtResult.Tables[0].Rows.Count == 0)
+            DataTable dtResult = _objUSR01Service.GetUserByUserName(username);
+            if (dtResult == null || dtResult.Rows.Count == 0)
             {
                 response.IsSuccess = false;
-                response.Message = "User Not Found"; 
+                response.Message = "User Not Found";
             }
             response.Data = dtResult;
             return response;
         }
 
         /// <summary>
-        /// Saves a user to the database (insert or update based on the operation).
+        /// Saves a user to the database (insert or update based on the Enmoperation).
         /// </summary>
         /// <returns>A Response object indicating the success or failure of the operation.</returns>
         public Response Save()
@@ -106,17 +102,17 @@ namespace Birth_Certificate_Generator.BL.Handler
             Response response = new Response();
             if (Operation == EnmOperation.I)
             {
-                using (IDbConnection db = _dbFactory.OpenDbConnection())
+                using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
                 {
-                    db.Insert(objUSR01); 
+                    db.Insert(objUSR01);
                 }
                 response.Message = EnmOperation.I.GetMessage();
             }
             else
             {
-                using (IDbConnection db = _dbFactory.OpenDbConnection())
+                using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
                 {
-                    db.Update(objUSR01); 
+                    db.Update(objUSR01);
                 }
                 response.Message = EnmOperation.U.GetMessage();
             }
@@ -124,48 +120,51 @@ namespace Birth_Certificate_Generator.BL.Handler
         }
 
         /// <summary>
-        /// Deletes a user by their ID.
+        /// Delete a user by their ID.
         /// </summary>
         /// <param name="id">The ID of the user to delete.</param>
         /// <returns>A Response object indicating the success or failure of the deletion.</returns>
         public Response Delete(int id)
         {
+            int rowsAffected;
             Response response = new Response();
-            using (IDbConnection db = _dbFactory.OpenDbConnection())
+            using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
             {
-                int rowsAffected = db.DeleteById<USR01>(id); 
-                if (rowsAffected == 0)
-                {
-                    response.IsSuccess = false;
-                    response.Message = $"User {id} does not exist";
-                }
-                else
-                {
-                    response.Message = EnmOperation.D.GetMessage();
-                }
+                rowsAffected = db.DeleteById<USR01>(id);
             }
+            if (rowsAffected == 0)
+            {
+                response.IsSuccess = false;
+                response.Message = $"User {id} does not exist";
+            }
+            else
+            {
+                response.Message = EnmOperation.D.GetMessage();
+            }
+
             return response;
         }
 
         /// <summary>
-        /// Prepares a user object for saving to the database.
+        /// Presave a user object for Converting Dto to Poco and set other feild.
         /// </summary>
-        /// <param name="objUSR01Dto">The data transfer object representing the user.</param>
+        /// <param name="objUSR01Dto">The DTO representing the user.</param>
         public void PreSave(DTOUSR01 objUSR01Dto)
         {
-            objUSR01 = objUSR01Dto.CreatePOCO<USR01>(); 
+            objUSR01 = objUSR01Dto.CreatePOCO<USR01>();
+           
             if (Operation == EnmOperation.I)
             {
                 objUSR01.R01F06 = DateTime.Now;
             }
             else if (Operation == EnmOperation.U)
             {
-                objUSR01.R01F07 = DateTime.Now; 
+                objUSR01.R01F07 = DateTime.Now;
             }
         }
 
         /// <summary>
-        /// Validates the user object to ensure it's ready for saving.
+        /// Validates the user object.
         /// </summary>
         /// <returns>A Response object indicating whether the validation passed or failed.</returns>
         public Response Validate()
@@ -174,26 +173,26 @@ namespace Birth_Certificate_Generator.BL.Handler
             Response response = new Response();
             if (Operation == EnmOperation.I)
             {
-                using (IDbConnection db = _dbFactory.OpenDbConnection())
+                using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
                 {
-                    count = (int)db.Count((USR01 p) => p.R01F03 == objUSR01.R01F03); 
+                    count = (int)db.Count((USR01 p) => p.R01F03 == objUSR01.R01F03);
                 }
                 if (count > 0)
                 {
                     response.IsSuccess = false;
-                    response.Message = "Duplicate entry found"; 
+                    response.Message = "Duplicate entry found";
                 }
             }
             else
             {
-                using (IDbConnection db = _dbFactory.OpenDbConnection())
+                using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
                 {
-                    count = (int)db.Count((USR01 p) => p.R01F01 == objUSR01.R01F01); 
+                    count = (int)db.Count((USR01 p) => p.R01F01 == objUSR01.R01F01);
                 }
                 if (count <= 0)
                 {
                     response.IsSuccess = false;
-                    response.Message = $"User with ID = {objUSR01.R01F01} does not exist"; 
+                    response.Message = $"User with ID = {objUSR01.R01F01} does not exist";
                 }
             }
             return response;

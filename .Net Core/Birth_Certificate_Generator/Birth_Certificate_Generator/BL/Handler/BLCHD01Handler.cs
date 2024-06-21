@@ -1,16 +1,17 @@
 ﻿using Birth_Certificate_Generator.BL.Interface;
+using Birth_Certificate_Generator.Connection;
+using Birth_Certificate_Generator.DL.Interface;
 using Birth_Certificate_Generator.ML;
 using Birth_Certificate_Generator.ML.DTO;
 using Birth_Certificate_Generator.ML.POCO;
 using Birth_Certificate_Generator.Other;
 using ServiceStack.OrmLite;
 using System.Data;
-using Birth_Certificate_Generator.DL;
 
 namespace Birth_Certificate_Generator.BL.Handler
 {
     /// <summary>
-    /// Business logic handler for managing child records, providing CRUD operations, validation, and other business-related tasks.
+    /// Business logic handler for managing child records and validation.
     /// </summary>
     public class BLCHD01Handler : ICHD01
     {
@@ -18,7 +19,7 @@ namespace Birth_Certificate_Generator.BL.Handler
         /// <summary>
         /// ORM Lite connection factory for database operations.
         /// </summary>
-        private readonly OrmLiteConnectionFactory _dbFactory;
+        private readonly IOrmLiteContext _dbFactory;
 
         /// <summary>
         /// The child object used for pre-save operations and data handling.
@@ -26,9 +27,9 @@ namespace Birth_Certificate_Generator.BL.Handler
         private CHD01 _objCHD01;
 
         /// <summary>
-        /// Repository context for child-related data operations.
+        /// Repository for child-related data operations.
         /// </summary>
-        private readonly DBCHD01Context _childRepository;
+        private readonly ICHD01Repository _objCHD01Service;
         #endregion
 
         #region Public Member
@@ -40,14 +41,14 @@ namespace Birth_Certificate_Generator.BL.Handler
 
         #region Constructor
         /// <summary>
-        /// Initializes a new instance of the BLCHD01Handler class with the specified database factory and child repository.
+        /// instance of the BLCHD01Handler class with the specified database factory and child repository.
         /// </summary>
         /// <param name="dbFactory">ORM Lite connection factory for database operations.</param>
         /// <param name="context">Repository context for child-related data operations.</param>
-        public BLCHD01Handler(OrmLiteConnectionFactory dbFactory, DBCHD01Context context)
+        public BLCHD01Handler(IOrmLiteContext dbFactory, ICHD01Repository objCHD01Service)
         {
             _dbFactory = dbFactory;
-            _childRepository = context;
+            _objCHD01Service = objCHD01Service;
         }
         #endregion
 
@@ -60,12 +61,12 @@ namespace Birth_Certificate_Generator.BL.Handler
         public Response GetAll()
         {
             Response response = new Response();
-            DataSet dtResult = _childRepository.GetAllChildren();
+            DataTable dtResult = _objCHD01Service.GetAllChildren();
 
-            if (dtResult.Tables.Count == 0 || dtResult.Tables[0].Rows.Count == 0)
+            if (dtResult == null || dtResult.Rows.Count == 0)
             {
                 response.IsSuccess = false;
-                response.Message = "No child records found"; 
+                response.Message = "No child records found";
                 return response;
             }
             response.Data = dtResult;
@@ -80,9 +81,9 @@ namespace Birth_Certificate_Generator.BL.Handler
         public Response GetById(int id)
         {
             Response response = new Response();
-            DataSet dtResult = _childRepository.GetChildById(id);
+            DataTable dtResult = _objCHD01Service.GetChildById(id);
 
-            if (dtResult.Tables.Count == 0 || dtResult.Tables[0].Rows.Count == 0)
+            if (dtResult == null || dtResult.Rows.Count == 0)
             {
                 response.IsSuccess = false;
                 response.Message = $"Child with ID = {id} not found";
@@ -93,20 +94,20 @@ namespace Birth_Certificate_Generator.BL.Handler
         }
 
         /// <summary>
-        /// Prepares a child record for saving to the database.
+        /// Presave For Converting Dto to POCO and set other feilds
         /// </summary>
-        /// <param name="childDto">Data transfer object representing the child to be saved.</param>
-        public void PreSave(DTOCHD01 childDto)
+        /// <param name="objdtoCHD01">DTO representing the child to be saved.</param>
+        public void PreSave(DTOCHD01 objdtoCHD01)
         {
-            _objCHD01 = childDto.CreatePOCO<CHD01>(); // Convert DTO to POCO
-            if (Operation == EnmOperation.I) 
+            _objCHD01 = objdtoCHD01.CreatePOCO<CHD01>(); // Convert DTO to POCO
+            if (Operation == EnmOperation.I)
             {
-                _objCHD01.D01F08 = DateTime.Now; 
+                _objCHD01.D01F08 = DateTime.Now;
             }
         }
 
         /// <summary>
-        /// Validates the child record to ensure it's ready for saving.
+        /// Validates the child record 
         /// </summary>
         /// <returns>A Response object indicating whether validation passed or failed.</returns>
         public Response Validate()
@@ -114,15 +115,29 @@ namespace Birth_Certificate_Generator.BL.Handler
             Response response = new Response();
             if (Operation == EnmOperation.I)
             {
-                using (IDbConnection db = _dbFactory.OpenDbConnection())
+                int count;
+                using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
                 {
-                    int count = (int)db.Count((CHD01 p) => p.D01F02 == _objCHD01.D01F02 && p.D01F03 == _objCHD01.D01F03);
+                    count = (int)db.Count((CHD01 p) => p.D01F02 == _objCHD01.D01F02 && p.D01F03 == _objCHD01.D01F03);
+                }
+                if (count > 0)
+                {
+                    response.IsSuccess = false;
+                    response.Message = "Duplicate entry found";
+                }
+            }
 
-                    if (count > 0) 
-                    {
-                        response.IsSuccess = false;
-                        response.Message = "Duplicate entry found"; 
-                    }
+            else
+            {
+                int count;
+                using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
+                {
+                    count = (int)db.Count((CHD01 p) => p.D01F01 == _objCHD01.D01F01);
+                }
+                if (count == 0)
+                {
+                    response.IsSuccess = false;
+                    response.Message = $"Child ID = {_objCHD01.D01F01} not Exist ";
                 }
             }
 
@@ -137,20 +152,20 @@ namespace Birth_Certificate_Generator.BL.Handler
         {
             Response response = new Response();
 
-            if (Operation == EnmOperation.I) 
+            if (Operation == EnmOperation.I)
             {
-                using (IDbConnection db = _dbFactory.OpenDbConnection())
+                using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
                 {
-                    db.Insert(_objCHD01); 
+                    db.Insert(_objCHD01);
                 }
 
                 response.Message = EnmOperation.I.GetMessage();
             }
-            else if (Operation == EnmOperation.U) 
+            else if (Operation == EnmOperation.U)
             {
-                using (IDbConnection db = _dbFactory.OpenDbConnection())
+                using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
                 {
-                    db.Update(_objCHD01); 
+                    db.Update(_objCHD01);
                 }
 
                 response.Message = EnmOperation.U.GetMessage();
@@ -167,20 +182,19 @@ namespace Birth_Certificate_Generator.BL.Handler
         public Response Delete(int id)
         {
             Response response = new Response();
-
-            using (IDbConnection db = _dbFactory.OpenDbConnection())
+            int rowsAffected;
+            using (IDbConnection db = _dbFactory.DbFactory.OpenDbConnection())
             {
-                int rowsAffected = db.DeleteById<CHD01>(id);
-
-                if (rowsAffected == 0) 
-                {
-                    response.IsSuccess = false;
-                    response.Message = $"Child with ID = {id} does not exist"; 
-                }
-                else
-                {
-                    response.Message = EnmOperation.D.GetMessage(); 
-                }
+                rowsAffected = db.DeleteById<CHD01>(id);
+            }
+            if (rowsAffected == 0)
+            {
+                response.IsSuccess = false;
+                response.Message = $"Child with ID = {id} does not exist";
+            }
+            else
+            {
+                response.Message = EnmOperation.D.GetMessage();
             }
 
             return response;

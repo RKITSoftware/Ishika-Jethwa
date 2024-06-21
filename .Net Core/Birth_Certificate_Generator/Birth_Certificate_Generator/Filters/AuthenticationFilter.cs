@@ -1,14 +1,11 @@
-﻿using Birth_Certificate_Generator.ML.POCO;
+﻿using Birth_Certificate_Generator.BL.Handler;
+using Birth_Certificate_Generator.ML.POCO;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Controllers;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics.Contracts;
-using System.Net.Http.Headers;
 using System.Security.Claims;
-using System.Security.Principal;
-using System.Text;
-using Birth_Certificate_Generator.BL.Handler;
 
 namespace Birth_Certificate_Generator.Filters
 {
@@ -17,105 +14,96 @@ namespace Birth_Certificate_Generator.Filters
     /// </summary>
     public class AuthenticationFilter : Attribute, IAuthorizationFilter
     {
-      
         #region Public Members
 
         /// <summary>
-        /// Instance of BLTokenManager class
+        /// Instance of BLTokenManager for managing token operations.
         /// </summary>
         public BLTokenManager objBLTokenManager = new BLTokenManager();
 
         /// <summary>
-        /// Instance of USR01 class
+        /// Static user object to hold user details.
         /// </summary>
         public static USR01 objUSR01;
 
         /// <summary>
-        /// Defines flag indicating whether token is generated or not
-        /// Checks if token is being generating for first time or already generated
+        /// Flag to check if token is generated.
         /// </summary>
         public static bool isTokenGenerated = false;
 
         #endregion
 
         /// <summary>
-        /// Authenticates user
-        /// </summary>
-        /// <param name="context">Context of authorization filter</param>
+        /// Called to perform authorization.This method will validate the JWT token
+        /// present in the Authorization header and set the current user principal.
+        ///</summary>
+        /// <param name="context">Authorization filter context.</param>
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             if (SkipAuthorization(context)) return;
 
             string authHeader = context.HttpContext.Request.Headers["Authorization"];
 
-            if (authHeader != null && authHeader.StartsWith("Basic "))
+            if (authHeader != null && authHeader.StartsWith("Bearer "))
             {
-                var authHeaderVal = AuthenticationHeaderValue.Parse(authHeader);
+                string token = authHeader.Substring("Bearer ".Length).Trim();
 
-                try
+                if (objBLTokenManager.ValidateToken(token))
                 {
-                    string credentials = Encoding.UTF8.GetString(Convert.FromBase64String(authHeaderVal.Parameter));
-
-                    string[] userInfo = credentials.Split(':');
-                    string username = userInfo[0];
-                    string password = userInfo[1];
-
-                    BLLogin bl = Activator.CreateInstance<BLLogin>();
-
-                    USR01 user = bl.ValidateUser(username, password);
-
-                    if (user != null)
+                    var principal = objBLTokenManager.GetPrincipal(token);
+                    if (principal != null)
                     {
-                        objUSR01 = user; // Sets current logged in user
-
-                        var identity = new GenericIdentity(username);
-                        identity.AddClaim(new Claim(ClaimTypes.Name, objUSR01.R01F02));
-                        identity.AddClaim(new Claim("Id", Convert.ToString(objUSR01.R01F01)));
-
-                        IPrincipal principal = new GenericPrincipal(identity, objUSR01.R01F05.ToString().Split(','));
-
+                        context.HttpContext.User = principal;
                         Thread.CurrentPrincipal = principal;
 
-                        context.HttpContext.User = (ClaimsPrincipal)principal;
+                        var identity = (ClaimsIdentity)principal.Identity;
+                        string username = identity.FindFirst(ClaimTypes.Name).Value;
+                       
 
-                        // Checks if token is generated before
-                        if (isTokenGenerated == false)
+                       
+                        BLLogin objLogin = new BLLogin();
+                        USR01 user = objLogin.ValidateUserName(username);  // Assuming you have a method to get user details by username
+
+                        if (user != null)
                         {
-                            objBLTokenManager.GenerateToken(objUSR01);
+                            objUSR01 = user;
 
-                            isTokenGenerated = true;
+                            if (!isTokenGenerated)
+                            {
+                                objBLTokenManager.GenerateToken(objUSR01);
+                                isTokenGenerated = true;
+                                return;
+                            }
 
-                            return;
-                        }
-
-
-                        object token = BLTokenManager.cache.Get("JWTToken_" + objUSR01.R01F02);
-
-                        if (token != null)
-                        {
-                            token = objBLTokenManager.RefreshToken(objUSR01);
-
-                            if (token == null)
+                            string cachedToken = (string)BLTokenManager.cache.Get(BLTokenManager.CachePrefix + objUSR01.R01F02);
+                            if (cachedToken != null)
+                            {
+                                string refreshedToken = objBLTokenManager.RefreshToken(objUSR01);
+                                if (refreshedToken == null)
+                                {
+                                    context.Result = new StatusCodeResult(StatusCodes.Status500InternalServerError);
+                                }
+                                return;
+                            }
+                            else
                             {
                                 context.Result = new StatusCodeResult(StatusCodes.Status500InternalServerError);
+                                isTokenGenerated = false;
                             }
-                            return;
                         }
                         else
                         {
-                            context.Result = new StatusCodeResult(StatusCodes.Status500InternalServerError);
-                            isTokenGenerated = false;
+                            context.Result = new StatusCodeResult(StatusCodes.Status406NotAcceptable);
                         }
                     }
                     else
                     {
-                        context.Result = new StatusCodeResult(StatusCodes.Status406NotAcceptable);
+                        context.Result = new StatusCodeResult(StatusCodes.Status401Unauthorized);
                     }
                 }
-                catch (FormatException)
+                else
                 {
-                    // Credentials were not formatted correctly.
-                    context.HttpContext.Response.StatusCode = 401;
+                    context.Result = new StatusCodeResult(StatusCodes.Status401Unauthorized);
                 }
             }
             else
@@ -124,14 +112,18 @@ namespace Birth_Certificate_Generator.Filters
             }
         }
 
+        /// <summary>
+        /// Determines if the current action should skip authorization.
+        /// </summary>
+        /// <param name="context">Authorization filter context.</param>
+        /// <returns>True if the action has the AllowAnonymous attribute; otherwise, false.</returns>
         public static bool SkipAuthorization(AuthorizationFilterContext context)
         {
             Contract.Assert(context != null);
             if (context.ActionDescriptor is ControllerActionDescriptor descriptor)
             {
-                var actionAttributes =
-                   descriptor.MethodInfo.GetCustomAttributes(inherit: true);
-                if (actionAttributes.FirstOrDefault(a => a.GetType() == typeof(AllowAnonymousAttribute)) != null) return true;
+                var actionAttributes = descriptor.MethodInfo.GetCustomAttributes(inherit: true);
+                if (actionAttributes.Any(a => a.GetType() == typeof(AllowAnonymousAttribute))) return true;
             }
             return false;
         }

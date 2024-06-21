@@ -6,7 +6,7 @@
     Accept: */*
     Connection: keep-alive
     Host: localhost:5268
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    U-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     Accept-Encoding: gzip, deflate, br, zstd
     Accept-Language: en-US,en;q=0.9
     Authorization: Basic aXNoaWthOlBhc3N3b3Jk
@@ -31,7 +31,7 @@
     Accept: */*
     Connection: keep-alive
     Host: localhost:5268
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    U-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     Accept-Encoding: gzip, deflate, br, zstd
     Accept-Language: en-US,en;q=0.9
     Referer: http://localhost:5268/swagger/index.html
@@ -55,7 +55,7 @@
     Accept: */*
     Connection: keep-alive
     Host: localhost:5268
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    U-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     Accept-Encoding: gzip, deflate, br, zstd
     Accept-Language: en-US,en;q=0.9
     Authorization: Basic aXNoaWthOlBhc3N3b3Jk
@@ -76,7 +76,7 @@
     Accept: */*
     Connection: keep-alive
     Host: localhost:5268
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    U-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     Accept-Encoding: gzip, deflate, br, zstd
     Accept-Language: en-US,en;q=0.9
     Authorization: Basic aXNoaWthOlBhc3N3b3Jk
@@ -104,7 +104,7 @@
     Accept: */*
     Connection: keep-alive
     Host: localhost:5268
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    U-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     Accept-Encoding: gzip, deflate, br, zstd
     Accept-Language: en-US,en;q=0.9
     Authorization: Basic ZGltcGxlOmRpbXBsZQ==
@@ -132,7 +132,7 @@
     Accept: */*
     Connection: keep-alive
     Host: localhost:5268
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    U-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     Accept-Encoding: gzip, deflate, br, zstd
     Accept-Language: en-US,en;q=0.9
     Authorization: Basic ZGltcGxlOmRpbXBsZQ==
@@ -160,7 +160,7 @@
     Accept: */*
     Connection: keep-alive
     Host: localhost:5268
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    U-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     Accept-Encoding: gzip, deflate, br, zstd
     Accept-Language: en-US,en;q=0.9
     Authorization: Basic ZGltcGxlOmRpbXBsZQ==
@@ -188,7 +188,7 @@
     Accept: */*
     Connection: keep-alive
     Host: localhost:5268
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+    U-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
     Accept-Encoding: gzip, deflate, br, zstd
     Accept-Language: en-US,en;q=0.9
     Authorization: Basic ZGltcGxlOmRpbXBsZQ==

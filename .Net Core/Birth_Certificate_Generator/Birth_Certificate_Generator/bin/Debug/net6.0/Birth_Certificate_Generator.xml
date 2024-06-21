@@ -1,0 +1,1474 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Birth_Certificate_Generator</name>
+    </assembly>
+    <members>
+        <member name="T:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler">
+            <summary>
+            BirthCertificate For Requesting and Validation Handler
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler._dbFactory">
+            <summary>
+            ORM Lite connection factory for database operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler._objBCR01">
+            <summary>
+            instance current birth certificate request.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler._objBCR01Service">
+            <summary>
+            interface Repository for birth certificate request.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler.#ctor(Birth_Certificate_Generator.Connection.IOrmLiteContext,Birth_Certificate_Generator.DL.Interface.IBCR01Repository)">
+            <summary>
+            instance of the BLBCR01Handler with the specified database factory and Interface Repository.
+            </summary>
+            <param name="dbFactory">The ORM Lite connection factory for database operations.</param>
+            <param name="objBCR01Service">The interface Repository for birth certificate request data operations.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler.GetAll">
+            <summary>
+            Retrieves all birth certificate requests.
+            </summary>
+            <returns>A Response object containing all birth certificate requests.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler.GetPending">
+            <summary>
+            Retrieves all pending birth certificate requests.
+            </summary>
+            <returns>A Response object containing all pending birth certificate requests.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler.GetById(System.Int32)">
+            <summary>
+            Retrieves a birth certificate request by its ID.
+            </summary>
+            <param name="id">The ID of the birth certificate request to retrieve.</param>
+            <returns>A Response object containing the request data or an error message.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler.PreSave(Birth_Certificate_Generator.ML.DTO.DTOBCR01)">
+            <summary>
+            Presave For converting dto to poco and set other feilds
+            </summary>
+            <param name="objdtoBCR01">DTO representing the birth certificate request.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler.Validate">
+            <summary>
+            Validates the birth certificate request for it doesn't duplicate existing records.
+            </summary>
+            <returns>A Response object indicating validation success or failure.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler.Save">
+            <summary>
+            Saves the birth certificate request to the database.
+            </summary>
+            <returns>A Response object indicating the success or failure of the operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCR01Handler.Delete(System.Int32)">
+            <summary>
+            Deletes a birth certificate request by its ID.
+            </summary>
+            <param name="id">The ID of the birth certificate request to delete.</param>
+            <returns>A Response object indicating success or failure of the operation.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Handler.BLBCT01Handler">
+            <summary>
+            Business logic handler for managing birth certificates, including validation and PDF generation.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLBCT01Handler._objBCR01Service">
+            <summary>
+            interface for birth certificate request data operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLBCT01Handler._email">
+            <summary>
+            Service for Email Operation
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLBCT01Handler._dbFactory">
+            <summary>
+            ORM Lite connection factory for database operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLBCT01Handler._path">
+            <summary>
+            The path where generated certificate PDFs are stored.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCT01Handler.#ctor(Birth_Certificate_Generator.DL.Interface.IBCR01Repository,Birth_Certificate_Generator.Connection.IOrmLiteContext,Birth_Certificate_Generator.BL.Interface.IEmailService)">
+            <summary>
+            instance of the BLBCT01Handler class with the specified interface Repository ,ORM Lite factory and Email service.
+            </summary>
+            <param name="objBCR01Service">Database context for birth certificate requests.</param>
+            <param name="dbFactory">ORM Lite connection factory for database operations.</param>
+            <param name="email">Email Service For Sending Certificate to user's email</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCT01Handler.Validation(System.Int32)">
+            <summary>
+            Validates whether a certificate request with the given ID already exists.
+            </summary>
+            <param name="requestId">The ID of the certificate request to validate.</param>
+            <returns>A Response object indicating validation success or failure.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLBCT01Handler.FinalCertificate(System.Int32)">
+            <summary>
+            Generates a birth certificate PDF and updates the database with the new certificate.
+            </summary>
+            <param name="id">the certificate requestId  to generate.</param>
+            <returns>A Response object with the file path or error message.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Handler.PageBorderEvent">
+            <summary>
+            Custom page event handler for adding borders to PDF pages.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.PageBorderEvent.#ctor(System.Single,System.Single)">
+            <summary>
+            instance of the PageBorderEvent with the specified border thickness and margin.
+            </summary>
+            <param name="borderThickness">The thickness of the border to draw.</param>
+            <param name="margin">The margin within which the border is drawn.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.PageBorderEvent.OnEndPage(iTextSharp.text.pdf.PdfWriter,iTextSharp.text.Document)">
+            <summary>
+            Draws a border around the page when the page ends.
+            </summary>
+            <param name="writer">The PDF writer used to draw the border.</param>
+            <param name="document">The document object representing the current page.</param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler">
+            <summary>
+            Business logic handler for managing child records and validation.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler._dbFactory">
+            <summary>
+            ORM Lite connection factory for database operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler._objCHD01">
+            <summary>
+            The child object used for pre-save operations and data handling.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler._objCHD01Service">
+            <summary>
+            Repository for child-related data operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler.Operation">
+            <summary>
+            Current operation type (Insert, Update, Delete).
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler.#ctor(Birth_Certificate_Generator.Connection.IOrmLiteContext,Birth_Certificate_Generator.DL.Interface.ICHD01Repository)">
+            <summary>
+            instance of the BLCHD01Handler class with the specified database factory and child repository.
+            </summary>
+            <param name="dbFactory">ORM Lite connection factory for database operations.</param>
+            <param name="context">Repository context for child-related data operations.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler.GetAll">
+            <summary>
+            Retrieves all child records.
+            </summary>
+            <returns>A Response object containing all child records.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler.GetById(System.Int32)">
+            <summary>
+            Retrieves a child record by its ID.
+            </summary>
+            <param name="id">The ID of the child record to retrieve.</param>
+            <returns>A Response object with the child record or a not found message.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler.PreSave(Birth_Certificate_Generator.ML.DTO.DTOCHD01)">
+            <summary>
+            Presave For Converting Dto to POCO and set other feilds
+            </summary>
+            <param name="objdtoCHD01">DTO representing the child to be saved.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler.Validate">
+            <summary>
+            Validates the child record 
+            </summary>
+            <returns>A Response object indicating whether validation passed or failed.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler.Save">
+            <summary>
+            Saves the child record to the database (Insert or Update).
+            </summary>
+            <returns>A Response object indicating the success or failure of the operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLCHD01Handler.Delete(System.Int32)">
+            <summary>
+            Deletes a child record by its ID.
+            </summary>
+            <param name="id">The ID of the child record to delete.</param>
+            <returns>A Response object indicating the success or failure of the deletion.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Handler.BLEmailHandler">
+            <summary>
+            Email Service which implements ISender
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLEmailHandler._config">
+            <summary>
+            Configuration for Email Setting
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLEmailHandler.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            BLEmailHandler for handling Email
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLEmailHandler.Send(System.String,System.String,System.Byte[])">
+            <summary>
+            for Sending and email
+            </summary>
+            <param name="email">Receiver's Email</param>
+            <param name="body">Email Body</param>
+            <param name="attachmentBytes">Cerificate Pdf As Byte[]</param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Handler.BLLogin">
+            <summary>
+            Handler class for managing login and user validation.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLLogin._configuration">
+            <summary>
+            Configuration string for database operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLLogin._dbFactory">
+            <summary>
+            instance of OrmLite Connection Factopry
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLLogin.#ctor">
+            <summary>
+            instance of the BLLogin class, setting up the configuration and database connection string.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLLogin.GetUser">
+            <summary>
+            Retrieves all users from the database.
+            </summary>
+            <returns>A DataSet containing all user records.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLLogin.ValidateUser(Birth_Certificate_Generator.ML.Login)">
+            <summary>
+            Validates a user based on the provided username and password.
+            </summary>
+            <param name="username">The username to validate.</param>
+            <param name="password">The password associated with the username.</param>
+            <returns>The validated user or null if the user is invalid.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLLogin.ValidateUserName(System.String)">
+            <summary>
+            Validate a User based on username
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Handler.BLTokenManager">
+            <summary>
+            Handles logic for JWT token
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLTokenManager.Secret">
+            <summary>
+            Secret key for hashing
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLTokenManager.CachePrefix">
+            <summary>
+            Cache prefix to store tokens
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLTokenManager.cache">
+            <summary>
+            MemoryCache object 
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLTokenManager.GenerateToken(Birth_Certificate_Generator.ML.POCO.USR01)">
+            <summary>
+            Generates access tokens
+            </summary>
+            <param name="user">object of USR01</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLTokenManager.RefreshToken(Birth_Certificate_Generator.ML.POCO.USR01)">
+            <summary>
+            Generates refresh token
+            </summary>
+            <param name="token">Token entered by user</param>
+            <returns>New token with new expiration time</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLTokenManager.GetPrincipal(System.String)">
+            <summary>
+            Gets principal from token 
+            </summary>
+            <param name="token">JWT token</param>
+            <returns>Principal if valid token else null through catch</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLTokenManager.ValidateToken(System.String)">
+            <summary>
+            Validates token
+            </summary>
+            <param name="token">Token entered by user</param>
+            <returns>True if token is valid otherwise false</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLTokenManager.IsTokenExpired(System.String)">
+            <summary>
+            Checks token is expired or not
+            </summary>
+            <param name="token">Token entered by user</param>
+            <returns>True if token is expired otherwise false</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler">
+            <summary>
+            Business logic handler for user-related operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler._objUSR01Service">
+            <summary>
+            Interface Repository for user data operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.objUSR01">
+            <summary>
+            The current user object.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler._dbFactory">
+            <summary>
+            ORM Lite connection factory for database connections.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.Operation">
+            <summary>
+            Represents the current operation type (Insert, Update, Delete).
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.#ctor(Birth_Certificate_Generator.Connection.IOrmLiteContext,Birth_Certificate_Generator.DL.Interface.IUSR01Repository)">
+            <summary>
+            Constructor for BLUSR01Handler for connection factory and userRepository.
+            </summary>
+            <param name="dbFactory">ORM Lite connection factory.</param>
+            <param name="userrepository">Interface For User Related Data operation</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.GetAll">
+            <summary>
+            Retrieves all users.
+            </summary>
+            <returns>A Response object with all user data.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.GetUserByusername(System.String)">
+            <summary>
+            Retrieves a user by their username.
+            </summary>
+            <param name="username">The username to search for.</param>
+            <returns>A Response object with the user data or a not found message.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.Save">
+            <summary>
+            Saves a user to the database (insert or update based on the Enmoperation).
+            </summary>
+            <returns>A Response object indicating the success or failure of the operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.Delete(System.Int32)">
+            <summary>
+            Delete a user by their ID.
+            </summary>
+            <param name="id">The ID of the user to delete.</param>
+            <returns>A Response object indicating the success or failure of the deletion.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.PreSave(Birth_Certificate_Generator.ML.DTO.DTOUSR01)">
+            <summary>
+            Presave a user object for Converting Dto to Poco and set other feild.
+            </summary>
+            <param name="objUSR01Dto">The DTO representing the user.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Handler.BLUSR01Handler.Validate">
+            <summary>
+            Validates the user object.
+            </summary>
+            <returns>A Response object indicating whether the validation passed or failed.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Interface.IBCR01">
+            <summary>
+            Interface for Birth Certificate Request
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCR01.GetAll">
+            <summary>
+            Retrieves all birth certificate requests.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCR01.GetPending">
+            <summary>
+            Get Pending Request
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCR01.GetById(System.Int32)">
+            <summary>
+            Retrieves a birth certificate request by ID.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCR01.Validate">
+            <summary>
+            Validates the data of a birth certificate request.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCR01.PreSave(Birth_Certificate_Generator.ML.DTO.DTOBCR01)">
+            <summary>
+            Prepares the birth certificate request before saving (e.g., data transformations, setting defaults).
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCR01.Save">
+            <summary>
+            Saves the birth certificate request (inserts or updates based on context).
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCR01.Delete(System.Int32)">
+            <summary>
+            Deletes a birth certificate request by ID.
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Interface.IBCT01">
+            <summary>
+            Interface For Birth Certificatation
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCT01.FinalCertificate(System.Int32)">
+            <summary>
+            Generates Certificate's pdf
+            </summary>
+            <param name="id">Id of Request to be generate</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IBCT01.Validation(System.Int32)">
+            <summary>
+            Validation that already generated or not
+            </summary>
+            <param name="requestID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Interface.ICHD01">
+            <summary>
+            Interface for child-related operations.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.ICHD01.GetAll">
+            <summary>
+            Retrieves all child records from the database.
+            </summary>
+            <returns>A Response object containing all child records.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.ICHD01.GetById(System.Int32)">
+            <summary>
+            Retrieves a child record by its ID.
+            </summary>
+            <param name="id">The ID of the child to retrieve.</param>
+            <returns>A Response object containing the child record or an error message if not found.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.ICHD01.PreSave(Birth_Certificate_Generator.ML.DTO.DTOCHD01)">
+            <summary>
+            Presave for converting dto to poco and setting default values.
+            </summary>
+            <param name="objDtoChd01">The DTO representing the child record.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.ICHD01.Validate">
+            <summary>
+            Validates a child record.
+            </summary>
+            <returns>A Response object indicating validation success or failure.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.ICHD01.Save">
+            <summary>
+            Saves a child record to the database, either inserting a new record or updating an existing one.
+            </summary>
+            <returns>A Response object indicating the success or failure of the operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.ICHD01.Delete(System.Int32)">
+            <summary>
+            Deletes a child record by its ID.
+            </summary>
+            <param name="id">The ID of the child to delete.</param>
+            <returns>A Response object indicating success or failure of the deletion operation.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Interface.IEmailService">
+            <summary>
+            Interface for any message sending 
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IEmailService.Send(System.String,System.String,System.Byte[])">
+            <summary>
+            Sending message to user
+            </summary>
+            <param name="message"> message which we are sending to user </param>
+            <param name="address"> email id on whiich we are sending message </param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.BL.Interface.IUSR01">
+            <summary>
+            Interface for user-related operations.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IUSR01.GetAll">
+            <summary>
+            Retrieves all user records from the database.
+            </summary>
+            <returns>A Response object containing all user records.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IUSR01.GetUserByusername(System.String)">
+            <summary>
+            Retrieves a user by their username.
+            </summary>
+            <param name="username">The username to search for.</param>
+            <returns>A Response object containing the user record or an error message if not found.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IUSR01.PreSave(Birth_Certificate_Generator.ML.DTO.DTOUSR01)">
+            <summary>
+            Presave a user record including data conversion and default values.
+            </summary>
+            <param name="objDtoUse01">The DTO representing the user record.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IUSR01.Validate">
+            <summary>
+            Validates a user record .
+            </summary>
+            <returns>A Response object indicating validation success or failure.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IUSR01.Save">
+            <summary>
+            Saves a user record to the database,inserting or updating.
+            </summary>
+            <returns>A Response object indicating the success or failure of the operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.BL.Interface.IUSR01.Delete(System.Int32)">
+            <summary>
+            Deletes a user record by its ID.
+            </summary>
+            <param name="id">The ID of the user to delete.</param>
+            <returns>A Response object indicating success or failure of the deletion operation.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Connection.OrmLiteContext">
+            <summary>
+            Provides an ORM Lite context for establishing database connections.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.Connection.OrmLiteContext.DbFactory">
+            <summary>
+            The database connection factory used to create connections.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Connection.OrmLiteContext.#ctor(System.String)">
+            <summary>
+            instance of the OrmLiteContext with a specified connection string.
+            </summary>
+            <param name="connectionString">The database connection string.</param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Controllers.CLBCR01">
+            <summary>
+            Controller for managing birth certificate requests
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Controllers.CLBCR01._objBCR01Service">
+            <summary>
+            Service interface for managing birth certificate requests.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Controllers.CLBCR01.response">
+            <summary>
+            General response object for operation results.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLBCR01.#ctor(Birth_Certificate_Generator.BL.Interface.IBCR01)">
+             <summary>
+            instance of the CLBCR01 controller with the specified service.
+             </summary>
+             <param name="requestService">Service for birth certificate request operations.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLBCR01.GetAllRequests">
+            <summary>
+            Retrieves all birth certificate requests.
+            </summary>
+            <returns>A list of all birth certificate requests.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLBCR01.GetRequestById(System.Int32)">
+            <summary>
+            Retrieves a birth certificate request by its ID.
+            </summary>
+            <param name="id">The ID of the birth certificate request to retrieve.</param>
+            <returns>The response get if found, otherwise  response with response message.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLBCR01.AddRequest(Birth_Certificate_Generator.ML.DTO.DTOBCR01)">
+            <summary>
+            Adds a new birth certificate request.
+            </summary>
+            <param name="request">DTO representing the new request.</param>
+            <returns>The result of the addition operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLBCR01.GetPendingRequest">
+            <summary>
+            Retrieves all pending birth certificate requests.
+            </summary>
+            <returns>All pending requests.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLBCR01.DeleteRequest(System.Int32)">
+            <summary>
+            Deletes a birth certificate request by its ID.
+            </summary>
+            <param name="id">The ID of the request to delete.</param>
+            <returns>The result of the deletion operation.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Controllers.CLBCT01">
+            <summary>
+            Controller for handling birth certificate operations, such as generating and retrieving certificates.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Controllers.CLBCT01._objBCT01">
+            <summary>
+            Interface for the birth certificate operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Controllers.CLBCT01.response">
+            <summary>
+            General response object used for handling operation results.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLBCT01.#ctor(Birth_Certificate_Generator.BL.Interface.IBCT01)">
+            <summary>
+            instance of the CLBCT01 controller with the specified birth certificate service.
+            </summary>
+            <param name="objBCT01">Service for birth certificate operations.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLBCT01.GetCertificate(System.Int32)">
+            <summary>
+            Retrieves a birth certificate by its ID and also send it to the user's email.
+            </summary>
+            <param name="id">The ID of the birth certificate to retrieve.</param>
+            <returns>The PDF file of the birth certificate.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Controllers.CLCHD01">
+            <summary>
+            Controller for managing child records its operation.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Controllers.CLCHD01._objCHD01Service">
+            <summary>
+            Service interface for child-related operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Controllers.CLCHD01.response">
+            <summary>
+            Response object for returning results.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLCHD01.#ctor(Birth_Certificate_Generator.BL.Interface.ICHD01)">
+            <summary>
+            instance of the CLCHD01 controller with the specified child service.
+            </summary>
+            <param name="childService">Service for child-related operations.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLCHD01.GetAllChildren">
+            <summary>
+            Retrieves all child records.
+            </summary>
+            <returns>All child records as a response.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLCHD01.GetChildById(System.Int32)">
+            <summary>
+            Retrieves a child record by its ID.
+            </summary>
+            <param name="id">The ID of the child record to retrieve.</param>
+            <returns>The child record as response</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLCHD01.AddChild(Birth_Certificate_Generator.ML.DTO.DTOCHD01)">
+            <summary>
+            Adds a new child record.
+            </summary>
+            <param name="objCHD01Dto">DTO representing the new child.</param>
+            <returns>The result of the addition operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLCHD01.UpdateChild(Birth_Certificate_Generator.ML.DTO.DTOCHD01)">
+            <summary>
+            Updates an existing child record.
+            </summary>
+            <param name="objCHD01Dto">DTO representing the child to be updated.</param>
+            <returns>Result of the update operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLCHD01.DeleteChild(System.Int32)">
+            <summary>
+            Deletes a child record by its ID.
+            </summary>
+            <param name="id">The ID of the child record to delete.</param>
+            <returns>Return result as response</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Controllers.CLLogin">
+            <summary>
+             Controller Class For Login
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLLogin.#ctor">
+            <summary>
+            Initializes a new instance of the class.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLLogin.Login(Birth_Certificate_Generator.ML.Login)">
+            <summary>
+            Authenticates the user and generates a JWT token.
+            </summary>
+            <param name="objLogin">The username and Password.</param>
+            <returns>A JWT token if the user is authenticated, otherwise a 401 Unauthorized status.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Controllers.CLUSR01">
+            <summary>
+            Controller for managing users.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Controllers.CLUSR01._objUSR01Service">
+            <summary>
+            instance of IUSR01 for user services
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Controllers.CLUSR01.response">
+            <summary>
+             Response object for returning results.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLUSR01.#ctor(Birth_Certificate_Generator.BL.Interface.IUSR01)">
+            <summary>
+            instance of the CLUSR01 controller.
+            </summary>
+            <param name="objUSR01Service">Service interface for user-related operations.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLUSR01.GetAll">
+            <summary>
+            Retrieves all users.
+            </summary>
+            <returns>List of all users.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLUSR01.GetUserByUsername(System.String)">
+            <summary>
+            Retrieves a user by their username.
+            </summary>
+            <param name="username">The username to search.</param>
+            <returns>User data if found as response.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLUSR01.AddUser(Birth_Certificate_Generator.ML.DTO.DTOUSR01)">
+            <summary>
+            Adds a new user.
+            </summary>
+            <param name="objUSR01Dto">DTO representing the new user.</param>
+            <returns>Result of the operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLUSR01.UpdateUser(Birth_Certificate_Generator.ML.DTO.DTOUSR01)">
+            <summary>
+            Updates an existing user's information.
+            </summary>
+            <param name="objUSR01Dto">DTO representing the updated user information.</param>
+            <returns>Result of the operation.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Controllers.CLUSR01.DeleteUser(System.Int32)">
+            <summary>
+            Deletes a user by their ID.
+            </summary>
+            <param name="id">The ID of the user to delete.</param>
+            <returns>Result of the operation.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.DL.Context.DBBCR01Context">
+            <summary>
+            operation with the birth certificate requests in the database.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.DL.Context.DBBCR01Context._execContext">
+            <summary>
+            instance of DBExecContext
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBBCR01Context.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            instance of the DBBCR01Context with the specified connection string.
+            </summary>
+            <param name="configuration">The connection string for the database.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBBCR01Context.GetAllData">
+            <summary>
+            Retrieves all birth certificate request data from the database.
+            </summary>
+            <returns>A DataSet containing all birth certificate request data.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBBCR01Context.GetPending">
+            <summary>
+            Retrieves all pending birth certificate requests from the database.
+            </summary>
+            <returns>A DataSet containing all pending birth certificate requests.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBBCR01Context.GetDataByID(System.Int32)">
+            <summary>
+            Retrieves birth certificate request data by ID.
+            </summary>
+            <param name="id">The ID of the birth certificate request.</param>
+            <returns>A DataSet containing the birth certificate request data for the specified ID.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.DL.Context.DBCHD01Context">
+            <summary>
+            Handling Child Class Database Operation
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.DL.Context.DBCHD01Context._execContext">
+            <summary>
+            instance of DBExecContext
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBCHD01Context.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            To Set instance of DBExecContext
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBCHD01Context.GetAllChildren">
+            <summary>
+            Get All Children Details
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBCHD01Context.GetChildById(System.Int32)">
+            <summary>
+            Get Details of Child by its ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.DL.Context.DBUSR01Context">
+            <summary>
+            interacting with the USR01 table in the database.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.DL.Context.DBUSR01Context._execContext">
+            <summary>
+            instance of DBExecContext
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBUSR01Context.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            instance of the DBUSR01Context with the specified connection string.
+            </summary>
+            <param name="configuration">The connection string for the database.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBUSR01Context.GetAllUser">
+            <summary>
+            Retrieves all user records from the USR01 table in the database.
+            </summary>
+            <returns>A DataSet containing all user records.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Context.DBUSR01Context.GetUserByUserName(System.String)">
+            <summary>
+            Retrieves user records by their username from the USR01 table.
+            </summary>
+            <param name="username">The username to search </param>
+            <returns>A DataSet containing the user record with the specified username.</returns>
+        </member>
+        <member name="F:Birth_Certificate_Generator.DL.DBExecContext._connectionString">
+            <summary>
+            The database connection string used for MySql operations.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.DBExecContext.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            instance of the DBBCR01Context with the specified connection string.
+            </summary>
+            <param name="configuration">The connection string for the database.</param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.DL.Interface.IBCR01Repository">
+            <summary>
+            Interface For birth certificate request Database repository
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Interface.IBCR01Repository.GetAllData">
+            <summary>
+            Retrive All Request for Birth certificate
+            </summary>
+            <returns>All Data of birth certificate in dataset</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Interface.IBCR01Repository.GetPending">
+            <summary>
+            Retrive All Pending Request for Birth certificate
+            </summary>
+            <returns>All Pending Data of birth certificate in dataset</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Interface.IBCR01Repository.GetDataByID(System.Int32)">
+            <summary>
+            Retrive  Request by its id for Birth certificate
+            </summary>
+            <param name="id">Id of requested data</param>
+            <returns>Requestd Data in dataset</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.DL.Interface.ICHD01Repository">
+            <summary>
+            interface for Child Related Database operation
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Interface.ICHD01Repository.GetAllChildren">
+            <summary>
+            Get All Children Data 
+            </summary>
+            <returns>All Children Data in Dataset</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Interface.ICHD01Repository.GetChildById(System.Int32)">
+            <summary>
+            Get Child Data by it's ID
+            </summary>
+            <param name="id">Id of Child that can be searched</param>
+            <returns>Requested Child Data in Dataset</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.DL.Interface.IUSR01Repository">
+            <summary>
+            Interface for User Related Database operation
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Interface.IUSR01Repository.GetAllUser">
+            <summary>
+            Get All User Details
+            </summary>
+            <returns> get User details  in Dataset</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.DL.Interface.IUSR01Repository.GetUserByUserName(System.String)">
+            <summary>
+            Get user details by its username
+            </summary>
+            <param name="username">Username that can be searched</param>
+            <returns>Get User details by its username in dataset</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Filters.AuthenticationFilter">
+            <summary>
+            Custom basic authentication filter
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Filters.AuthenticationFilter.objBLTokenManager">
+            <summary>
+            Instance of BLTokenManager for managing token operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Filters.AuthenticationFilter.objUSR01">
+            <summary>
+            Static user object to hold user details.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Filters.AuthenticationFilter.isTokenGenerated">
+            <summary>
+            Flag to check if token is generated.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Filters.AuthenticationFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+             <summary>
+             Called to perform authorization.This method will validate the JWT token
+             present in the Authorization header and set the current user principal.
+            </summary>
+             <param name="context">Authorization filter context.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Filters.AuthenticationFilter.SkipAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+            <summary>
+            Determines if the current action should skip authorization.
+            </summary>
+            <param name="context">Authorization filter context.</param>
+            <returns>True if the action has the AllowAnonymous attribute; otherwise, false.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Filters.AuthorizationFilter">
+            <summary>
+            Authorization Filter For cheking Roles 
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Filters.AuthorizationFilter.objBLTokenManager">
+            <summary>
+            Instance of BLTokenManager class
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.Filters.AuthorizationFilter.Roles">
+            <summary>
+            User roles
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Filters.AuthorizationFilter.#ctor(System.String)">
+            <summary>
+            Initializes roles
+            </summary>
+            <param name="roles">Role of user</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Filters.AuthorizationFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+            <summary>
+            Authenticates user using user's JWT token
+            </summary>
+            <param name="actionContext">Information of executing context</param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware">
+            <summary>
+            Middleware for logging HTTP requests and responses.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Constructor for RequestLoggingMiddleware.
+            </summary>
+            <param name="next">The next middleware in the pipeline.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware.LogRequest(Microsoft.AspNetCore.Http.HttpRequest)">
+            <summary>
+            Logs the incoming HTTP request.
+            </summary>
+            <param name="request">The HTTP request.</param>
+            <returns>The log message for the request.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware.LogResponse(Microsoft.AspNetCore.Http.HttpResponse,System.IO.Stream)">
+            <summary>
+            Logs the outgoing HTTP response.
+            </summary>
+            <param name="response">The HTTP response.</param>
+            <param name="responseBody">The response body stream.</param>
+            <returns>The log message for the response.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Middleware.RequestLoggingMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Middleware Invoke method to handle logging of requests and responses.
+            </summary>
+            <param name="httpContext">HTTP context.</param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Middleware.MiddlewareExtensions">
+            <summary>
+            Extension method for adding RequestLoggingMiddleware to the application's middleware pipeline.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Middleware.MiddlewareExtensions.UseRequestLogging(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Adds the RequestLoggingMiddleware to the application's middleware pipeline.
+            </summary>
+            <param name="builder">The IApplicationBuilder instance.</param>
+            <returns>The IApplicationBuilder instance.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.DTO.DTOBCR01">
+            <summary>
+            Dto Class for Birth Certificate Request
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOBCR01.C01F01">
+            <summary>
+            Unique identifier for the birth certificate request.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOBCR01.C01F02">
+            <summary>
+            Child ID.
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.DTO.DTOCHD01">
+            <summary>
+            Dto Class for CHD01 
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOCHD01.D01F01">
+            <summary>
+            ChildID
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOCHD01.D01F02">
+            <summary>
+            The child's first name.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOCHD01.D01F03">
+            <summary>
+            The child's last name.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOCHD01.D01F04">
+            <summary>
+            The child's date of birth.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOCHD01.D01F05">
+            <summary>
+            The location where the child was born.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOCHD01.D01F06">
+            <summary>
+            The child's gender.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOCHD01.D01F07">
+            <summary>
+            The name of the child's parent(s).
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOCHD01.D01F09">
+            <summary>
+            The email id  of the child's parent(s).
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.DTO.DTOUSR01">
+            <summary>
+            Dto for user class
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOUSR01.R01F01">
+            <summary>
+            UserId
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOUSR01.R01F02">
+            <summary>
+            Username
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOUSR01.R01F03">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOUSR01.R01F04">
+            <summary>
+            PasswordHash
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.DTO.DTOUSR01.R01F05">
+            <summary>
+            Role
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.ErrorModel">
+            <summary>
+            Model class representing an error response.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.ErrorModel.RequestId">
+            <summary>
+            Gets or sets the request identifier associated with the error.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.ErrorModel.ShowRequestId">
+            <summary>
+            Gets a value indicating whether to show the request identifier.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.ErrorModel.ExceptionMsg">
+            <summary>
+            Gets or sets the exception message describing the error.
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.Login">
+            <summary>
+            Login Class for Authentication authorization
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.Login.L01F01">
+            <summary>
+            Username
+            </summary>
+            <example>ishika</example>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.Login.L01F02">
+            <summary>
+            Password
+            </summary>
+            <example>Password</example>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.POCO.BCR01">
+            <summary>
+            Represents a request for a birth certificate Request.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.BCR01.C01F01">
+            <summary>
+            Unique identifier for the birth certificate request.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.BCR01.C01F02">
+            <summary>
+            Child ID.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.BCR01.C01F03">
+            <summary>
+            The date when the birth certificate request was submitted.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.BCR01.C01F04">
+            <summary>
+            The status of the request (e.g., Pending, Approved).
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.POCO.BCT01">
+            <summary>
+            Represents an issued birth certificate.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.BCT01.T01F01">
+            <summary>
+            CertificateId
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.BCT01.T01F02">
+            <summary>
+            RequestId
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.BCT01.T01F03">
+            <summary>
+            CertificateNumber
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.BCT01.T01F04">
+            <summary>
+            IssueDate
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.POCO.CHD01">
+            <summary>
+            Represents information about a child .
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F01">
+            <summary>
+            ChildID
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F02">
+            <summary>
+            The child's first name.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F03">
+            <summary>
+            The child's last name.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F04">
+            <summary>
+            The child's date of birth.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F05">
+            <summary>
+            The location where the child was born.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F06">
+            <summary>
+            The child's gender.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F07">
+            <summary>
+            The name of the child's parent(s).
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F08">
+            <summary>
+            Created Date
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.CHD01.D01F09">
+            <summary>
+            parent's email
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.POCO.USR01">
+            <summary>
+            Represents a user in the birth certificate system.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.USR01.R01F01">
+            <summary>
+            UserId
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.USR01.R01F02">
+            <summary>
+            Username
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.USR01.R01F03">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.USR01.R01F04">
+            <summary>
+            PasswordHash
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.USR01.R01F05">
+            <summary>
+            Role
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.USR01.R01F06">
+            <summary>
+            Created Date
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.POCO.USR01.R01F07">
+            <summary>
+            Modified Date
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.ML.Response">
+            <summary>
+            Represents response for API responses.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.Response.IsSuccess">
+            <summary>
+            operation was successful or not.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.Response.Data">
+            <summary>
+            Contains the data.
+            </summary>
+        </member>
+        <member name="P:Birth_Certificate_Generator.ML.Response.Message">
+            <summary>
+            Provides additional information.
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Other.Convertor">
+            <summary>
+            static class Convertor with extension method
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Other.Convertor.CreatePOCO``1(System.Object)">
+            <summary>
+            Creates an instance of the target type and maps properties from the source object to the target object.
+            </summary>
+            <typeparam name="T">The type of object to create.</typeparam>
+            <param name="objSource">The source object from which property values will be retrieved.</param>
+            <returns>An instance of the target type with properties mapped from the source object.</returns>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Other.Convertor.GetMessage(Birth_Certificate_Generator.Other.EnmOperation)">
+            <summary>
+            Gets the corresponding message for the enum value.
+            </summary>
+            <param name="enumValue">The enum value.</param>
+            <returns>The message corresponding to the enum value.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Other.EnmOperation">
+            <summary>
+            Enum defining messages for different operations.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Other.EnmOperation.I">
+            <summary>
+            Record inserted successfully.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Other.EnmOperation.D">
+            <summary>
+            Record deleted successfully.
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Other.EnmOperation.U">
+            <summary>
+            Record updated successfully.
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Other.EnmStatus">
+            <summary>
+            Certificate Status
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Other.EnmStatus.A">
+            <summary>
+            Approved
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Other.EnmStatus.P">
+            <summary>
+            Pending
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Other.EnmRoles">
+            <summary>
+            Roles
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Other.EnmRoles.A">
+            <summary>
+            Admin
+            </summary>
+        </member>
+        <member name="F:Birth_Certificate_Generator.Other.EnmRoles.U">
+            <summary>
+            User
+            </summary>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Other.ExceptionHandlerExtension">
+            <summary>
+            Extension class for handling exceptions.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Other.ExceptionHandlerExtension.ConfigureExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Configures the global exception handling middleware.
+            </summary>
+            <param name="app">The application builder instance.</param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Other.UsernameLayoutRenderer">
+            <summary>
+            Custom layout renderer for extracting username from JWT token and rendering it.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Other.UsernameLayoutRenderer.Append(System.Text.StringBuilder,NLog.LogEventInfo)">
+            <summary>
+            Appends the username extracted from JWT token to the log message.
+            </summary>
+            <param name="builder">StringBuilder to build the log message.</param>
+            <param name="logEvent">LogEventInfo containing log event information.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Other.UsernameLayoutRenderer.GetUsernameFromJwt(System.String)">
+            <summary>
+            Extracts the username from the JWT token.
+            </summary>
+            <param name="jwtToken">JWT token string.</param>
+            <returns>The username extracted from the JWT token.</returns>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Program">
+            <summary>
+            Program Entry class for Application
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Program.Main(System.String[])">
+            <summary>
+            Main method serving as the entry point for the application.
+            </summary>
+            <param name="args">Command-line arguments passed to the application.</param>
+        </member>
+        <member name="T:Birth_Certificate_Generator.Startup">
+            <summary>
+            The Startup class configures services and the app's request pipeline.
+            </summary>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor to initialize the Startup class with configuration settings.
+            </summary>
+            <param name="configuration">The configuration settings for the application.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures services and dependencies for the application.
+            </summary>
+            <param name="services">The service collection to which dependencies are added.</param>
+        </member>
+        <member name="M:Birth_Certificate_Generator.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configures the HTTP request pipeline.
+            </summary>
+            <param name="app">The application builder.</param>
+            <param name="env">The web hosting environment.</param>
+        </member>
+    </members>
+</doc>

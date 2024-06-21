@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DevExtreme TextArea Demo</title>
+    <!-- Include necessary libraries and stylesheets -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.11/css/dx.light.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.11/js/dx.all.js"></script>
+    <style>
+        /* CSS for TextArea-container and label */
+        .TextArea-table {
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .TextArea-table th,
+        .TextArea-table td {
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .TextArea-table td:first-child,
+        .TextArea-table th:first-child {
+            min-width: 150px;
+            text-align: center;
+        }
+
+
+        .TextArea-container .dx-TextArea {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="TextArea-table">
+        <tr>
+            <th>Label</th>
+            <th>TextArea</th>
+        </tr>
+        <tr>
+            <td>example-textarea</td>
+            <td id="example-textarea"></td>
+        </tr>
+        <tr>
+            <td>editing-textarea</td>
+            <td id="editing-textarea"></td>
+        </tr>
+        <tr>
+            <td>disabled-textarea</td>
+            <td id="disabled-textarea"></td>
+        </tr>
+    </table>
+    <script src="textarea.js"></script>
+</body>
+
+</html>

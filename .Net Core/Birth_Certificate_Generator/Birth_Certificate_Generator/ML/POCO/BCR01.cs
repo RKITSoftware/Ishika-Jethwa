@@ -1,5 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using ServiceStack.DataAnnotations;
 
 namespace Birth_Certificate_Generator.ML.POCO
 {
@@ -11,9 +10,8 @@ namespace Birth_Certificate_Generator.ML.POCO
         /// <summary>
         /// Unique identifier for the birth certificate request.
         /// </summary>
-        [Key]
-        [Required]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [PrimaryKey]
+        [AutoIncrement]
         public int C01F01 { get; set; }
 
         /// <summary>
@@ -25,16 +23,12 @@ namespace Birth_Certificate_Generator.ML.POCO
         /// <summary>
         /// The date when the birth certificate request was submitted.
         /// </summary>
-        [Required]
+       
         public DateTime C01F03 { get; set; }
 
         /// <summary>
-        /// The status of the request (e.g., Pending, Approved, Rejected).
+        /// The status of the request (e.g., Pending, Approved).
         /// </summary>
-        [Required]
-        [StringLength(1)]
         public string C01F04 { get; set; }
     }
-
-
 }

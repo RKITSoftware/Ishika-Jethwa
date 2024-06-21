@@ -1,0 +1,206 @@
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.csproj.AssemblyReference.cache
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.csproj.CoreCompileInputs.cache
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Employee_CRUD.dll.config
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Employee_CRUD.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Employee_CRUD.pdb
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\csc.exe
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\csc.exe.config
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\csc.rsp
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\csi.exe
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\csi.exe.config
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\csi.rsp
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.AppContext.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Collections.Immutable.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Console.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Globalization.Calendars.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.IO.Compression.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.IO.FileSystem.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Net.Http.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Net.Sockets.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Reflection.Metadata.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.ValueTuple.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Xml.XPath.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\vbc.exe
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\vbc.exe.config
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\vbc.rsp
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\VBCSCompiler.exe
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\roslyn\VBCSCompiler.exe.config
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\BouncyCastle.Cryptography.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Dapper.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Google.Protobuf.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\K4os.Compression.LZ4.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\K4os.Compression.LZ4.Streams.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\K4os.Hash.xxHash.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Microsoft.Web.Infrastructure.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\MySql.Data.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Newtonsoft.Json.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Swashbuckle.Core.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Buffers.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Configuration.ConfigurationManager.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Diagnostics.DiagnosticSource.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.IO.Pipelines.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Memory.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Net.Http.Formatting.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Numerics.Vectors.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Runtime.CompilerServices.Unsafe.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Threading.Tasks.Extensions.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Web.Http.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Web.Http.WebHost.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\WebActivatorEx.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\ZstdSharp.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\BouncyCastle.Cryptography.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Dapper.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Google.Protobuf.pdb
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Google.Protobuf.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\K4os.Compression.LZ4.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\K4os.Compression.LZ4.Streams.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\K4os.Hash.xxHash.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Microsoft.Bcl.AsyncInterfaces.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\MySql.Data.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Buffers.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Diagnostics.DiagnosticSource.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.IO.Pipelines.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Memory.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Numerics.Vectors.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Runtime.CompilerServices.Unsafe.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Threading.Tasks.Extensions.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Newtonsoft.Json.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Net.Http.Formatting.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Web.Http.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\System.Web.Http.WebHost.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.csproj.CopyComplete
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.dll
+F:\Demo\advanceTopic\Employee_CRUD\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.pdb
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Employee_CRUD.dll.config
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Employee_CRUD.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Employee_CRUD.pdb
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\csc.exe
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\csc.exe.config
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\csc.rsp
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\csi.exe
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\csi.exe.config
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\csi.rsp
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.Managed.Core.targets
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\Microsoft.Win32.Primitives.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.AppContext.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Collections.Immutable.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Console.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Globalization.Calendars.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.IO.Compression.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.IO.Compression.ZipFile.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.IO.FileSystem.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Net.Http.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Net.Sockets.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Reflection.Metadata.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Security.Cryptography.Encoding.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Security.Cryptography.Primitives.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Text.Encoding.CodePages.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Threading.Tasks.Extensions.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.ValueTuple.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Xml.ReaderWriter.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Xml.XmlDocument.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Xml.XPath.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\System.Xml.XPath.XDocument.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\vbc.exe
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\vbc.exe.config
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\vbc.rsp
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\VBCSCompiler.exe
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\roslyn\VBCSCompiler.exe.config
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\BouncyCastle.Cryptography.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Dapper.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Google.Protobuf.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\K4os.Compression.LZ4.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\K4os.Compression.LZ4.Streams.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\K4os.Hash.xxHash.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Microsoft.Bcl.AsyncInterfaces.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Microsoft.Web.Infrastructure.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\MySql.Data.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Newtonsoft.Json.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Swashbuckle.Core.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Buffers.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Configuration.ConfigurationManager.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Diagnostics.DiagnosticSource.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.IO.Pipelines.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Memory.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Net.Http.Formatting.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Numerics.Vectors.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Runtime.CompilerServices.Unsafe.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Threading.Tasks.Extensions.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Web.Http.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Web.Http.WebHost.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\WebActivatorEx.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\ZstdSharp.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\BouncyCastle.Cryptography.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Dapper.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Google.Protobuf.pdb
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Google.Protobuf.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\K4os.Compression.LZ4.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\K4os.Compression.LZ4.Streams.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\K4os.Hash.xxHash.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Microsoft.Bcl.AsyncInterfaces.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\MySql.Data.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Buffers.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Diagnostics.DiagnosticSource.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.IO.Pipelines.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Memory.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Numerics.Vectors.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Runtime.CompilerServices.Unsafe.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Threading.Tasks.Extensions.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Newtonsoft.Json.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Net.Http.Formatting.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Web.Http.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\System.Web.Http.WebHost.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.csproj.AssemblyReference.cache
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.csproj.CoreCompileInputs.cache
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.csproj.CopyComplete
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.dll
+F:\Dimple - 371\New folder\DataBase with C#\Employee_CRUD\obj\Debug\Employee_CRUD.pdb

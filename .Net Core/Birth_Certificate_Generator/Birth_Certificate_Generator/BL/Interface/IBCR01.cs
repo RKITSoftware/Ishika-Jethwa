@@ -16,7 +16,6 @@ namespace Birth_Certificate_Generator.BL.Interface
         /// <summary>
         /// Get Pending Request
         /// </summary>
-        
         Response GetPending();
 
         /// <summary>

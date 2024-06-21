@@ -1,0 +1,18 @@
+.demo-container {
+    overflow: visible;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#content {
+    padding: 0 24px;
+}
+
+#content h2 {
+    font-size: 26px;
+}
